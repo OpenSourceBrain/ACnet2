@@ -1,0 +1,8 @@
+*.bak
+neuroConstruct/generatedMOOSE
+neuroConstruct/generatedNeuroML
+neuroConstruct/generatedNEURON
+neuroConstruct/generatedGENESIS
+neuroConstruct/simulations
+*.*~
+neuroConstruct/backup*
