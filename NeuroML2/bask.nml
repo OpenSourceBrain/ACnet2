@@ -44,30 +44,7 @@
             
         </morphology>
 
-            <!--Adding the biophysical parameters-->
-
-        <biophysicalProperties id="biophys">
-
-            <membraneProperties>
-
-                <channelDensity condDensity="0.1428571 mS_per_cm2" id="LeakConductance_all" ionChannel="LeakConductance" erev="-65.0 mV" ion="non_specific">    <!--Note: Units of extra parameters are not known, except if it's e or erev!!-->
-</channelDensity>
-
-                <spikeThresh value="0 mV"/>
-
-                <specificCapacitance value="1.5 uF_per_cm2"/>
-
-                <initMembPotential value="-65.0 mV"/>
-
-            </membraneProperties>
-
-            <intracellularProperties>
-
-                <resistivity value="0.07 kohm_cm"/>
-
-            </intracellularProperties>
-
-        </biophysicalProperties>
+  
 
     </cell>
     
