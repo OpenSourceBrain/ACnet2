@@ -385,7 +385,7 @@ part of NeuroML or any standardised XML specification. -->
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
   <void property="preferredSaveFormat">
-   <string>NeuroML v1.8.1 Format</string>
+   <string>Java Serialized Object Format</string>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.utils.Display3DProperties">
