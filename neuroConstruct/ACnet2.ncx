@@ -25,9 +25,20 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <string>Regions_2</string>
     </void>
+    <void method="add">
+     <string>Regions_3</string>
+    </void>
    </void>
    <void method="get">
     <string>Colour</string>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>255</int>
+      <int>255</int>
+      <int>255</int>
+      <int>255</int>
+     </object>
+    </void>
     <void method="add">
      <object class="java.awt.Color">
       <int>255</int>
@@ -84,6 +95,22 @@ part of NeuroML or any standardised XML specification. -->
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
+       <void index="3">
+        <void property="value">
+         <float>200.0</float>
+        </void>
+       </void>
+       <void index="4">
+        <void property="value">
+         <float>50.0</float>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
    </void>
   </void>
  </object>
@@ -92,10 +119,23 @@ part of NeuroML or any standardised XML specification. -->
    <void method="get">
     <string>Cell Packing Adapter</string>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
+       <void index="0">
+        <void property="value">
+         <float>400.0</float>
+        </void>
+       </void>
+       <void index="1">
+        <void property="value">
+         <float>-200.0</float>
+        </void>
+       </void>
+      </void>
+     </object>
     </void>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter">
@@ -164,17 +204,17 @@ part of NeuroML or any standardised XML specification. -->
     <string>Colour</string>
     <void method="add">
      <object class="java.awt.Color">
-      <int>29</int>
-      <int>177</int>
-      <int>91</int>
+      <int>0</int>
+      <int>102</int>
+      <int>255</int>
       <int>255</int>
      </object>
     </void>
     <void method="add">
      <object class="java.awt.Color">
-      <int>210</int>
-      <int>160</int>
-      <int>28</int>
+      <int>204</int>
+      <int>0</int>
+      <int>51</int>
       <int>255</int>
      </object>
     </void>
@@ -198,10 +238,10 @@ part of NeuroML or any standardised XML specification. -->
    <void method="get">
     <string>Region Name</string>
     <void method="add">
-     <string>Regions_1</string>
+     <string>Regions_3</string>
     </void>
     <void method="add">
-     <string>Regions_1</string>
+     <string>Regions_3</string>
     </void>
     <void method="add">
      <string>Regions_2</string>
@@ -395,7 +435,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_16</string>
+   <string>Sim_17</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
