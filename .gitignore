@@ -1,3 +1,9 @@
+GENESIS/EPSC*.txt
+GENESIS/*netview*.txt
+GENESIS/*summary*.txt
+
+NeuroML2/*.svg
+
 *.bak
 neuroConstruct/generatedMOOSE
 neuroConstruct/generatedNeuroML
