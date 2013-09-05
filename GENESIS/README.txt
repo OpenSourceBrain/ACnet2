@@ -29,8 +29,22 @@ The scripts will be of particular interest to those GENESIS network
 modelers who have not taken advantage of the ten-fold speed increase
 available with the use of 'hsolve' for network simulations.
 
+The optional GUI for the simulation allows many experiments and
+variations of the model to be carried out without modifications.
 This package also contains both GENESIS and simulator-independent Python
 tools for the visualization and analysis of network activity.
+
+If you do not use the GENESIS simulator, and would like to try out the
+simulation, it is simplest to download the entire 'Ultimate GENESIS
+Tutorial Distribution' package with all source code, installation
+instructions, and the complete set of tutorials (about 50 MB) from
+`http://genesis-sim.org/GENESIS/UGTD.html
+<http://genesis-sim.org/GENESIS/UGTD.html>`_.  GENESIS usually installs
+without problems under modern versions of Linux.  Most questions related to
+installation have been answered in the archives of the 'genesis-sim-users'
+mailing list, which are available from the GENESIS 2 Sourceforge page at
+`http://sourceforge.net/projects/genesis-sim/
+<http://sourceforge.net/projects/genesis-sim/>`_.
 
 `ACnet2-docs.html <ACnet2-docs.html>`_ suggests experiments that may be
 tried with the many configurable options in the scripts, and ways to extend
@@ -46,4 +60,5 @@ version 2.1 <figures/copying.txt>`_.
 David Beeman
 University of Colorado, Boulder
 dbeeman@colorado.edu
-Sat Aug 31 12:30:34 MDT 2013
+Tue Sep  3 12:03:30 MDT 2013
+

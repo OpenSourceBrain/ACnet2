@@ -320,7 +320,7 @@ version 2.1</a>.</p>
 <p>David Beeman
 University of Colorado, Boulder
 <a class="reference external" href="mailto:dbeeman&#64;colorado.edu">dbeeman&#64;colorado.edu</a>
-Sat Aug 31 12:30:34 MDT 2013</p>
+Tue Sep  3 12:03:30 MDT 2013</p>
 <div class="section" id="introduction">
 <h1>Introduction</h1>
 <p>Cortical waves have been observed in many cortical areas, including the
@@ -377,7 +377,7 @@ random inputs to provide background levels of firing for the two
 populations in agreement with typical measured values.</p>
 <p>The model omits the following important features:</p>
 <ul class="simple">
-<li>A detailed model of interlaminar connections</li>
+<li>A detailed model of connections from other layers</li>
 <li>Other types of inhibitory channels (e.g.GABA_B, NMDA) and cells (e.g.
 chandelier) with their particular patterns of connections</li>
 <li>gap junctions betweeen inhibitory cells</li>
@@ -390,7 +390,7 @@ assumptions made on cell density and the connection probablity between
 cells as a function of separation.  The goal of this modeling effort was to
 find a suitable set of the four maximal synaptic conductances (gmax).  This
 should allow the propagation of waves of excitation with neither widespread
-undamped oscillations nor excessive inhibitory supperession of the response
+undamped oscillations nor excessive inhibitory quenching of the response
 to stimuli.</p>
 <p>The top right portion of the CNS poster describes how the default
 parameters (shown in the <a class="reference external" href="figures/0001C_run.png">Runtime GUI</a>) produce
@@ -442,7 +442,7 @@ layer as:</p>
 <pre class="literal-block">
 P(r) = P0 * exp(-(r/s)^2), with the s = 10*SEP_X = 0.4 mm
 
-P0(Ex-&gt;Ex) = 0.15,  P0(Ex-&gt;Inh) = 0.45, P0(Inh-&gt;Ex) =  P0(Inh-&gt;Inh) = 0.6
+P0(Ex-&gt;Ex) = 0.15, P0(Ex-&gt;Inh) = 0.45, P0(Inh-&gt;Ex) = P0(Inh-&gt;Inh) = 0.6
 </pre>
 <p>For this model, the separation between excitatory cells SEP_X = 40 micrometers.
 The maximum range for connections was 1 mm. This connection scheme
@@ -552,8 +552,11 @@ to 1/6 of an octave, or any other value.</p>
 installed.  If you have not used GENESIS before, it is simplest to download
 the entire 'Ultimate GENESIS Tutorial Distribution' package with all source
 code, installation instructions, and the complete set of tutorials
-(about 50 MB) from <a class="reference external" href="http://genesis-sim.org/GENESIS/UGTD.html">http://genesis-sim.org/GENESIS/UGTD.html</a>.  GENESIS installs without
-problems under modern versions of Linux.</p>
+(about 50 MB) from <a class="reference external" href="http://genesis-sim.org/GENESIS/UGTD.html">http://genesis-sim.org/GENESIS/UGTD.html</a>.  GENESIS usually installs without
+problems under modern versions of Linux.  Most questions related to
+installation have been answered in the archives of the 'genesis-sim-users'
+mailing list, which are available from the GENESIS 2 Sourceforge page at
+<a class="reference external" href="http://sourceforge.net/projects/genesis-sim/">http://sourceforge.net/projects/genesis-sim/</a>.</p>
 <p><em>ACnet2-main.g</em> is the main simulation script, with default values of
 the parameters that were used to generate the results in Beeman (2013).
 It includes the files to create the GUI and contains many configurable
