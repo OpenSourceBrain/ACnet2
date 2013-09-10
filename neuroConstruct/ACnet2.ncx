@@ -8,6 +8,9 @@ Note that this file is neuroConstruct specific and isn't any
 part of NeuroML or any standardised XML specification. -->
 
  <object class="ucl.physiol.neuroconstruct.project.BasicProjectInfo">
+  <void property="projectDescription">
+   <string> </string>
+  </void>
   <void property="projectFileVersion">
    <string>neuroConstruct v1.7.0</string>
   </void>
@@ -518,7 +521,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>0</string>
      </void>
      <void property="valuePlotted">
-      <string>Na_traub_GEN:X</string>
+      <string>Na_bask_GEN:X</string>
      </void>
     </object>
    </void>
@@ -549,7 +552,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>0</string>
      </void>
      <void property="valuePlotted">
-      <string>Na_traub_GEN:Y</string>
+      <string>Na_bask_GEN:Y</string>
      </void>
     </object>
    </void>
@@ -580,7 +583,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>0</string>
      </void>
      <void property="valuePlotted">
-      <string>Na_traub:m</string>
+      <string>Na_bask:m</string>
      </void>
     </object>
    </void>
@@ -611,7 +614,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>0</string>
      </void>
      <void property="valuePlotted">
-      <string>Na_traub:h</string>
+      <string>Na_bask:h</string>
      </void>
     </object>
    </void>
@@ -619,7 +622,7 @@ part of NeuroML or any standardised XML specification. -->
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
   <void property="preferredSaveFormat">
-   <string>Java Serialized Object Format</string>
+   <string>NeuroML v1.8.1 Format</string>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.utils.Display3DProperties">
@@ -669,7 +672,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_28</string>
+   <string>Sim_32</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>

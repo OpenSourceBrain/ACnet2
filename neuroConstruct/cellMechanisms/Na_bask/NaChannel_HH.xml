@@ -3,7 +3,7 @@
 
     <meta:notes>ChannelML file containing a single Channel description</meta:notes>
 
-    <channel_type name="Na_traub" density="yes">
+    <channel_type name="Na_bask" density="yes">
         
         <status value="stable">
             <meta:comment>Equations adapted from HH paper for modern convention of external potential being zero</meta:comment>
