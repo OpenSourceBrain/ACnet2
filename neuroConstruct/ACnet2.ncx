@@ -186,6 +186,17 @@ part of NeuroML or any standardised XML specification. -->
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
+       <void index="2">
+        <void property="value">
+         <float>100.0</float>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
@@ -207,6 +218,9 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <string>bask_soma_Na_CML</string>
     </void>
+    <void method="add">
+     <string>bask_GEN</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
@@ -227,6 +241,9 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <int>5</int>
+    </void>
+    <void method="add">
+     <int>4</int>
     </void>
    </void>
    <void method="get">
@@ -279,6 +296,14 @@ part of NeuroML or any standardised XML specification. -->
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>197</int>
+      <int>222</int>
+      <int>112</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -290,6 +315,9 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Regions_2</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
     </void>
     <void method="add">
      <string>Regions_1</string>
@@ -320,6 +348,9 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Test_CML</string>
+    </void>
+    <void method="add">
+     <string>baskets_GEN</string>
     </void>
    </void>
   </void>
@@ -618,6 +649,34 @@ part of NeuroML or any standardised XML specification. -->
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>baskets_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>baskets_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>baskets_GEN_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
@@ -672,7 +731,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_32</string>
+   <string>Sim_35</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -795,6 +854,34 @@ part of NeuroML or any standardised XML specification. -->
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>baskets_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="dur">
+      <void property="fixedNum">
+       <float>500.0</float>
+      </void>
+      <void property="numberType">
+       <int>11</int>
+      </void>
+     </void>
+     <void property="reference">
+      <string>Input_4</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo">
@@ -914,6 +1001,40 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="simDuration">
       <float>300.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>baskets</string>
+      </void>
+      <void method="add">
+       <string>baskets_GEN</string>
+      </void>
+     </void>
+     <void property="inputs">
+      <void method="add">
+       <string>Input_0</string>
+      </void>
+      <void method="add">
+       <string>Input_4</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>TestCells</string>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>baskets_GEN_v</string>
+      </void>
+      <void method="add">
+       <string>baskets_v</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>700.0</float>
      </void>
     </object>
    </void>
