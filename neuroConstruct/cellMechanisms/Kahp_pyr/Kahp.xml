@@ -60,7 +60,7 @@
         </current_voltage_relation>
 
 	<impl_prefs>
-	  <table_settings max_v="0.03" min_v="-0.1" table_divisions="3000"/>
+	  <table_settings max_v="0.05" min_v="-0.1" table_divisions="3000"/>
 	</impl_prefs>
         
         
