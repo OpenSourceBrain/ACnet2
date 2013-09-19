@@ -11,11 +11,11 @@ Note the following:
    Mechanism Type should only have values: Channel mechanism, Synaptic mechanism, Ion concentration, Point process, Gap junction
 
 </comment>
-<entry key="Mechanism Name">Ca_hip_traub91_GEN</entry>
+<entry key="Mechanism Name">Ca_pyr_GEN</entry>
 <entry key="Mechanism Model">File Based Membrane Mechanism</entry>
 <entry key="Mechanism Type">Channel mechanism</entry>
 <entry key="Implementation method">File based Cell Mechanism</entry>
-<entry key="GENESIS implementation">Ca_hip_traub91_GEN.g</entry>
+<entry key="GENESIS implementation">Ca_pyr_GEN.g</entry>
 <entry key="Default Instance Name">NewMembraneMechanism</entry>
 <entry key="Description">A conductance on the cell membrane, full implementation of which is present in a specified file</entry>
 </properties>
