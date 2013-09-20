@@ -22,6 +22,6 @@ Note the following:
 <entry key="PSICS mapping">ChannelML_v1.8.1_PSICS.xsl</entry>
 <entry key="ChannelML file">LeakConductance.xml</entry>
 <entry key="GENESIS file requires compilation">false</entry>
-<entry key="Mechanism Name">LeakConductance</entry>
+<entry key="Mechanism Name">LeakConductance_bask</entry>
 <entry key="Mechanism Model">Template based ChannelML file</entry>
 </properties>
