@@ -4,30 +4,59 @@
     xmlns:meta="http://morphml.org/metadata/schema" 
     xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd" 
     units="SI Units">
+  
+    <meta:notes>ChannelML file describing intracellular Calcium dynamics, from the Hippocampal CA3 neuron model presented in Traub et al., 1991.</meta:notes>
 
-	<meta:notes>...</meta:notes>
-    
     <ion name="ca" charge="2" role="SignallingSubstance">  
         <meta:notes>Signifies that the ion is involved in a process which alters its concentration</meta:notes>
     </ion>
     
     <ion_concentration name="Ca_conc">
         
+
         <status value="in_progress">
-            <meta:comment>....</meta:comment>
+            <meta:comment>Transcribed from the Genesis implementation by David Beeman</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>
+            <meta:contributor>
+                <meta:name>Boris Marin</meta:name>
+            </meta:contributor>
         </status>
-    
-        <meta:notes>An expontially decaying pool of calcium</meta:notes>
 
+        <meta:authorList>
+            <meta:modelTranslator>
+                <meta:name>Padraig Gleeson</meta:name>
+                <meta:institution>UCL</meta:institution>    
+                <meta:email>p.gleeson - at - ucl.ac.uk</meta:email>
+            </meta:modelTranslator>
+            <meta:modelTranslator>
+                <meta:name>Boris Marin</meta:name>
+                <meta:institution>UCL</meta:institution>    
+                <meta:email>b.marin - at - ucl.ac.uk</meta:email>
+            </meta:modelTranslator>
+        </meta:authorList>
+
+        <meta:publication>
+            <meta:fullTitle>Traub, R. D., Wong, R. K., Miles, R., and Michelson, H. (1991). A model of a CA3 hippocampal pyramidal neuron incorporating voltage-clamp data on intrinsic conductances. Journal of neurophysiology, 66(2), 635-50.</meta:fullTitle>
+<meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/1663538</meta:pubmedRef>
+        </meta:publication>
+
+        <meta:neuronDBref>
+            <meta:modelName>Na channels</meta:modelName>
+            <meta:uri>http://senselab.med.yale.edu/neurondb/NeuronProp.aspx?id=259&amp;mo=1&amp;re=&amp;pr=C</meta:uri>
+
+        </meta:neuronDBref>
+
+    
         
         <ion_species name="ca"/>
         
-        <decaying_pool_model resting_conc ="7.55e-5" decay_constant="1e-2">
+        <decaying_pool_model resting_conc ="0.0" decay_constant="0.01333">
             
-            <pool_volume_info shell_thickness = "8.4e-8"/>
+            <fixed_pool_info>
+	      <phi>17.402e12</phi> <!-- this constant depends on geometrical factors, so each compartment will have its own. Units should be checked with Dave. -->
+	    </fixed_pool_info>
             
         </decaying_pool_model>
         
