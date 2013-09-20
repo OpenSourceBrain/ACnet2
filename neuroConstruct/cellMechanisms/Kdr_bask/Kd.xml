@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level2/ChannelML_v1.8.1.xsd" units="SI Units">
+
+    <meta:notes>ChannelML file containing a single Potassium Channel description, from the book Neuronal Networks of the Hippocampus, Traub and Miles 1991</meta:notes>
+
+    <channel_type name="Kdr_bask" density="yes">
+        
+        <status value="in_progress">
+            <meta:comment>Transcribed from the Genesis implementation by David Beeman</meta:comment>
+            <meta:contributor>
+                <meta:name>Padraig Gleeson</meta:name>
+            </meta:contributor>
+            <meta:contributor>
+                <meta:name>Boris Marin</meta:name>
+            </meta:contributor>
+        </status>
+
+        <meta:authorList>
+            <meta:modelTranslator>
+                <meta:name>Padraig Gleeson</meta:name>
+                <meta:institution>UCL</meta:institution>    
+                <meta:email>p.gleeson - at - ucl.ac.uk</meta:email>
+            </meta:modelTranslator>
+            <meta:modelTranslator>
+                <meta:name>Boris Marin</meta:name>
+                <meta:institution>UCL</meta:institution>    
+                <meta:email>b.marin - at - ucl.ac.uk</meta:email>
+            </meta:modelTranslator>
+        </meta:authorList>
+
+        <meta:publication>
+            <meta:fullTitle>Traub, R. D., &amp; Miles, R. (1991). Neuronal Networks of the Hippocampus. Cambridge University Press.</meta:fullTitle>
+        </meta:publication>
+
+        <meta:neuronDBref>
+            <meta:modelName>K channels</meta:modelName>
+            <meta:uri>http://senselab.med.yale.edu/neurondb/NeuronProp.aspx?id=259&amp;mo=1&amp;re=&amp;pr=C</meta:uri>
+        </meta:neuronDBref>
+        
+        <current_voltage_relation cond_law="ohmic" ion="k" default_erev="-0.09"> 
+            
+            <gate name="n" instances="4">
+                <closed_state id="n0"/>
+                <open_state id="n"/>
+
+                <transition name="alpha" from="n0" to="n" expr_form="generic" expr="9.93908245804491*exp(-55.5555555555556*v)"/>  
+                <transition name="beta" from="n" to="n0" expr_form="generic" expr="4000.0/(0.0100518357446336*exp(-200.0*v) + 1.0)"/>  
+            </gate>
+           
+            
+        </current_voltage_relation>
+
+	<impl_prefs>
+	  <table_settings max_v="0.05" min_v="-0.1" table_divisions="3000"/>
+	</impl_prefs>
+        
+        
+    </channel_type>
+</channelml>
