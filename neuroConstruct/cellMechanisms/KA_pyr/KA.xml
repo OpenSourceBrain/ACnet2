@@ -3,7 +3,7 @@
 
     <meta:notes>ChannelML file containing a single Potassium Channel description, from the Hippocampal CA3 neuron model presented in Traub et al., 1991.</meta:notes>
 
-    <channel_type name="Kahp_pyr" density="yes">
+    <channel_type name="KA_pyr" density="yes">
         
         <status value="in_progress">
             <meta:comment>Transcribed from the Genesis implementation by David Beeman</meta:comment>
