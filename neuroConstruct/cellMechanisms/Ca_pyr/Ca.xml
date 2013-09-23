@@ -49,8 +49,10 @@
                 <closed_state id="m0"/>
                 <open_state id="m"/>
 
-                <transition name="alpha" from="m0" to="m" expr_form="generic" expr="1600.0/(1.43328813856966*exp(-71.9942404607631*v) + 1.0)"/>  
-                <transition name="beta" from="m" to="m0" expr_form="generic" expr="(20000.0*v + 178.0)/(5.92985641859114*exp(200.0*v) - 1.0)"/>  
+                <!-- <transition name="alpha" from="m0" to="m" expr_form="generic" expr="1600.0/(1.43328813856966*exp(-71.9942404607631*v) + 1.0)"/>   -->
+                <transition name="alpha" from="m0" to="m" expr_form="sigmoid" rate="1.6e+03" scale="-1.389e-02" midpoint="5e-03"/>  
+                <!-- <transition name="beta" from="m" to="m0" expr_form="generic" expr="(20000.0*v + 178.0)/(5.92985641859114*exp(200.0*v) - 1.0)"/>   -->
+                <transition name="beta" from="m" to="m0" expr_form="exp_linear" rate="1e2" scale="-5e-3" midpoint="-8.9e-3"/>  
             </gate>
            
             <gate name="h" instances="1">
