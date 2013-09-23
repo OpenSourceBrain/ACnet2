@@ -43,8 +43,8 @@
                 <closed_state id="n0"/>
                 <open_state id="n"/>
 
-                <transition name="alpha" from="n0" to="n" expr_form="generic" expr="9.93908245804491*exp(-55.5555555555556*v)"/>  
-                <transition name="beta" from="n" to="n0" expr_form="generic" expr="4000.0/(0.0100518357446336*exp(-200.0*v) + 1.0)"/>  
+                <transition name="alpha" from="n0" to="n" expr_form="generic" expr="9.93908245804491* (exp (-55.5555555555556*v))"/>  
+                <transition name="beta" from="n" to="n0" expr_form="generic" expr="4000.0/(0.0100518357446336* (exp (-200.0*v)) + 1.0)"/>  
             </gate>
            
             
