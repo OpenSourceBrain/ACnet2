@@ -39,7 +39,11 @@
 
         </meta:neuronDBref>
         
-        <current_voltage_relation cond_law="ohmic" ion="ca" default_erev="0.08" default_gmax="1.328e-07"> 
+        <current_voltage_relation cond_law="ohmic"
+				  ion="ca"
+				  charge="2"
+				  default_erev="0.08"
+				  default_gmax="1.328e-07"> 
             
             <gate name="m" instances="2">
                 <closed_state id="m0"/>
