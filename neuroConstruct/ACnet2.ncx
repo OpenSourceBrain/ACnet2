@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.6.0_27" class="java.beans.XMLDecoder">
+<java version="1.7.0_40" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -64,35 +64,22 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
       <void property="parameterList">
-       <void index="3">
-        <void property="value">
-         <float>2350.0</float>
+       <void id="InternalParameter0" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter0"/>
+          <float>2350.0</float>
+         </void>
         </void>
        </void>
-       <void index="5">
-        <void property="value">
-         <float>2350.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
-       <void index="1">
-        <void property="value">
-         <float>200.0</float>
-        </void>
-       </void>
-       <void index="3">
-        <void property="value">
-         <float>2300.0</float>
-        </void>
-       </void>
-       <void index="5">
-        <void property="value">
-         <float>2300.0</float>
+       <void id="InternalParameter1" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter1"/>
+          <float>2350.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -101,14 +88,55 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
       <void property="parameterList">
-       <void index="3">
-        <void property="value">
-         <float>200.0</float>
+       <void id="InternalParameter2" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter2"/>
+          <float>200.0</float>
+         </void>
         </void>
        </void>
-       <void index="4">
-        <void property="value">
-         <float>50.0</float>
+       <void id="InternalParameter3" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter3"/>
+          <float>2300.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter4" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter4"/>
+          <float>2300.0</float>
+         </void>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
+       <void id="InternalParameter5" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter5"/>
+          <float>200.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter6" index="4">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter6"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -127,30 +155,22 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>400.0</float>
+       <void id="InternalParameter7" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter7"/>
+          <float>400.0</float>
+         </void>
         </void>
        </void>
-       <void index="1">
-        <void property="value">
-         <float>-200.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter">
-      <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
-        </void>
-       </void>
-       <void index="1">
-        <void property="value">
-         <float>50.0</float>
+       <void id="InternalParameter8" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter8"/>
+          <float>-200.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -159,14 +179,76 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
+       <void id="InternalParameter9" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter9"/>
+          <float>0.0</float>
+         </void>
         </void>
        </void>
-       <void index="1">
-        <void property="value">
-         <float>25.0</float>
+       <void id="InternalParameter10" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter10"/>
+          <float>50.0</float>
+         </void>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter">
+      <void property="parameterList">
+       <void id="InternalParameter11" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter11"/>
+          <float>0.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter12" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter12"/>
+          <float>25.0</float>
+         </void>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
+       <void id="InternalParameter13" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter13"/>
+          <float>100.0</float>
+         </void>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
+       <void id="InternalParameter14" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter14"/>
+          <float>-100.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -176,37 +258,13 @@ part of NeuroML or any standardised XML specification. -->
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
-      <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>100.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
-      <void property="parameterList">
-       <void index="2">
-        <void property="value">
-         <float>100.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
-      <void property="parameterList">
-       <void index="2">
-        <void property="value">
-         <float>-100.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
    </void>
    <void method="get">
@@ -224,16 +282,22 @@ part of NeuroML or any standardised XML specification. -->
      <string>pyr_4_sym</string>
     </void>
     <void method="add">
+     <string>bask_GEN</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_GEN</string>
+    </void>
+    <void method="add">
      <string>bask_soma_Na_GEN</string>
     </void>
     <void method="add">
      <string>bask_soma_Na_CML</string>
     </void>
     <void method="add">
-     <string>bask_GEN</string>
+     <string>bask_soma_Kdr_GEN</string>
     </void>
     <void method="add">
-     <string>pyr_4_sym_GEN</string>
+     <string>bask_soma_Kdr_CML</string>
     </void>
    </void>
    <void method="get">
@@ -251,16 +315,22 @@ part of NeuroML or any standardised XML specification. -->
      <int>7</int>
     </void>
     <void method="add">
-     <int>6</int>
-    </void>
-    <void method="add">
-     <int>5</int>
-    </void>
-    <void method="add">
      <int>4</int>
     </void>
     <void method="add">
      <int>3</int>
+    </void>
+    <void method="add">
+     <int>2</int>
+    </void>
+    <void method="add">
+     <int>1</int>
+    </void>
+    <void method="add">
+     <int>2</int>
+    </void>
+    <void method="add">
+     <int>1</int>
     </void>
    </void>
    <void method="get">
@@ -299,22 +369,6 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <object class="java.awt.Color">
-      <int>225</int>
-      <int>78</int>
-      <int>113</int>
-      <int>255</int>
-     </object>
-    </void>
-    <void method="add">
-     <object class="java.awt.Color">
-      <int>248</int>
-      <int>10</int>
-      <int>240</int>
-      <int>255</int>
-     </object>
-    </void>
-    <void method="add">
-     <object class="java.awt.Color">
       <int>197</int>
       <int>222</int>
       <int>112</int>
@@ -329,6 +383,38 @@ part of NeuroML or any standardised XML specification. -->
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>109</int>
+      <int>35</int>
+      <int>253</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>73</int>
+      <int>141</int>
+      <int>7</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>59</int>
+      <int>169</int>
+      <int>87</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>129</int>
+      <int>80</int>
+      <int>154</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -340,6 +426,12 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Regions_2</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
     </void>
     <void method="add">
      <string>Regions_1</string>
@@ -372,16 +464,22 @@ part of NeuroML or any standardised XML specification. -->
      <string>pyrs48x48</string>
     </void>
     <void method="add">
-     <string>Test_GEN</string>
-    </void>
-    <void method="add">
-     <string>Test_CML</string>
-    </void>
-    <void method="add">
      <string>baskets_GEN</string>
     </void>
     <void method="add">
      <string>pyramidals_GEN</string>
+    </void>
+    <void method="add">
+     <string>Test__Na_bask_GEN</string>
+    </void>
+    <void method="add">
+     <string>Test__Na_bask_CML</string>
+    </void>
+    <void method="add">
+     <string>Test_Kdr_bask_GEN</string>
+    </void>
+    <void method="add">
+     <string>Test__Kdr_bask_CML</string>
     </void>
    </void>
   </void>
@@ -503,186 +601,6 @@ part of NeuroML or any standardised XML specification. -->
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
      <void property="cellGroup">
-      <string>Test_GEN</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>Test_GEN_v</string>
-     </void>
-     <void property="maxValue">
-      <float>50.0</float>
-     </void>
-     <void property="minValue">
-      <float>-90.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test_GEN_v</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test_CML</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>Test_GEN_v</string>
-     </void>
-     <void property="maxValue">
-      <float>50.0</float>
-     </void>
-     <void property="minValue">
-      <float>-90.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test_CML_v</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test_GEN</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_5</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test_GEN_v_1</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Na_bask_GEN:X</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test_GEN</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_5</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test_GEN_v_2</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Na_bask_GEN:Y</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test_CML</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_5</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test_GEN_v_3</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Na_bask:m</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test_CML</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_5</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test_GEN_v_4</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Na_bask:h</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
       <string>baskets_GEN</string>
      </void>
      <void property="cellNumber">
@@ -736,6 +654,192 @@ part of NeuroML or any standardised XML specification. -->
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_bask_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_5</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_bask_GEN_m</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_bask_GEN:X</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_bask_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_5</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_bask_GEN_h</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_bask_GEN:Y</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_bask_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_5</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_bask_m</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_bask:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_bask_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_5</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_bask_h</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_bask:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kdr_bask_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_6</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kdr_bask_n</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kdr_bask:n</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_Kdr_bask_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_6</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kdr_bask_GEN_n</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kdr_bask_GEN:X</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
@@ -780,7 +884,30 @@ part of NeuroML or any standardised XML specification. -->
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings"/>
- <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings"/>
+ <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings">
+  <void property="nativeBlocks">
+   <void method="put">
+    <int>10</int>
+    <string></string>
+   </void>
+   <void method="put">
+    <int>5</int>
+    <string></string>
+   </void>
+   <void method="put">
+    <int>15</int>
+    <string></string>
+   </void>
+   <void method="put">
+    <int>-1</int>
+    <string></string>
+   </void>
+   <void method="put">
+    <int>1</int>
+    <string></string>
+   </void>
+  </void>
+ </object>
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
   <void property="dt">
@@ -790,7 +917,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_39</string>
+   <string>Sim_56</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -811,12 +938,16 @@ part of NeuroML or any standardised XML specification. -->
        <float>100.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator0" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator0"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>500.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -839,72 +970,20 @@ part of NeuroML or any standardised XML specification. -->
        <float>100.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator1" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator1"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>500.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
       <string>Input_1</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
-     <void property="amp">
-      <void property="fixedNum">
-       <float>0.2</float>
-      </void>
-     </void>
-     <void property="cellGroup">
-      <string>Test_GEN</string>
-     </void>
-     <void property="del">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-     </void>
-     <void property="dur">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
-      </void>
-     </void>
-     <void property="reference">
-      <string>Input_2</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
-     <void property="amp">
-      <void property="fixedNum">
-       <float>0.2</float>
-      </void>
-     </void>
-     <void property="cellGroup">
-      <string>Test_CML</string>
-     </void>
-     <void property="del">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-     </void>
-     <void property="dur">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
-      </void>
-     </void>
-     <void property="reference">
-      <string>Input_3</string>
      </void>
     </object>
    </void>
@@ -918,12 +997,16 @@ part of NeuroML or any standardised XML specification. -->
        <float>100.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator2" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator2"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>500.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -946,16 +1029,148 @@ part of NeuroML or any standardised XML specification. -->
        <float>100.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator3" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator3"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>500.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
       <string>Input_5</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Na_bask_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator4" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator4"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Na_bask_GEN</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Na_bask_CML</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator5" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator5"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Na_bask_CML</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Kdr_bask_CML</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator6" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator6"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Kdr_bask_CML</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test_Kdr_bask_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator7" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator7"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Kdr_bask_GEN</string>
      </void>
     </object>
    </void>
@@ -967,10 +1182,10 @@ part of NeuroML or any standardised XML specification. -->
     <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
-       <string>baskets</string>
+       <string>Test__Na_bask_CML</string>
       </void>
       <void method="add">
-       <string>pyramidals</string>
+       <string>Test__Na_bask_GEN</string>
       </void>
      </void>
      <void property="description">
@@ -978,10 +1193,10 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="inputs">
       <void method="add">
-       <string>Input_0</string>
+       <string>IClamp_Na_bask_CML</string>
       </void>
       <void method="add">
-       <string>Input_1</string>
+       <string>IClamp_Na_bask_GEN</string>
       </void>
      </void>
      <void property="name">
@@ -989,20 +1204,20 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="plots">
       <void method="add">
-       <string>baskets_v</string>
+       <string>Test__Na_bask_GEN_h</string>
       </void>
       <void method="add">
-       <string>pyramidals_v</string>
+       <string>Test__Na_bask_GEN_m</string>
       </void>
       <void method="add">
-       <string>Test_CML_v</string>
+       <string>Test__Na_bask_h</string>
       </void>
       <void method="add">
-       <string>Test_GEN_v</string>
+       <string>Test__Na_bask_m</string>
       </void>
      </void>
      <void property="simDuration">
-      <float>700.0</float>
+      <float>300.0</float>
      </void>
     </object>
    </void>
@@ -1039,18 +1254,30 @@ part of NeuroML or any standardised XML specification. -->
     <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
-       <string>Test_CML</string>
+       <string>Test__Kdr_bask_CML</string>
       </void>
       <void method="add">
-       <string>Test_GEN</string>
+       <string>Test__Na_bask_CML</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_bask_GEN</string>
+      </void>
+      <void method="add">
+       <string>Test_Kdr_bask_GEN</string>
       </void>
      </void>
      <void property="inputs">
       <void method="add">
-       <string>Input_2</string>
+       <string>IClamp_Kdr_bask_CML</string>
       </void>
       <void method="add">
-       <string>Input_3</string>
+       <string>IClamp_Kdr_bask_GEN</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Na_bask_CML</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Na_bask_GEN</string>
       </void>
      </void>
      <void property="name">
@@ -1058,22 +1285,22 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="plots">
       <void method="add">
-       <string>Test_CML_v</string>
+       <string>Test__Kdr_bask_GEN_n</string>
       </void>
       <void method="add">
-       <string>Test_GEN_v</string>
+       <string>Test__Kdr_bask_n</string>
       </void>
       <void method="add">
-       <string>Test_GEN_v_1</string>
+       <string>Test__Na_bask_GEN_h</string>
       </void>
       <void method="add">
-       <string>Test_GEN_v_2</string>
+       <string>Test__Na_bask_GEN_m</string>
       </void>
       <void method="add">
-       <string>Test_GEN_v_3</string>
+       <string>Test__Na_bask_h</string>
       </void>
       <void method="add">
-       <string>Test_GEN_v_4</string>
+       <string>Test__Na_bask_m</string>
       </void>
      </void>
      <void property="simDuration">

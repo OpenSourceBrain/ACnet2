@@ -46,7 +46,7 @@
                 </bio:mechanism>
 
                 <bio:mechanism name="LeakConductance_bask" type="Channel Mechanism" passive_conductance="true">
-                    <bio:parameter name="e" value="-65.0">
+                    <bio:parameter name="e" value="-6.5E7">
                         <bio:group>all</bio:group>
                     </bio:parameter>
                     <bio:parameter name="gmax" value="0.1428571">
