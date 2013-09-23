@@ -37,7 +37,7 @@
             <meta:uri>http://senselab.med.yale.edu/neurondb/NeuronProp.aspx?id=259&amp;mo=1&amp;re=&amp;pr=C</meta:uri>
         </meta:neuronDBref>
         
-        <current_voltage_relation cond_law="ohmic" ion="na" default_erev="0.05"> 
+        <current_voltage_relation cond_law="ohmic" ion="na" default_erev="0.05" default_gmax="0"> 
             
             <gate name="m" instances="3">
                 <closed_state id="m0"/>
