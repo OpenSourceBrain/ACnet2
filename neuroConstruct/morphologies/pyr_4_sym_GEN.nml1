@@ -115,7 +115,7 @@
                     </bio:parameter>
                 </bio:mechanism>
 
-                <bio:mechanism name="Ca_hip_traub91_GEN" type="Channel Mechanism">
+                <bio:mechanism name="Ca_pyr_GEN" type="Channel Mechanism">
                     <bio:parameter name="gmax" value="10.0">
                         <bio:group>soma_group</bio:group>
                     </bio:parameter>

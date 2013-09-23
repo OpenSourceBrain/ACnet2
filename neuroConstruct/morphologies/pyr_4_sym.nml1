@@ -115,7 +115,7 @@ Value for scaling factor to apply to current to get change in conc should be
 
                 </bio:mechanism>
 
-                <bio:mechanism name="Ca_hip_traub91" type="Channel Mechanism">
+                <bio:mechanism name="Ca_pyr" type="Channel Mechanism">
                     <bio:parameter name="gmax" value="10.0">
                         <bio:group>soma_group</bio:group>
                     </bio:parameter>

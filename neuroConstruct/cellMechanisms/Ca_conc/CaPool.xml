@@ -48,8 +48,6 @@
 
         </meta:neuronDBref>
 
-    
-        
         <ion_species name="ca"/>
         
         <decaying_pool_model resting_conc ="0.0" decay_constant="0.01333">
