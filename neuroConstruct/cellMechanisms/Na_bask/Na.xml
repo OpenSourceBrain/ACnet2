@@ -43,16 +43,16 @@
                 <closed_state id="m0"/>
                 <open_state id="m"/>
 
-                <transition name="alpha" from="m0" to="m" expr_form="generic" expr="(-320000.0*v - 16000.0)/(3.72665317207867e-6*exp(-250.0*v) - 1.0)"/>  
-                <transition name="beta" from="m" to="m0" expr_form="generic" expr="(280000.0*v + 6440.0)/(99.4843156419338*exp(200.0*v) - 1.0)"/>  
+                <transition name="alpha" from="m0" to="m" expr_form="generic" expr="(-320000.0*v - 16000.0)/(3.72665317207867e-6* (exp (-250.0*v)) - 1.0)"/>  
+                <transition name="beta" from="m" to="m0" expr_form="generic" expr="(280000.0*v + 6440.0)/(99.4843156419338* (exp (200.0*v)) - 1.0)"/>  
             </gate>
            
             <gate name="h" instances="1">
                 <closed_state id="h0"/>
                 <open_state id="h"/>
 
-                <transition name="alpha" from="h0" to="h" expr_form="generic" expr="9.93908245804491*exp(-55.5555555555556*v)"/>  
-                <transition name="beta" from="h" to="h0" expr_form="generic" expr="4000.0/(0.0100518357446336*exp(-200.0*v) + 1.0)"/>    
+                <transition name="alpha" from="h0" to="h" expr_form="generic" expr="9.93908245804491* (exp (-55.5555555555556*v))"/>  
+                <transition name="beta" from="h" to="h0" expr_form="generic" expr="4000.0/(0.0100518357446336* (exp (-200.0*v)) + 1.0)"/>    
             </gate>
             
         </current_voltage_relation>
