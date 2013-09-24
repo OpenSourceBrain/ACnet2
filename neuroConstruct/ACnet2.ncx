@@ -9,7 +9,7 @@ part of NeuroML or any standardised XML specification. -->
 
  <object class="ucl.physiol.neuroconstruct.project.BasicProjectInfo">
   <void property="projectDescription">
-   <string>         </string>
+   <string> </string>
   </void>
   <void property="projectFileVersion">
    <string>neuroConstruct v1.7.0</string>
@@ -266,6 +266,24 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
@@ -299,6 +317,24 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <string>bask_soma_Kdr_CML</string>
     </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Na_CML</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Na_GEN</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Kdr_CML</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Kdr_GEN</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Ca_CML</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Ca_GEN</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
@@ -331,6 +367,24 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <int>1</int>
+    </void>
+    <void method="add">
+     <int>0</int>
+    </void>
+    <void method="add">
+     <int>-1</int>
+    </void>
+    <void method="add">
+     <int>-2</int>
+    </void>
+    <void method="add">
+     <int>-3</int>
+    </void>
+    <void method="add">
+     <int>-4</int>
+    </void>
+    <void method="add">
+     <int>-5</int>
     </void>
    </void>
    <void method="get">
@@ -415,6 +469,54 @@ part of NeuroML or any standardised XML specification. -->
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>179</int>
+      <int>113</int>
+      <int>253</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>36</int>
+      <int>237</int>
+      <int>214</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>61</int>
+      <int>119</int>
+      <int>169</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>223</int>
+      <int>255</int>
+      <int>124</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>170</int>
+      <int>195</int>
+      <int>58</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>233</int>
+      <int>35</int>
+      <int>217</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -426,6 +528,24 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Regions_2</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
     </void>
     <void method="add">
      <string>Regions_1</string>
@@ -480,6 +600,24 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Test__Kdr_bask_CML</string>
+    </void>
+    <void method="add">
+     <string>Test__Na_pyr_CML</string>
+    </void>
+    <void method="add">
+     <string>Test__Na_pyr_GEN</string>
+    </void>
+    <void method="add">
+     <string>Test__Kdr_pyr_CML</string>
+    </void>
+    <void method="add">
+     <string>Test__Kdr_pyr_GEN</string>
+    </void>
+    <void method="add">
+     <string>Test__Ca_pyr_CML</string>
+    </void>
+    <void method="add">
+     <string>Test__Ca_pyr_GEN</string>
     </void>
    </void>
   </void>
@@ -719,6 +857,223 @@ part of NeuroML or any standardised XML specification. -->
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
      <void property="cellGroup">
+      <string>Test_Kdr_bask_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_6</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kdr_bask_GEN_n</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kdr_bask_GEN:X</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_pyr_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_7</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_pyr_CML_m</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_pyr:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_pyr_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_7</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_pyr_CML_h</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_pyr:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_pyr_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_7</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_pyr_GEN_m</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_pyr_GEN:X</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Na_pyr_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_7</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Na_pyr_GEN_h</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_pyr_GEN:Y</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kdr_pyr_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_8</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kdr_pyr_GEN_n</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kdr_pyr_GEN:X</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kdr_pyr_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_8</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kdr_pyr_CML_n</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kdr_pyr:n</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
       <string>Test__Na_bask_CML</string>
      </void>
      <void property="cellNumber">
@@ -737,7 +1092,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>Plot and save</string>
      </void>
      <void property="plotReference">
-      <string>Test__Na_bask_m</string>
+      <string>Test__Na_bask_CML_m</string>
      </void>
      <void property="segmentId">
       <string>0</string>
@@ -768,7 +1123,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>Plot and save</string>
      </void>
      <void property="plotReference">
-      <string>Test__Na_bask_h</string>
+      <string>Test__Na_bask_CML_h</string>
      </void>
      <void property="segmentId">
       <string>0</string>
@@ -799,7 +1154,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>Plot and save</string>
      </void>
      <void property="plotReference">
-      <string>Test__Kdr_bask_n</string>
+      <string>Test__Kdr_bask_CML_n</string>
      </void>
      <void property="segmentId">
       <string>0</string>
@@ -812,13 +1167,13 @@ part of NeuroML or any standardised XML specification. -->
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
      <void property="cellGroup">
-      <string>Test_Kdr_bask_GEN</string>
+      <string>Test__Ca_pyr_CML</string>
      </void>
      <void property="cellNumber">
       <string>*</string>
      </void>
      <void property="graphWindow">
-      <string>GraphWin_6</string>
+      <string>GraphWin_9</string>
      </void>
      <void property="maxValue">
       <float>1.0</float>
@@ -830,13 +1185,106 @@ part of NeuroML or any standardised XML specification. -->
       <string>Plot and save</string>
      </void>
      <void property="plotReference">
-      <string>Test__Kdr_bask_GEN_n</string>
+      <string>Test__Ca_pyr_CML_m</string>
      </void>
      <void property="segmentId">
       <string>0</string>
      </void>
      <void property="valuePlotted">
-      <string>Kdr_bask_GEN:X</string>
+      <string>Ca_pyr:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Ca_pyr_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_9</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Ca_pyr_CML_h</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_pyr:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Ca_pyr_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_9</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Ca_pyr_GEN_h</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_pyr_GEN:Y</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Ca_pyr_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_9</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Ca_pyr_GEN_m</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_pyr_GEN:X</string>
      </void>
     </object>
    </void>
@@ -917,7 +1365,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_61</string>
+   <string>Sim_72</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1174,6 +1622,198 @@ part of NeuroML or any standardised XML specification. -->
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Na_pyr_CML</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator8" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator8"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Na_pyr_CML</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Na_pyr_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator9" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator9"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Na_pyr_GEN</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Kdr_pyr_CML</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator10" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator10"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Kdr_pyr_CML</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Kdr_pyr_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator11" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator11"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Kdr_pyr_GEN</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Ca_pyr_CML</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator12" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator12"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Ca_pyr_CML</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Ca_pyr_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator13" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator13"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Ca_pyr_GEN</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo">
@@ -1189,6 +1829,9 @@ part of NeuroML or any standardised XML specification. -->
       </void>
       <void method="add">
        <string>Test__Na_bask_GEN</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_pyr_CML</string>
       </void>
       <void method="add">
        <string>Test_Kdr_bask_GEN</string>
@@ -1210,6 +1853,9 @@ part of NeuroML or any standardised XML specification. -->
       <void method="add">
        <string>IClamp_Na_bask_GEN</string>
       </void>
+      <void method="add">
+       <string>IClamp_Na_pyr_CML</string>
+      </void>
      </void>
      <void property="name">
       <string>Default Simulation Configuration</string>
@@ -1219,19 +1865,16 @@ part of NeuroML or any standardised XML specification. -->
        <string>Test__Kdr_bask_GEN_n</string>
       </void>
       <void method="add">
-       <string>Test__Kdr_bask_n</string>
-      </void>
-      <void method="add">
        <string>Test__Na_bask_GEN_h</string>
       </void>
       <void method="add">
        <string>Test__Na_bask_GEN_m</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_h</string>
+       <string>Test__Na_pyr_CML_h</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_m</string>
+       <string>Test__Na_pyr_CML_m</string>
       </void>
      </void>
      <void property="simDuration">
@@ -1272,7 +1915,19 @@ part of NeuroML or any standardised XML specification. -->
     <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
+       <string>Test__Ca_pyr_CML</string>
+      </void>
+      <void method="add">
+       <string>Test__Ca_pyr_GEN</string>
+      </void>
+      <void method="add">
        <string>Test__Kdr_bask_CML</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_pyr_CML</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_pyr_GEN</string>
       </void>
       <void method="add">
        <string>Test__Na_bask_CML</string>
@@ -1281,10 +1936,22 @@ part of NeuroML or any standardised XML specification. -->
        <string>Test__Na_bask_GEN</string>
       </void>
       <void method="add">
+       <string>Test__Na_pyr_CML</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_pyr_GEN</string>
+      </void>
+      <void method="add">
        <string>Test_Kdr_bask_GEN</string>
       </void>
      </void>
      <void property="inputs">
+      <void method="add">
+       <string>IClamp_Ca_pyr_CML</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Ca_pyr_GEN</string>
+      </void>
       <void method="add">
        <string>IClamp_Kdr_bask_CML</string>
       </void>
@@ -1292,10 +1959,22 @@ part of NeuroML or any standardised XML specification. -->
        <string>IClamp_Kdr_bask_GEN</string>
       </void>
       <void method="add">
+       <string>IClamp_Kdr_pyr_CML</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Kdr_pyr_GEN</string>
+      </void>
+      <void method="add">
        <string>IClamp_Na_bask_CML</string>
       </void>
       <void method="add">
        <string>IClamp_Na_bask_GEN</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Na_pyr_CML</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Na_pyr_GEN</string>
       </void>
      </void>
      <void property="name">
@@ -1303,10 +1982,34 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="plots">
       <void method="add">
+       <string>Test__Ca_pyr_CML_h</string>
+      </void>
+      <void method="add">
+       <string>Test__Ca_pyr_CML_m</string>
+      </void>
+      <void method="add">
+       <string>Test__Ca_pyr_GEN_h</string>
+      </void>
+      <void method="add">
+       <string>Test__Ca_pyr_GEN_m</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_bask_CML_n</string>
+      </void>
+      <void method="add">
        <string>Test__Kdr_bask_GEN_n</string>
       </void>
       <void method="add">
-       <string>Test__Kdr_bask_n</string>
+       <string>Test__Kdr_pyr_CML_n</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_pyr_GEN_n</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_bask_CML_h</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_bask_CML_m</string>
       </void>
       <void method="add">
        <string>Test__Na_bask_GEN_h</string>
@@ -1315,10 +2018,16 @@ part of NeuroML or any standardised XML specification. -->
        <string>Test__Na_bask_GEN_m</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_h</string>
+       <string>Test__Na_pyr_CML_h</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_m</string>
+       <string>Test__Na_pyr_CML_m</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_pyr_GEN_h</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_pyr_GEN_m</string>
       </void>
      </void>
      <void property="simDuration">
