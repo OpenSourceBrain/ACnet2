@@ -9,7 +9,7 @@ part of NeuroML or any standardised XML specification. -->
 
  <object class="ucl.physiol.neuroconstruct.project.BasicProjectInfo">
   <void property="projectDescription">
-   <string> </string>
+   <string>         </string>
   </void>
   <void property="projectFileVersion">
    <string>neuroConstruct v1.7.0</string>
@@ -899,11 +899,11 @@ part of NeuroML or any standardised XML specification. -->
     <string></string>
    </void>
    <void method="put">
-    <int>-1</int>
+    <int>1</int>
     <string></string>
    </void>
    <void method="put">
-    <int>1</int>
+    <int>-1</int>
     <string></string>
    </void>
   </void>
@@ -917,7 +917,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_56</string>
+   <string>Sim_61</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1182,16 +1182,28 @@ part of NeuroML or any standardised XML specification. -->
     <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
+       <string>Test__Kdr_bask_CML</string>
+      </void>
+      <void method="add">
        <string>Test__Na_bask_CML</string>
       </void>
       <void method="add">
        <string>Test__Na_bask_GEN</string>
+      </void>
+      <void method="add">
+       <string>Test_Kdr_bask_GEN</string>
       </void>
      </void>
      <void property="description">
       <string>This is the default configuration of the Cell Groups, stimulations, plots, etc for this project</string>
      </void>
      <void property="inputs">
+      <void method="add">
+       <string>IClamp_Kdr_bask_CML</string>
+      </void>
+      <void method="add">
+       <string>IClamp_Kdr_bask_GEN</string>
+      </void>
       <void method="add">
        <string>IClamp_Na_bask_CML</string>
       </void>
@@ -1203,6 +1215,12 @@ part of NeuroML or any standardised XML specification. -->
       <string>Default Simulation Configuration</string>
      </void>
      <void property="plots">
+      <void method="add">
+       <string>Test__Kdr_bask_GEN_n</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_bask_n</string>
+      </void>
       <void method="add">
        <string>Test__Na_bask_GEN_h</string>
       </void>

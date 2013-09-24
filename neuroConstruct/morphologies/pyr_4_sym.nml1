@@ -134,7 +134,7 @@ Value for scaling factor to apply to current to get change in conc should be
                 </bio:mechanism>
 
                 <bio:mechanism name="LeakConductance_pyr" type="Channel Mechanism" passive_conductance="true">
-                    <bio:parameter name="e" value="-6.6E7">
+                    <bio:parameter name="e" value="-66.0">
                         <bio:group>all</bio:group>
                     </bio:parameter>
                     <bio:parameter name="gmax" value="0.1420051">
