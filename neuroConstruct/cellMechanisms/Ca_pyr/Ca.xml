@@ -60,7 +60,7 @@
                 <open_state id="h"/>
 
 		<time_course name="tau" from="hc" to="h" expr_form="generic" expr="0.2"/>
-		<steady_state name="inf" from="hc" to="h" expr_form="generic" expr="v &gt; -0.06 ? exp(-50*(v + 0.06)) : 1"/>
+		<steady_state name="inf" from="hc" to="h" expr_form="generic" expr="v &gt; -0.06 ? (exp (-50*(v + 0.06))) : 1"/>
 
             </gate>
             
