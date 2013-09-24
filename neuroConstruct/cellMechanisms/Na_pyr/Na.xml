@@ -45,9 +45,7 @@
                 <closed_state id="m0"/>
                 <open_state id="m"/>
 
-                <!-- <transition name="alpha" from="m0" to="m" expr_form="generic" expr="(-320000.0*v - 15008.0)/(8.08904403605717e-6*exp(-250.0*v) - 1.0)"/>   -->
                 <transition name="alpha" from="m0" to="m" expr_form="exp_linear" rate="1.28e3" scale="4e-3" midpoint="-4.69e-2"/>  
-                <!-- <transition name="beta" from="m" to="m0" expr_form="generic" expr="(280000.0*v + 5572.0)/(53.5170342274912*exp(200.0*v) - 1.0)"/>   -->
                 <transition name="beta" from="m" to="m0" expr_form="exp_linear" rate="1.4e3" scale="-5e-3" midpoint="-19.9e-3"/>  
             </gate>
            
@@ -55,8 +53,8 @@
                 <closed_state id="h0"/>
                 <open_state id="h"/>
 
-                <transition name="alpha" from="h0" to="h" expr_form="generic" expr="11.7416385561416*exp(-55.5555555555556*v)"/>  
-                <transition name="beta" from="h" to="h0" expr_form="generic" expr="4000.0/(0.0183156388887342*exp(-200.0*v) + 1.0)"/>    
+                <transition name="alpha" from="h0" to="h" expr_form="exponential" rate="1.28e2" scale="-1.8e-2" midpoint="-4.3e-2"/>  
+                <transition name="beta" from="h" to="h0" expr_form="sigmoid" rate="4e3" scale="-5e-3" midpoint="-2e-2"/>  
             </gate>
             
         </current_voltage_relation>
