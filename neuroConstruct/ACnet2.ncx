@@ -9,7 +9,7 @@ part of NeuroML or any standardised XML specification. -->
 
  <object class="ucl.physiol.neuroconstruct.project.BasicProjectInfo">
   <void property="projectDescription">
-   <string> </string>
+   <string>    </string>
   </void>
   <void property="projectFileVersion">
    <string>neuroConstruct v1.7.0</string>
@@ -284,6 +284,12 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
@@ -335,6 +341,12 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <string>pyr_4_sym_soma_Ca_GEN</string>
     </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Kahp_CaPool_CML</string>
+    </void>
+    <void method="add">
+     <string>pyr_4_sym_soma_Kahp_CaPool_GEN</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
@@ -385,6 +397,12 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <int>-5</int>
+    </void>
+    <void method="add">
+     <int>-6</int>
+    </void>
+    <void method="add">
+     <int>-7</int>
     </void>
    </void>
    <void method="get">
@@ -517,6 +535,22 @@ part of NeuroML or any standardised XML specification. -->
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>101</int>
+      <int>149</int>
+      <int>153</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>140</int>
+      <int>137</int>
+      <int>125</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -528,6 +562,12 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Regions_2</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
     </void>
     <void method="add">
      <string>Regions_1</string>
@@ -618,6 +658,12 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Test__Ca_pyr_GEN</string>
+    </void>
+    <void method="add">
+     <string>Test__Kahp_CaPool_CML</string>
+    </void>
+    <void method="add">
+     <string>Test__Kahp_CaPool_GEN</string>
     </void>
    </void>
   </void>
@@ -1288,6 +1334,161 @@ part of NeuroML or any standardised XML specification. -->
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kahp_CaPool_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_10</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kahp_pyr_GEN_z</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kahp_pyr_GEN:Z</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kahp_CaPool_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_11</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0E-6</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__CaPool_GEN_ca</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_conc_GEN:CONC:ca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kahp_CaPool_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_10</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__Kahp_pyr_CML_z</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kahp_pyr:z</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test__Kahp_CaPool_CML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_11</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0E-6</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Test__CaPool_CML_ca</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_conc:CONC:ca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>pyramidals</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_12</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0E12</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>pyramidals_ca</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_conc:CONC:ca</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
@@ -1347,11 +1548,11 @@ part of NeuroML or any standardised XML specification. -->
     <string></string>
    </void>
    <void method="put">
-    <int>1</int>
+    <int>-1</int>
     <string></string>
    </void>
    <void method="put">
-    <int>-1</int>
+    <int>1</int>
     <string></string>
    </void>
   </void>
@@ -1365,7 +1566,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_72</string>
+   <string>Sim_108</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1814,6 +2015,70 @@ part of NeuroML or any standardised XML specification. -->
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Kahp_CaPool_CML</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator14" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator14"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Kahp_CaPool_CML</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.2</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test__Kahp_CaPool_GEN</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void id="NumberGenerator15" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator15"/>
+        <int>11</int>
+       </void>
+      </void>
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="reference">
+      <string>IClamp_Kahp_CaPool_GEN</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo">
@@ -1822,19 +2087,19 @@ part of NeuroML or any standardised XML specification. -->
     <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
+       <string>Test__Ca_pyr_CML</string>
+      </void>
+      <void method="add">
        <string>Test__Kdr_bask_CML</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_pyr_CML</string>
       </void>
       <void method="add">
        <string>Test__Na_bask_CML</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_GEN</string>
-      </void>
-      <void method="add">
        <string>Test__Na_pyr_CML</string>
-      </void>
-      <void method="add">
-       <string>Test_Kdr_bask_GEN</string>
       </void>
      </void>
      <void property="description">
@@ -1842,16 +2107,19 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="inputs">
       <void method="add">
+       <string>IClamp_Ca_pyr_CML</string>
+      </void>
+      <void method="add">
        <string>IClamp_Kdr_bask_CML</string>
       </void>
       <void method="add">
        <string>IClamp_Kdr_bask_GEN</string>
       </void>
       <void method="add">
-       <string>IClamp_Na_bask_CML</string>
+       <string>IClamp_Kdr_pyr_CML</string>
       </void>
       <void method="add">
-       <string>IClamp_Na_bask_GEN</string>
+       <string>IClamp_Na_bask_CML</string>
       </void>
       <void method="add">
        <string>IClamp_Na_pyr_CML</string>
@@ -1862,13 +2130,22 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="plots">
       <void method="add">
-       <string>Test__Kdr_bask_GEN_n</string>
+       <string>Test__Ca_pyr_CML_h</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_GEN_h</string>
+       <string>Test__Ca_pyr_CML_m</string>
       </void>
       <void method="add">
-       <string>Test__Na_bask_GEN_m</string>
+       <string>Test__Kdr_bask_CML_n</string>
+      </void>
+      <void method="add">
+       <string>Test__Kdr_pyr_CML_n</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_bask_CML_h</string>
+      </void>
+      <void method="add">
+       <string>Test__Na_bask_CML_m</string>
       </void>
       <void method="add">
        <string>Test__Na_pyr_CML_h</string>
@@ -2084,6 +2361,34 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="simDuration">
       <float>700.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>pyramidals</string>
+      </void>
+     </void>
+     <void property="inputs">
+      <void method="add">
+       <string>Input_1</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>TestPyramidals</string>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>pyramidals_ca</string>
+      </void>
+      <void method="add">
+       <string>pyramidals_v</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>800.0</float>
      </void>
     </object>
    </void>
