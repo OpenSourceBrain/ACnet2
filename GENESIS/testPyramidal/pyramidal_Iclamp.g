@@ -26,7 +26,7 @@ make_Kahp_hip_traub91 Kahp_pyr
 make_Ca_hip_conc Ca_conc
 pope
 
-readcell ../pyr_4_asym.p /pyramidal
+readcell pyr_4_sym.p /pyramidal
 
 
 //Adding a current pulse of amplitude: 6.0E-10 A, SingleElectricalInput: [Input: IClamp, cellGroup: pyramidals, cellNumber: 0, segmentId: 0, fractionAlong: 0.5]
@@ -62,7 +62,7 @@ setclock 0 {dt} // Units[GENESIS_SI_time, symbol: s]
 create neutral /plots
 
 create xform /plots/pyramidal_ca [500,100,400,400]  -title "Ca_conc:CONC:ca (Ca) in /pyramidal"
-xshow /plots/g1
+xshow /plots/pyramidal_ca
 create xgraph /plots/pyramidal_ca/graph -xmin 0 -xmax {duration} -ymin 0.0 -ymax 1.0E30
 addmsg /pyramidal/soma/Ca_conc /plots/pyramidal_ca/graph PLOT Ca *...amidal/soma_Ca_conc:Ca *black
 
