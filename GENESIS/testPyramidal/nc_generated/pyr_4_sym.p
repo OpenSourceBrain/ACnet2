@@ -45,7 +45,7 @@
 
 
 *double_endpoint
-soma none 0 0 0 0 17 0 23 Ca_conc -1.4166824E24 Ca_pyr 100 Kahp_pyr 25 Kdr_pyr 800 Na_pyr 1200 
+soma none 0 0 0 0 17 0 23 Ca_conc -7.7690002E12 Ca_pyr 100 Kahp_pyr 25 Kdr_pyr 800 Na_pyr 1200 
 *double_endpoint_off
 
 // Cell mechanism: LeakConductance_pyr (density: 1.420051E-9 mS um^-2, e = -66.0)

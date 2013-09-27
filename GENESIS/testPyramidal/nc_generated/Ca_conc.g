@@ -32,7 +32,7 @@
 // /channelml/ion_concentration/ion_species/@name = ca 
 // /channelml/ion_concentration/decaying_pool_model/@resting_conc = 0.0 
 // /channelml/ion_concentration/decaying_pool_model/@decay_constant = 0.01333 
-// /channelml/ion_concentration/decaying_pool_model/fixed_pool_info/phi = 17.402e12 
+// /channelml/ion_concentration/decaying_pool_model/fixed_pool_info/phi = 95.43150105430371 
 
 // File from which this was generated: /home/boris/git/ACnet2/neuroConstruct/cellMechanisms/Ca_conc/CaPool.xml
 

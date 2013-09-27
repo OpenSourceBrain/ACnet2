@@ -53,7 +53,9 @@
         <decaying_pool_model resting_conc ="0.0" decay_constant="0.01333">
             
             <fixed_pool_info>
-	      <phi>17.402e12</phi> <!-- this constant depends on geometrical factors, so each compartment will have its own. Units should be checked with Dave. -->
+	      <!-- this value is divided by the compt area to get the
+		   conversion factor between current and change in concentration. -->
+	      <phi>95.43150105430371</phi> 
 	    </fixed_pool_info>
             
         </decaying_pool_model>

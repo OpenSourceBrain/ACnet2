@@ -13,7 +13,7 @@ echo ""
 echo "    Description:     "
 
 echo "    Simulation configuration: TestPyramidals"
-echo "    Simulation reference: Sim_108"
+echo "    Simulation reference: Sim_114"
 echo " "
 echo  "*****************************************************"
 
@@ -21,7 +21,7 @@ echo  "*****************************************************"
 
 //   Initializes random-number generator
 
-randseed 1667708824
+randseed 1607406365
 
 //   This temperature is needed if any of the channels are temp dependent (Q10 dependence) 
 //   
@@ -60,23 +60,23 @@ env // prints details on some global variables
 //   Including channel mechanisms 
 //   
 
-include Kahp_pyr
-make_Kahp_pyr
+include Na_pyr
+make_Na_pyr
 
 include Kdr_pyr
 make_Kdr_pyr
 
-include Ca_conc
-make_Ca_conc
+include LeakConductance_pyr
+make_LeakConductance_pyr
 
 include Ca_pyr
 make_Ca_pyr
 
-include LeakConductance_pyr
-make_LeakConductance_pyr
+include Kahp_pyr
+make_Kahp_pyr
 
-include Na_pyr
-make_Na_pyr
+include Ca_conc
+make_Ca_conc
 
 //   Adding unique channel: LeakConductance_pyr__e_-66 for: LeakConductance_pyr (density: 1.420051E-9 mS um^-2, e = -66.0)
 
@@ -107,7 +107,7 @@ create neutral /cells/pyramidals
 
 str compName
 
-readcell pyr_4_sym.p /cells/pyramidals/pyramidals_0
+readcell /home/boris/git/ACnet2/neuroConstruct/simulations/Sim_114/pyr_4_sym.p /cells/pyramidals/pyramidals_0
 addfield /cells/pyramidals/pyramidals_0 celltype
 setfield /cells/pyramidals/pyramidals_0 celltype pyr_4_sym
 
@@ -219,12 +219,12 @@ setclock 0 {dt} // Units[GENESIS_SI_time, symbol: s]
 create neutral /plots
 
 
-create xform /plots/GraphWin_12 [500,100,400,400]  -title "Values of Ca_conc:CONC:ca (Ca) in /cells/pyramidals/pyramidals_0: Sim_108"
+create xform /plots/GraphWin_12 [500,100,400,400]  -title "Values of Ca_conc:CONC:ca (Ca) in /cells/pyramidals/pyramidals_0: Sim_114"
 xshow /plots/GraphWin_12
 create xgraph /plots/GraphWin_12/graph -xmin 0 -xmax {duration} -ymin 0.0 -ymax 1.0E30
 addmsg /cells/pyramidals/pyramidals_0/soma/Ca_conc /plots/GraphWin_12/graph PLOT Ca *...amidals_0/soma_Ca_conc:Ca *black
 
-create xform /plots/pyramidals_v [500,100,400,400]  -title "Values of VOLTAGE (Vm) in /cells/pyramidals/pyramidals_0: Sim_108"
+create xform /plots/pyramidals_v [500,100,400,400]  -title "Values of VOLTAGE (Vm) in /cells/pyramidals/pyramidals_0: Sim_114"
 xshow /plots/pyramidals_v
 create xgraph /plots/pyramidals_v/graph -xmin 0 -xmax {duration} -ymin -0.09 -ymax 0.05
 addmsg /cells/pyramidals/pyramidals_0/soma /plots/pyramidals_v/graph PLOT Vm *...dals/pyramidals_0_soma:Vm *black
@@ -237,7 +237,7 @@ addmsg /cells/pyramidals/pyramidals_0/soma /plots/pyramidals_v/graph PLOT Vm *..
 if (!{exists /controls})
     create neutral /controls
 end
-create xform /controls/runControl [700, 20, 200, 140] -title "Run Controls: Sim_108"
+create xform /controls/runControl [700, 20, 200, 140] -title "Run Controls: Sim_114"
 xshow /controls/runControl
 
 create xbutton /controls/runControl/RESET -script reset
@@ -265,7 +265,7 @@ str simsDir
 simsDir = "/home/boris/git/ACnet2/neuroConstruct/simulations/"
 
 str simReference
-simReference = "Sim_108"
+simReference = "Sim_114"
 
 str targetDir
 targetDir =  {strcat {simsDir} {simReference}}
@@ -351,11 +351,11 @@ startTimeFile = {strcat {targetDir} {"starttime"}}
 stopTimeFile = {strcat {targetDir} {"stoptime"}}
 sh {strcat {"date +%s.%N > "} {startTimeFile}}
 
-echo Starting sim: Sim_108 on {genesisCore} with dur: {duration} dt: {dt} and steps: {steps} (Crank-Nicholson num integration method (11), using hsolve: true, chanmode: 0)
+echo Starting sim: Sim_114 on {genesisCore} with dur: {duration} dt: {dt} and steps: {steps} (Crank-Nicholson num integration method (11), using hsolve: true, chanmode: 0)
 date +%F__%T__%N
 step {steps}
 
-echo Finished simulation reference: Sim_108
+echo Finished simulation reference: Sim_114
 date +%F__%T__%N
 echo Data stored in directory: {targetDir}
 
