@@ -8,9 +8,6 @@ Note that this file is neuroConstruct specific and isn't any
 part of NeuroML or any standardised XML specification. -->
 
  <object class="ucl.physiol.neuroconstruct.project.BasicProjectInfo">
-  <void property="projectDescription">
-   <string>    </string>
-  </void>
   <void property="projectFileVersion">
    <string>neuroConstruct v1.7.0</string>
   </void>
@@ -1470,7 +1467,7 @@ part of NeuroML or any standardised XML specification. -->
       <string>GraphWin_12</string>
      </void>
      <void property="maxValue">
-      <float>1.0E12</float>
+      <float>10.0</float>
      </void>
      <void property="minValue">
       <float>0.0</float>
@@ -1486,6 +1483,37 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="valuePlotted">
       <string>Ca_conc:CONC:ca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>pyramidals_GEN</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_12</string>
+     </void>
+     <void property="maxValue">
+      <float>10.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>pyramidals_GEN_ca</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Ca_conc_GEN:CONC:ca</string>
      </void>
     </object>
    </void>
@@ -1566,7 +1594,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_109</string>
+   <string>Sim_139</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -2389,6 +2417,34 @@ part of NeuroML or any standardised XML specification. -->
      </void>
      <void property="simDuration">
       <float>800.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>pyramidals_GEN</string>
+      </void>
+     </void>
+     <void property="inputs">
+      <void method="add">
+       <string>Input_5</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>TestPyramidals_GEN</string>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>pyramidals_GEN_ca</string>
+      </void>
+      <void method="add">
+       <string>pyramidals_GEN_v</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>100.0</float>
      </void>
     </object>
    </void>
