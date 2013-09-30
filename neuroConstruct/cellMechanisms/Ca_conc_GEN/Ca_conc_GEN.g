@@ -88,14 +88,14 @@ function make_%Name%
     if ({exists {chanpath}})
        return
     end
-        create Ca_concen Ca_conc
-        setfield Ca_conc \
+        create Ca_concen {chanpath}
+        setfield {chanpath} \
                 tau     0.01333   \      // sec
                 B       17.402e12 \      // Curr to conc for soma
                 Ca_base 0.0
-        addfield Ca_conc addmsg1
-        setfield Ca_conc \
-                addmsg1        "../Ca_hip_traub91 . I_Ca Ik"
+        addfield {chanpath} addmsg1
+        setfield {chanpath} \
+                addmsg1        "../Ca_pyr_GEN . I_Ca Ik"
 end
 /*
 This Ca_concen element should receive an "I_Ca" message from the calcium

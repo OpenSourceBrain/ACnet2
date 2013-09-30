@@ -1577,7 +1577,9 @@ part of NeuroML or any standardised XML specification. -->
    </void>
    <void method="put">
     <int>1</int>
-    <string></string>
+    <string>#SIM_CONFIG_INCLUDE TestPyramidals_GEN
+ce /cells/pyramidals_GEN/pyramidals_GEN_0/soma/Ca_conc_GEN
+setfield B 7.769000247e+12</string>
    </void>
    <void method="put">
     <int>-1</int>
@@ -1594,7 +1596,7 @@ part of NeuroML or any standardised XML specification. -->
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_139</string>
+   <string>Sim_155</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -2444,7 +2446,7 @@ part of NeuroML or any standardised XML specification. -->
       </void>
      </void>
      <void property="simDuration">
-      <float>100.0</float>
+      <float>800.0</float>
      </void>
     </object>
    </void>

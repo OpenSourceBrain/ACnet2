@@ -106,5 +106,5 @@ function make_%Name%
 // CONCEN message from the Ca_hip_concen element
         addfield {chanpath} addmsg1
         setfield {chanpath} \
-                addmsg1        "../Ca_conc . CONCEN Ca"
+                addmsg1        "../Ca_conc_GEN . CONCEN Ca"
 end
