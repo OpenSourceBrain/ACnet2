@@ -1576,27 +1576,28 @@ part of NeuroML or any standardised XML specification. -->
     <string></string>
    </void>
    <void method="put">
-    <int>1</int>
-    <string>#SIM_CONFIG_INCLUDE TestPyramidals_GEN
-ce /cells/pyramidals_GEN/pyramidals_GEN_0/soma/Ca_conc_GEN
-setfield B 7.769000247e+12</string>
-   </void>
-   <void method="put">
     <int>-1</int>
     <string></string>
+   </void>
+   <void method="put">
+    <int>1</int>
+    <string>#SIM_CONFIG_INCLUDE TestPyramidals_GEN
+#SIM_CONFIG_INCLUDE TestCells
+ce /cells/pyramidals_GEN/pyramidals_GEN_0/soma/Ca_conc_GEN
+setfield B 7.769000247e+12</string>
    </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
   <void property="dt">
-   <float>0.025</float>
+   <float>0.0025</float>
   </void>
   <void property="duration">
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_155</string>
+   <string>Sim_161</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
