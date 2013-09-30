@@ -41,11 +41,11 @@ setfield ^ level1 6.0E-10 width1 0.5 delay1 0.099975 delay2 10000.0
 addmsg /stim/pulse/iclamp /pyramidal/soma INJECT output
 
 
-create hsolve pyramidal/solve
-setfield pyramidal/solve path pyramidal/#[][TYPE=compartment],pyramidal/#[][TYPE=symcompartment] comptmode 1
-setmethod pyramidal/solve 11
-setfield pyramidal/solve chanmode 0
-call pyramidal/solve SETUP
+create hsolve /pyramidal/solve
+setfield /pyramidal/solve path /pyramidal/[][TYPE=compartment],pyramidal/[][TYPE=symcompartment] comptmode 1
+setmethod /pyramidal/solve 11
+setfield /pyramidal/solve chanmode 0
+call /pyramidal/solve SETUP
 reset
 
 //simulation settings
