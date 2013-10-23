@@ -109,10 +109,13 @@
 
             <biophysics units="Physiological Units">
 
-                <bio:mechanism name="Ca_conc" type="Ion Concentration">    <!--Note: not adding gmax for Ion Concentration. 
-Value for scaling factor to apply to current to get change in conc should be
+                <bio:mechanism name="Ca_conc" type="Ion Concentration">    <!--Note: Calcium pools are not proper ion channels, thus this parameter does not represent a proper maximum conductance.
+The scaling factor for converting current into change in ion concentration should be
  determined from ChannelML file for the CaPool...-->
 
+                    <bio:parameter name="gmax" value="0.0">
+                        <bio:group>all</bio:group>
+                    </bio:parameter>
                 </bio:mechanism>
 
                 <bio:mechanism name="Ca_pyr" type="Channel Mechanism">
