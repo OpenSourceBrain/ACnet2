@@ -6,10 +6,8 @@ NeuroML2/*.svg
 
 *.bak
 neuroConstruct/generatedMOOSE
-neuroConstruct/generatedNeuroML
 neuroConstruct/generatedNEURON
 neuroConstruct/generatedGENESIS
 neuroConstruct/simulations
-neuroConstruct/generatedNeuroML*
 *.*~
 neuroConstruct/backup*
