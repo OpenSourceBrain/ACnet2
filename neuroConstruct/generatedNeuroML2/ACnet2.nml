@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="network_ACnet2">
+
+<notes>
+
+Network structure (NeuroML 2beta1) for project: ACnet2 saved with neuroConstruct v1.7.0 on: 12:15:23, 23-Oct-13
+
+Cell Group: pyramidals contains 1 cells
+Cell Group: baskets contains 1 cells
+
+
+</notes>
+
+
+
+    <pulseGenerator id="Input_1" delay="0.1s" duration="0.5s" amplitude="6.0E-10A"/>
+
+    
+
+    <pulseGenerator id="Input_0" delay="0.1s" duration="0.5s" amplitude="1.0E-10A"/>
+
+    
+    <network id="network_ACnet2" type="networkWithTemperature" temperature="6.3 degC">
+
+        
+
+        <population id="pyramidals" component="pyr_4_sym" type="populationList">
+            <instance id="0">
+                <location x="400.0" y="-200.0" z="0.0"/>
+            </instance>
+        </population>
+
+        <population id="baskets" component="bask" type="populationList">
+            <instance id="0">
+                <location x="0.0" y="0.0" z="0.0"/>
+            </instance>
+        </population>
+
+
+
+            <!--There are no synaptic connections present in the network-->
+
+
+        <inputList id="Input_1" component="Input_1" population="pyramidals">
+                <input id="0" target="../pyramidals/0/pyr_4_sym" destination="synapses"/>
+            </inputList>
+
+
+
+        <inputList id="Input_0" component="Input_0" population="baskets">
+                <input id="0" target="../baskets/0/bask" destination="synapses"/>
+            </inputList>
+
+
+
+
+
+    </network>
+
+</neuroml>

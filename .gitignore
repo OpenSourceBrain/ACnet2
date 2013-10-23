@@ -1,3 +1,5 @@
+/neuroConstruct/generatedNeuroML2/runsim.sh
+/neuroConstruct/generatedNeuroML2/LEMS_ACnet2.xml
 GENESIS/EPSC*.txt
 GENESIS/*netview*.txt
 GENESIS/*summary*.txt

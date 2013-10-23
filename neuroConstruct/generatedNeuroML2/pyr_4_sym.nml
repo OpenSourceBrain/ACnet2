@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="pyr_4_sym">
 
+    <include href="Ca_conc.nml"/>
+
+    <include href="Ca_pyr.nml"/>
+
+    <include href="Kahp_pyr.nml"/>
+
+    <include href="Kdr_pyr.nml"/>
+
     <include href="LeakConductance_pyr.nml"/>
+
+    <include href="Na_pyr.nml"/>
 
     <cell id="pyr_4_sym">
 
@@ -134,8 +144,16 @@
 
             <membraneProperties>
 
+                <channelDensity condDensity="10.0 mS_per_cm2" id="Ca_pyr_soma_group" ionChannel="Ca_pyr" segmentGroup="soma_group" ion="ca" erev="80.0 mV"/>
+
+                <channelDensity condDensity="2.5 mS_per_cm2" id="Kahp_pyr_soma_group" ionChannel="Kahp_pyr" segmentGroup="soma_group" ion="k" erev="-75.0 mV"/>
+
+                <channelDensity condDensity="80.0 mS_per_cm2" id="Kdr_pyr_soma_group" ionChannel="Kdr_pyr" segmentGroup="soma_group" ion="k" erev="-75.0 mV"/>
+
                 <channelDensity condDensity="0.1420051 mS_per_cm2" id="LeakConductance_pyr_all" ionChannel="LeakConductance_pyr" erev="-66.0 mV" ion="non_specific">    <!--Note: Units of extra parameters are not known, except if it's e or erev!!-->
 </channelDensity>
+
+                <channelDensity condDensity="120.0 mS_per_cm2" id="Na_pyr_soma_group" ionChannel="Na_pyr" segmentGroup="soma_group" ion="na" erev="55.0 mV"/>
 
                 <spikeThresh value="0 mV"/>
 
@@ -146,6 +164,8 @@
             </membraneProperties>
 
             <intracellularProperties>
+
+                <species id="ca" ion="ca" concentrationModel="Ca_conc"/>
 
                 <resistivity value="0.2 kohm_cm"/>
 
