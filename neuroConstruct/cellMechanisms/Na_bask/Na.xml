@@ -5,8 +5,8 @@
 
     <channel_type name="Na_bask" density="yes">
         
-        <status value="in_progress">
-            <meta:comment>Transcribed from the Genesis implementation by David Beeman</meta:comment>
+        <status value="stable">
+            <meta:comment>Transcribed from the Genesis implementation of David Beeman</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>
@@ -30,6 +30,7 @@
 
         <meta:publication>
             <meta:fullTitle>Traub, R. D., &amp; Miles, R. (1991). Neuronal Networks of the Hippocampus. Cambridge University Press.</meta:fullTitle>
+            <meta:pubmedRef>http://www.cambridge.org/us/academic/subjects/life-sciences/neuroscience/neuronal-networks-hippocampus</meta:pubmedRef>
         </meta:publication>
 
         <meta:neuronDBref>

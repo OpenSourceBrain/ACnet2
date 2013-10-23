@@ -28,7 +28,7 @@
                     <meta:group>soma_group</meta:group>
                 </mml:cable>
 
-                <mml:cable id="1" name="dend" fract_along_parent="0.5">
+                <mml:cable id="1" name="dend">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
                 </mml:cable>

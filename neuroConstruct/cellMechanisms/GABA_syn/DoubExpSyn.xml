@@ -9,6 +9,8 @@
         <status value="stable">
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
+            </meta:contributor>
+            <meta:contributor>
                 <meta:name>Boris Marin</meta:name>
             </meta:contributor>
         </status>

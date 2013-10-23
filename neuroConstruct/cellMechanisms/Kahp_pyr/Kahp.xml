@@ -5,8 +5,8 @@
 
     <channel_type name="Kahp_pyr" density="yes">
         
-        <status value="in_progress">
-            <meta:comment>Transcribed from the Genesis implementation by David Beeman</meta:comment>
+        <status value="stable">
+            <meta:comment>Transcribed from the Genesis implementation of David Beeman</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>

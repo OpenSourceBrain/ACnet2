@@ -225,12 +225,6 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
-    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
@@ -282,12 +276,6 @@ part of NeuroML or any standardised XML specification. -->
     <void method="add">
      <string>pyr_4_sym_soma_Ca_GEN</string>
     </void>
-    <void method="add">
-     <string>pyr_4_sym_soma_Kahp_CaPool_CML</string>
-    </void>
-    <void method="add">
-     <string>pyr_4_sym_soma_Kahp_CaPool_GEN</string>
-    </void>
    </void>
    <void method="get">
     <string>Priority</string>
@@ -338,12 +326,6 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <int>-5</int>
-    </void>
-    <void method="add">
-     <int>-6</int>
-    </void>
-    <void method="add">
-     <int>-7</int>
     </void>
    </void>
    <void method="get">
@@ -476,22 +458,6 @@ part of NeuroML or any standardised XML specification. -->
       <int>255</int>
      </object>
     </void>
-    <void method="add">
-     <object class="java.awt.Color">
-      <int>101</int>
-      <int>149</int>
-      <int>153</int>
-      <int>255</int>
-     </object>
-    </void>
-    <void method="add">
-     <object class="java.awt.Color">
-      <int>140</int>
-      <int>137</int>
-      <int>125</int>
-      <int>255</int>
-     </object>
-    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -503,12 +469,6 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Regions_2</string>
-    </void>
-    <void method="add">
-     <string>Regions_1</string>
-    </void>
-    <void method="add">
-     <string>Regions_1</string>
     </void>
     <void method="add">
      <string>Regions_1</string>
@@ -599,12 +559,6 @@ part of NeuroML or any standardised XML specification. -->
     </void>
     <void method="add">
      <string>Test__Ca_pyr_GEN</string>
-    </void>
-    <void method="add">
-     <string>Test__Kahp_CaPool_CML</string>
-    </void>
-    <void method="add">
-     <string>Test__Kahp_CaPool_GEN</string>
     </void>
    </void>
   </void>
@@ -1278,130 +1232,6 @@ part of NeuroML or any standardised XML specification. -->
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
      <void property="cellGroup">
-      <string>Test__Kahp_CaPool_GEN</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_10</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test__Kahp_pyr_GEN_z</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Kahp_pyr_GEN:Z</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test__Kahp_CaPool_GEN</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_11</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0E-6</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test__CaPool_GEN_ca</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Ca_conc_GEN:CONC:ca</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test__Kahp_CaPool_CML</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_10</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test__Kahp_pyr_CML_z</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Kahp_pyr:z</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
-      <string>Test__Kahp_CaPool_CML</string>
-     </void>
-     <void property="cellNumber">
-      <string>*</string>
-     </void>
-     <void property="graphWindow">
-      <string>GraphWin_11</string>
-     </void>
-     <void property="maxValue">
-      <float>1.0E-6</float>
-     </void>
-     <void property="minValue">
-      <float>0.0</float>
-     </void>
-     <void property="plotAndOrSave">
-      <string>Plot and save</string>
-     </void>
-     <void property="plotReference">
-      <string>Test__CaPool_CML_ca</string>
-     </void>
-     <void property="segmentId">
-      <string>0</string>
-     </void>
-     <void property="valuePlotted">
-      <string>Ca_conc:CONC:ca</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
-     <void property="cellGroup">
       <string>pyramidals</string>
      </void>
      <void property="cellNumber">
@@ -1601,6 +1431,9 @@ setfield B 7.769000247e+12
   </void>
   <void property="duration">
    <float>100.0</float>
+  </void>
+  <void property="maxElectroLen">
+   <float>0.8</float>
   </void>
   <void property="reference">
    <string>Sim_186</string>
@@ -1993,62 +1826,6 @@ setfield B 7.769000247e+12
      </void>
      <void property="reference">
       <string>IClamp_Ca_pyr_GEN</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
-     <void property="amp">
-      <void property="fixedNum">
-       <float>0.2</float>
-      </void>
-     </void>
-     <void property="cellGroup">
-      <string>Test__Kahp_CaPool_CML</string>
-     </void>
-     <void property="del">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-     </void>
-     <void property="dur">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
-      </void>
-     </void>
-     <void property="reference">
-      <string>IClamp_Kahp_CaPool_CML</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
-     <void property="amp">
-      <void property="fixedNum">
-       <float>0.2</float>
-      </void>
-     </void>
-     <void property="cellGroup">
-      <string>Test__Kahp_CaPool_GEN</string>
-     </void>
-     <void property="del">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-     </void>
-     <void property="dur">
-      <void property="fixedNum">
-       <float>100.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
-      </void>
-     </void>
-     <void property="reference">
-      <string>IClamp_Kahp_CaPool_GEN</string>
      </void>
     </object>
    </void>

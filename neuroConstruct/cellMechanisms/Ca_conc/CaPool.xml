@@ -14,8 +14,8 @@
     <ion_concentration name="Ca_conc">
         
 
-        <status value="in_progress">
-            <meta:comment>Transcribed from the Genesis implementation by David Beeman</meta:comment>
+        <status value="stable">
+            <meta:comment>Transcribed from the Genesis implementation of David Beeman</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>
