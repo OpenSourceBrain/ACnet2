@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta2.xsd" id="Kdr_bask">
+<?xml version="1.0" encoding="iso-8859-1"?><neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta2.xsd" id="Kdr_bask">
 
     <notes>ChannelML file containing a single Potassium Channel description, from the book Neuronal Networks of the Hippocampus, Traub and Miles 1991</notes>
 
@@ -14,7 +13,7 @@
                     <bqmodel:isDescribedBy xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
                         <rdf:Bag>
                             <rdf:li>Traub, R. D., &amp; Miles, R. (1991). Neuronal Networks of the Hippocampus. Cambridge University Press.</rdf:li>
-                            <rdf:li rdf:resource=""/>
+                            <rdf:li rdf:resource="http://www.cambridge.org/us/academic/subjects/life-sciences/neuroscience/neuronal-networks-hippocampus"/>
                         </rdf:Bag>
                     </bqmodel:isDescribedBy>
 

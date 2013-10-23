@@ -19,7 +19,7 @@
             </segment>
 
             <segment id="1" name="dend">
-                <parent segment="0" fractionAlong="0.5"/>
+                <parent segment="0"/>
                 <proximal x="0.0" y="40.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="200.0" z="0.0" diameter="2.0"/>
             </segment>

@@ -3,7 +3,7 @@
 
 <meta:notes>
 
-Network structure (NeuroML 1.x) for project: ACnet2 saved with neuroConstruct v1.7.0 on: 12:09:28, 23-Oct-13
+Network structure (NeuroML 1.x) for project: ACnet2 saved with neuroConstruct v1.7.0 on: 14:34:17, 23-Oct-13
 
 Cell Group: pyramidals contains 1 cells
 Cell Group: baskets contains 1 cells
@@ -12,7 +12,7 @@ Cell Group: baskets contains 1 cells
 </meta:notes>
 
 <meta:properties>
-    <meta:property tag="neuroConstruct_random_seed" value="-1378144166"/>
+    <meta:property tag="neuroConstruct_random_seed" value="-1278904281"/>
 
     <meta:property tag="neuroConstruct_sim_config" value="Default Simulation Configuration"/>
 
