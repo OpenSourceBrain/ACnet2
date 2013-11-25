@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="bask">
 
-    <include href="Kdr_bask.nml"/>
+    <include href="Kdr_bask.channel.nml"/>
 
-    <include href="LeakConductance_bask.nml"/>
+    <include href="LeakConductance_bask.channel.nml"/>
 
-    <include href="Na_bask.nml"/>
+    <include href="Na_bask.channel.nml"/>
 
     <cell id="bask">
 
@@ -56,8 +56,7 @@
 
                 <channelDensity condDensity="50.0 mS_per_cm2" id="Kdr_bask_soma_group" ionChannel="Kdr_bask" segmentGroup="soma_group" ion="k" erev="-90.0 mV"/>
 
-                <channelDensity condDensity="0.1428571 mS_per_cm2" id="LeakConductance_bask_all" ionChannel="LeakConductance_bask" erev="-65.0 mV" ion="non_specific">    <!--Note: Units of extra parameters are not known, except if it's e or erev!!-->
-</channelDensity>
+                <channelDensity condDensity="0.1428571 mS_per_cm2" id="LeakConductance_bask_all" ionChannel="LeakConductance_bask" erev="-65.0 mV" ion="non_specific"/>
 
                 <channelDensity condDensity="100.0 mS_per_cm2" id="Na_bask_soma_group" ionChannel="Na_bask" segmentGroup="soma_group" ion="na" erev="50.0 mV"/>
 

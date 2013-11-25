@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="network_ACnet2">
 
-<notes>
+    <notes>
 
-Network structure (NeuroML 2beta1) for project: ACnet2 saved with neuroConstruct v1.7.0 on: 14:34:23, 23-Oct-13
+Network structure (NeuroML 2beta1) for project: ACnet2 saved with neuroConstruct v1.7.0 on: 12:17:27, 25-Nov-13
 
 Cell Group: pyramidals contains 1 cells
 Cell Group: baskets contains 1 cells
 
 
-</notes>
+
+    </notes>
 
 
+    <include href="bask.cell.nml"/>
+    <include href="pyr_4_sym.cell.nml"/>
+    <include href="LeakConductance_bask.channel.nml"/>
+    <include href="Kdr_bask.channel.nml"/>
+    <include href="Na_bask.channel.nml"/>
+    <include href="Ca_pyr.channel.nml"/>
+    <include href="Kahp_pyr.channel.nml"/>
+    <include href="LeakConductance_pyr.channel.nml"/>
+    <include href="Na_pyr.channel.nml"/>
+    <include href="Kdr_pyr.channel.nml"/>
+    <include href="Ca_conc.nml"/>
 
     <pulseGenerator id="Input_1" delay="0.1s" duration="0.5s" amplitude="6.0E-10A"/>
 
