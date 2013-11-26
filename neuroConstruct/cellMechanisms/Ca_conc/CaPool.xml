@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channelml xmlns="http://morphml.org/channelml/schema" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:meta="http://morphml.org/metadata/schema" 
-    xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd" 
-    units="SI Units">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:meta="http://morphml.org/metadata/schema" 
+           xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd" 
+           units="SI Units">
   
     <meta:notes>ChannelML file describing intracellular Calcium dynamics, from the Hippocampal CA3 neuron model presented in Traub et al., 1991.</meta:notes>
 
@@ -39,7 +39,7 @@
 
         <meta:publication>
             <meta:fullTitle>Traub, R. D., Wong, R. K., Miles, R., and Michelson, H. (1991). A model of a CA3 hippocampal pyramidal neuron incorporating voltage-clamp data on intrinsic conductances. Journal of neurophysiology, 66(2), 635-50.</meta:fullTitle>
-<meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/1663538</meta:pubmedRef>
+            <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/1663538</meta:pubmedRef>
         </meta:publication>
 
         <meta:neuronDBref>
@@ -53,10 +53,10 @@
         <decaying_pool_model resting_conc ="0.0" decay_constant="0.01333">
             
             <fixed_pool_info>
-	      <!-- this value is divided by the compt area to get the
-		   conversion factor between current and change in concentration. -->
-	      <phi>95.43150105430371</phi> 
-	    </fixed_pool_info>
+                <!-- this value is divided by the compt area to get the
+                conversion factor between current and change in concentration. -->
+                <phi>95.431501</phi> 
+            </fixed_pool_info>
             
         </decaying_pool_model>
         
