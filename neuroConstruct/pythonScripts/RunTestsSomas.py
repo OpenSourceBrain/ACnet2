@@ -40,6 +40,7 @@ simDt =                 0.0025
 simDtOverride =         {"LEMS":0.00025}
 
 simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI", "LEMS"]
+simulators =            ["NEURON", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI", "LEMS"]
 
 numConcurrentSims =     4
 

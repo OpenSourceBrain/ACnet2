@@ -36,6 +36,8 @@
         </gate>
 
         <gate id="h" type="gateHHtauInf" instances="1">
+            <timeCourse type="Ca_pyr_h_tau_tau"/>
+            <steadyState type="Ca_pyr_h_inf_inf"/>
         </gate>
                             
     </ionChannel>
