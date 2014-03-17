@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="bask">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="bask">
 
     <include href="Kdr_bask.channel.nml"/>
 
@@ -24,11 +24,19 @@
                 <distal x="0.0" y="200.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segmentGroup id="soma">
+            <segmentGroup id="soma" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="0"/>
             </segmentGroup>
 
-            <segmentGroup id="dend">
+            <segmentGroup id="dend" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="1"/>
             </segmentGroup>
 
@@ -37,11 +45,13 @@
                 <include segmentGroup="dend"/>
             </segmentGroup>
 
-            <segmentGroup id="soma_group">
+            <segmentGroup id="soma_group" neuroLexId="GO:0043025">    <!--Soma group-->
+
                 <include segmentGroup="soma"/>
             </segmentGroup>
 
-            <segmentGroup id="dendrite_group">
+            <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">    <!--Dendrite group-->
+
                 <include segmentGroup="dend"/>
             </segmentGroup>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="network_ACnet2">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="network_ACnet2">
 
     <notes>
 
-Network structure (NeuroML 2beta1) for project: ACnet2 saved with neuroConstruct v1.7.0 on: 18:06:54, 13-Jan-14
+Network structure (NeuroML 2beta3) for project: ACnet2 saved with neuroConstruct v1.7.1 on: 13:51:52, 17-Mar-14
 
 Cell Group: pyramidals contains 1 cells
 Cell Group: baskets contains 1 cells

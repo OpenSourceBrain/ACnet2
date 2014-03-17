@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="pyr_4_sym">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="pyr_4_sym">
 
-    <include href="Ca_conc.channel.nml"/>
+    <include href="Ca_conc.nml"/>
 
     <include href="Ca_pyr.channel.nml"/>
 
@@ -72,39 +72,75 @@
                 <distal x="-106.07" y="-156.07" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segmentGroup id="soma">
+            <segmentGroup id="soma" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="0"/>
             </segmentGroup>
 
-            <segmentGroup id="apical0">
+            <segmentGroup id="apical0" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="1"/>
             </segmentGroup>
 
-            <segmentGroup id="apical2">
+            <segmentGroup id="apical2" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="2"/>
             </segmentGroup>
 
-            <segmentGroup id="apical3">
+            <segmentGroup id="apical3" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="3"/>
             </segmentGroup>
 
-            <segmentGroup id="apical4">
+            <segmentGroup id="apical4" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="4"/>
             </segmentGroup>
 
-            <segmentGroup id="apical1">
+            <segmentGroup id="apical1" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="5"/>
             </segmentGroup>
 
-            <segmentGroup id="basal0">
+            <segmentGroup id="basal0" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="6"/>
             </segmentGroup>
 
-            <segmentGroup id="basal1">
+            <segmentGroup id="basal1" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="7"/>
             </segmentGroup>
 
-            <segmentGroup id="basal2">
+            <segmentGroup id="basal2" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="8"/>
             </segmentGroup>
 
@@ -120,11 +156,13 @@
                 <include segmentGroup="basal2"/>
             </segmentGroup>
 
-            <segmentGroup id="soma_group">
+            <segmentGroup id="soma_group" neuroLexId="GO:0043025">    <!--Soma group-->
+
                 <include segmentGroup="soma"/>
             </segmentGroup>
 
-            <segmentGroup id="dendrite_group">
+            <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">    <!--Dendrite group-->
+
                 <include segmentGroup="apical0"/>
                 <include segmentGroup="apical2"/>
                 <include segmentGroup="apical3"/>
