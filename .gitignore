@@ -1,5 +1,6 @@
+/neuroConstruct/generatedNeuroML2/*.dat
+/neuroConstruct/generatedNeuroML2/*.props
 /neuroConstruct/generatedNeuroML2/runsim.sh
-/neuroConstruct/generatedNeuroML2/LEMS_ACnet2.xml
 /neuroConstruct/generatedNeuroML2/*.log
 /neuroConstruct/generatedNeuroML2/*.mod
 /neuroConstruct/generatedNeuroML2/*.py
