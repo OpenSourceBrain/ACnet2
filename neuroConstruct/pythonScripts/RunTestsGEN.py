@@ -34,12 +34,12 @@ projFile = File(os.getcwd(), "../ACnet2.ncx")
 
 simConfigs = []
 
-simConfigs.append("Default Simulation Configuration")
+simConfigs.append("ComparePyramidals_CML_GEN")
 
 simDt =                 0.0025
+ 
+simulators =            ["GENESIS_SI"]
 
-simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI"]
-simulators =            ["NEURON", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI"]
 
 numConcurrentSims =     4
 
@@ -80,10 +80,11 @@ def testAll(argv=None):
 
     # These were discovered using analyseSims = True above.
     # They need to hold for all simulators
-    spikeTimesToCheck = {'baskets_0': [112.816, 136.064, 159.31, 182.558, 205.81, 229.058, 252.307, 275.555, 298.801, 322.053, 345.299, 368.55, 391.796, 415.046, 438.294, 461.544, 484.793, 508.042, 531.29, 554.536, 577.787, 601.208],
-                         'pyramidals_0': [106.88, 118.28, 129.407, 140.497, 151.601, 162.725, 173.878, 185.066, 196.292, 207.545, 218.826, 230.141, 241.486, 252.861, 264.263, 275.701, 287.158, 298.649, 310.163, 321.705, 333.277, 344.872, 356.49, 368.135, 379.804, 391.5, 403.219, 414.956, 426.72, 438.511, 450.318, 462.146, 473.996, 485.873, 497.767, 509.675, 521.611, 533.563, 545.537, 557.529, 569.539, 581.572, 593.622]}
+    times = [106.88, 118.28, 129.407, 140.497, 151.601, 162.725, 173.878, 185.066, 196.292, 207.545, 218.826, 230.141, 241.486, 252.861, 264.263, 275.701, 287.158, 298.649, 310.163, 321.705, 333.277, 344.872, 356.49, 368.135, 379.804, 391.5, 403.219, 414.956, 426.72, 438.511, 450.318, 462.146, 473.996, 485.873, 497.767, 509.675, 521.611, 533.563, 545.537, 557.529, 569.539, 581.572, 593.622]
+    spikeTimesToCheck = {'pyramidals_0': times,
+                         'pyramidals_GEN_0': times}
 
-    spikeTimeAccuracy = 0.65
+    spikeTimeAccuracy = 1.05
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_05" class="java.beans.XMLDecoder">
+<java version="1.7.0_55" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -19,8 +19,8 @@ part of NeuroML or any standardised XML specification. -->
    <string>ACnet2</string>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.RegionsInfo" id="RegionsInfo0">
-  <void id="Hashtable0" property="internalData">
+ <object class="ucl.physiol.neuroconstruct.project.RegionsInfo">
+  <void property="internalData">
    <void method="get">
     <string>Name</string>
     <void method="add">
@@ -63,8 +63,8 @@ part of NeuroML or any standardised XML specification. -->
    <void method="get">
     <string>Description</string>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox0">
-      <void id="InternalParameterArray0" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
        <void id="InternalParameter0" index="3">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -87,8 +87,8 @@ part of NeuroML or any standardised XML specification. -->
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox1">
-      <void id="InternalParameterArray1" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
        <void id="InternalParameter2" index="1">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -120,8 +120,8 @@ part of NeuroML or any standardised XML specification. -->
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox2">
-      <void id="InternalParameterArray2" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
        <void id="InternalParameter5" index="3">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -146,16 +146,16 @@ part of NeuroML or any standardised XML specification. -->
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.CellGroupsInfo" id="CellGroupsInfo0">
-  <void id="Hashtable1" property="internalData">
+ <object class="ucl.physiol.neuroconstruct.project.CellGroupsInfo">
+  <void property="internalData">
    <void method="get">
     <string>Cell Packing Adapter</string>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter" id="SinglePositionedCellPackingAdapter0">
-      <void id="InternalParameterArray3" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
        <void id="InternalParameter7" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -178,8 +178,8 @@ part of NeuroML or any standardised XML specification. -->
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter" id="CubicClosePackedCellPackingAdapter0">
-      <void id="InternalParameterArray4" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter">
+      <void property="parameterList">
        <void id="InternalParameter9" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -202,8 +202,8 @@ part of NeuroML or any standardised XML specification. -->
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter" id="CubicClosePackedCellPackingAdapter1">
-      <void id="InternalParameterArray5" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.CubicClosePackedCellPackingAdapter">
+      <void property="parameterList">
        <void id="InternalParameter11" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -226,8 +226,8 @@ part of NeuroML or any standardised XML specification. -->
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter" id="SinglePositionedCellPackingAdapter1">
-      <void id="InternalParameterArray6" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
        <void id="InternalParameter13" index="2">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -241,8 +241,8 @@ part of NeuroML or any standardised XML specification. -->
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter" id="SinglePositionedCellPackingAdapter2">
-      <void id="InternalParameterArray7" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
        <void id="InternalParameter14" index="2">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -289,8 +289,8 @@ part of NeuroML or any standardised XML specification. -->
      <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter" id="SinglePositionedCellPackingAdapter3">
-      <void id="InternalParameterArray8" property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
        <void id="InternalParameter15" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -681,7 +681,7 @@ part of NeuroML or any standardised XML specification. -->
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.SimPlotInfo" id="SimPlotInfo0">
+ <object class="ucl.physiol.neuroconstruct.project.SimPlotInfo">
   <void property="allSimPlots">
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
@@ -1745,7 +1745,7 @@ part of NeuroML or any standardised XML specification. -->
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings"/>
- <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings" id="GenesisSettings0">
+ <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings">
   <void property="nativeBlocks">
    <void method="put">
     <int>10</int>
@@ -1760,6 +1760,10 @@ part of NeuroML or any standardised XML specification. -->
     <string></string>
    </void>
    <void method="put">
+    <int>-1</int>
+    <string></string>
+   </void>
+   <void method="put">
     <int>1</int>
     <string>#SIM_CONFIG_INCLUDE TestPyramidals_GEN
 #SIM_CONFIG_INCLUDE TestCells
@@ -1768,10 +1772,6 @@ setfield B 7.769000247e+12
 
 #END_SIM_CONFIG_INCLUDE TestCells
 #END_SIM_CONFIG_INCLUDE TestPyramidals_GEN</string>
-   </void>
-   <void method="put">
-    <int>-1</int>
-    <string></string>
    </void>
   </void>
   <void property="symmetricCompartments">
@@ -1790,7 +1790,7 @@ setfield B 7.769000247e+12
    <float>0.8</float>
   </void>
   <void property="reference">
-   <string>Sim_286</string>
+   <string>Sim_291</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1799,10 +1799,10 @@ setfield B 7.769000247e+12
    <int>2</int>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.ElecInputInfo" id="ElecInputInfo0">
+ <object class="ucl.physiol.neuroconstruct.project.ElecInputInfo">
   <void property="allStims">
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings0">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="cellGroup">
       <string>baskets</string>
      </void>
@@ -1829,7 +1829,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings1">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.6</float>
@@ -1861,7 +1861,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings2">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="cellGroup">
       <string>baskets_GEN</string>
      </void>
@@ -1888,7 +1888,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings3">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.6</float>
@@ -1920,7 +1920,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings4">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -1952,7 +1952,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings5">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -1984,7 +1984,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings6">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2016,7 +2016,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings7">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2048,7 +2048,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings8">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2080,7 +2080,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings9">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2112,7 +2112,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings10">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2144,7 +2144,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings11">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2176,7 +2176,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings12">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2208,7 +2208,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings13">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2240,7 +2240,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings14">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="cellGroup">
       <string>basket_soma</string>
      </void>
@@ -2267,7 +2267,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings15">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
        <float>0.05</float>
@@ -2300,10 +2300,10 @@ setfield B 7.769000247e+12
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo" id="SimConfigInfo0">
+ <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo">
   <void property="allSimConfigs">
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig0">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>baskets</string>
@@ -2385,7 +2385,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig1">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>baskets24x24</string>
@@ -2414,7 +2414,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig2">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>Test__Ca_pyr_CML</string>
@@ -2523,7 +2523,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig3">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>baskets</string>
@@ -2575,7 +2575,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig4">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>pyramidals</string>
@@ -2603,7 +2603,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig5">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>pyramidals_GEN</string>
@@ -2631,7 +2631,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig6">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>baskets</string>
@@ -2662,7 +2662,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig7">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>basket_soma</string>
@@ -2708,7 +2708,7 @@ setfield B 7.769000247e+12
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig8">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
        <string>pyramidals</string>

@@ -171,11 +171,11 @@ The scaling factor for converting current into change in ion concentration shoul
 
                 <bio:ion_props name="ca">
                     <bio:parameter name="conc_e" value="3.0E-6">
-                        <bio:group>all</bio:group>
+                        <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 
                     <bio:parameter name="conc_i" value="5.0E-11">
-                        <bio:group>all</bio:group>
+                        <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 </bio:ion_props>
             </biophysics>

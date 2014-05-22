@@ -110,7 +110,7 @@
             <biophysics units="Physiological Units">
 
                 <bio:mechanism name="Ca_conc_GEN" type="Channel Mechanism">
-                    <bio:parameter name="gmax" value="7.769E20">
+                    <bio:parameter name="gmax" value="0.005487312">
                         <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 </bio:mechanism>
