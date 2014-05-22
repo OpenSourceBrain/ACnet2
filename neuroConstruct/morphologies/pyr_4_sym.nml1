@@ -114,7 +114,7 @@ The scaling factor for converting current into change in ion concentration shoul
  determined from ChannelML file for the CaPool...-->
 
                     <bio:parameter name="gmax" value="0.0">
-                        <bio:group>all</bio:group>
+                        <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 </bio:mechanism>
 
@@ -169,7 +169,7 @@ The scaling factor for converting current into change in ion concentration shoul
                     </bio:parameter>
                 </bio:init_memb_potential>
 
-<bio:ion_props name="ca">
+                <bio:ion_props name="ca">
                     <bio:parameter name="conc_e" value="3.0E-6">
                         <bio:group>all</bio:group>
                     </bio:parameter>
@@ -177,10 +177,8 @@ The scaling factor for converting current into change in ion concentration shoul
                     <bio:parameter name="conc_i" value="5.0E-11">
                         <bio:group>all</bio:group>
                     </bio:parameter>
-
-</bio:ion_props>
-
-</biophysics>
+                </bio:ion_props>
+            </biophysics>
 
             <connectivity/>
 

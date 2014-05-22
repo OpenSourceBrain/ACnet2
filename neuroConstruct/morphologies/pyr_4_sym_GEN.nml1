@@ -110,7 +110,7 @@
             <biophysics units="Physiological Units">
 
                 <bio:mechanism name="Ca_conc_GEN" type="Channel Mechanism">
-                    <bio:parameter name="gmax" value="0.0">
+                    <bio:parameter name="gmax" value="7.769E20">
                         <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 </bio:mechanism>
@@ -164,7 +164,18 @@
                     <bio:parameter value="-65.0">
                         <bio:group>all</bio:group>
                     </bio:parameter>
-                </bio:init_memb_potential></biophysics>
+                </bio:init_memb_potential>
+
+                <bio:ion_props name="ca">
+                    <bio:parameter name="conc_e" value="3.0E-6">
+                        <bio:group>soma_group</bio:group>
+                    </bio:parameter>
+                
+                    <bio:parameter name="conc_i" value="5.0E-11">
+                        <bio:group>soma_group</bio:group>
+                    </bio:parameter>
+                </bio:ion_props>
+            </biophysics>
 
             <connectivity/>
 
