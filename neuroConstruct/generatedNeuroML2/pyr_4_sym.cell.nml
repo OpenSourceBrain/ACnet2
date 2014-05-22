@@ -202,7 +202,7 @@ These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
 
             <intracellularProperties>
 
-                <species id="ca" ion="ca" concentrationModel="Ca_conc" initialConcentration="5.0E-11 mol_per_cm3" initialExtConcentration="3.0E-6 mol_per_cm3"/>
+                <species segmentGroup="soma_group" id="ca" ion="ca" concentrationModel="Ca_conc" initialConcentration="5.0E-11 mol_per_cm3" initialExtConcentration="3.0E-6 mol_per_cm3" segmentGroup="soma_group"/>
 
                 <resistivity value="0.2 kohm_cm"/>
 

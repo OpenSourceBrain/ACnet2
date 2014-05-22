@@ -10,6 +10,13 @@ part of NeuroML or any standardised XML specification. -->
  <object class="ucl.physiol.neuroconstruct.project.BasicProjectInfo">
   <void property="projectDescription">
    <string>Primary Auditory Cortex network model by Dave Beeman. 
+
+Model described in Beeman D (2013) A modeling study of cortical waves in primary auditory cortex. BMC Neuroscience, 14(Suppl 1):P23 doi:10.1186/1471-2202-14-S1-P23.
+
+See http://opensourcebrain.org/projects/acnet2 for more details.
+
+
+
 </string>
   </void>
   <void property="projectFileVersion">
