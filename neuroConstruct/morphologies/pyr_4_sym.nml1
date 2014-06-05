@@ -66,41 +66,50 @@
                 <mml:cable id="1" name="apical0">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="2" name="apical2">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="3" name="apical3">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="4" name="apical4">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="5" name="apical1">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>thalamic_input</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="6" name="basal0" fract_along_parent="0.0">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>basal_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="7" name="basal1">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>basal_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="8" name="basal2">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>basal_dends</meta:group>
                 </mml:cable>
 
             </mml:cables>
@@ -180,7 +189,17 @@ The scaling factor for converting current into change in ion concentration shoul
                 </bio:ion_props>
             </biophysics>
 
-            <connectivity/>
+            <connectivity>
+                <net:potential_syn_loc synapse_type="AMPA_syn">
+                    <net:group>soma_group</net:group>
+                
+                    <net:group>apical_dends</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="GABA_syn">
+                    <net:group>basal_dends</net:group>
+                </net:potential_syn_loc>
+            </connectivity>
 
         </cell>
     </cells>
