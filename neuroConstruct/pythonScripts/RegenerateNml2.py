@@ -15,8 +15,14 @@ import ncutils as nc # Many useful functions such as SimManager.runMultipleSims 
 projFile = File(os.getcwd(), "../ACnet2.ncx")
 
 simConfigs = []
-simConfigs.append("Default Simulation Configuration")
+simConfigs.append("TestSoma")
 
 nc.generateNeuroML2(projFile, simConfigs)
+
+extra_files = ['.test.omt', 'LargeNet.net.nml', 'TwoCell.net.nml', 'bask_soma.cell.nml', 'pyr_4_sym_soma.cell.nml']
+from subprocess import call
+
+for f in extra_files:
+    call(["git", "checkout", "../generatedNeuroML2/%s"%f])
 
 quit()

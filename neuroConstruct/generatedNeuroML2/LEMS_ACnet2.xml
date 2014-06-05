@@ -34,16 +34,16 @@
         is used to allow validation of this file according to the LEMS schema specified above...-->
     <Component type="Simulation" id="sim1" length="700.0ms" step="0.025ms" target="network_ACnet2">
         
-        <Display id="basket_soma_v" title="ACnet2: TestSoma, basket_soma, VOLTAGE" xmin="-0.07" xmax="0.77000004" ymin="-0.104" ymax="0.064" timeScale="1s">
-            <Line id="VOLTAGE-basket_soma_0" timeScale="1s" quantity="basket_soma/0/bask_soma/v" scale="1 V" color="#000000"/>
+        <Display id="basket_soma_v" title="ACnet2: TestSoma, basket_soma, VOLTAGE" xmin="-70.0" xmax="770.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE-basket_soma_0" timeScale="1ms" quantity="basket_soma/0/bask_soma/v" scale="1 mV" color="#000000"/>
         </Display>
     
-        <Display id="pyramidal_soma_v" title="ACnet2: TestSoma, pyramidal_soma, VOLTAGE" xmin="-0.07" xmax="0.77000004" ymin="-0.104" ymax="0.064" timeScale="1s">
-            <Line id="VOLTAGE-pyramidal_soma_0" timeScale="1s" quantity="pyramidal_soma/0/pyr_4_sym_soma/v" scale="1 V" color="#000000"/>
+        <Display id="pyramidal_soma_v" title="ACnet2: TestSoma, pyramidal_soma, VOLTAGE" xmin="-70.0" xmax="770.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE-pyramidal_soma_0" timeScale="1ms" quantity="pyramidal_soma/0/pyr_4_sym_soma/v" scale="1 mV" color="#000000"/>
         </Display>
     
-        <Display id="GraphWin_12" title="ACnet2: TestSoma, pyramidal_soma, Ca_conc:CONC:ca" xmin="-0.07" xmax="0.77000004" ymin="-3.0000002" ymax="33.0" timeScale="1s">
-            <Line id="Ca_conc_CONC_ca-pyramidal_soma_0" timeScale="1s" quantity="pyramidal_soma/0/pyr_4_sym_soma/caConc" scale="1 mol_per_m3" color="#000000"/>
+        <Display id="GraphWin_12" title="ACnet2: TestSoma, pyramidal_soma, Ca_conc:CONC:ca" xmin="-70.0" xmax="770.0" ymin="-3.0000003E-6" ymax="3.3E-5" timeScale="1ms">
+            <Line id="Ca_conc_CONC_ca-pyramidal_soma_0" timeScale="1ms" quantity="pyramidal_soma/0/pyr_4_sym_soma/caConc" scale="1 mol_per_cm3" color="#000000"/>
         </Display>
     
         <OutputFile id="basket_soma_v_OF" fileName="basket_soma_0.dat">
