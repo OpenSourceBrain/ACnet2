@@ -22,3 +22,5 @@ neuroConstruct/generatedGENESIS
 neuroConstruct/simulations
 *.*~
 neuroConstruct/backup*
+*$py.class
+
