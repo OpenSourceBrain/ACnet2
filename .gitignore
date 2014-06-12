@@ -12,6 +12,7 @@ x86_64
 GENESIS/EPSC*.txt
 GENESIS/*netview*.txt
 GENESIS/*summary*.txt
+GENESIS/*.dat
 
 NeuroML2/*.svg
 
@@ -24,3 +25,4 @@ neuroConstruct/simulations
 neuroConstruct/backup*
 *$py.class
 
+neuroConstruct/ACnet2_Network_nC_jython

@@ -19,6 +19,6 @@ Note the following:
 <entry key="Mechanism Type">Synaptic mechanism</entry>
 <entry key="ChannelML file">DoubExpSyn.xml</entry>
 <entry key="GENESIS file requires compilation">true</entry>
-<entry key="Mechanism Name">GABA_syn</entry>
+<entry key="Mechanism Name">AMPA_syn_inh</entry>
 <entry key="Mechanism Model">ChannelML based process</entry>
 </properties>

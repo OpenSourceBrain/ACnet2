@@ -79,6 +79,7 @@
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
                     <meta:group>apical_dends</meta:group>
+                    <meta:group>middle_apical_dendrite</meta:group>
                 </mml:cable>
 
                 <mml:cable id="4" name="apical4">

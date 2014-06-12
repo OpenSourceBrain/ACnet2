@@ -18,7 +18,7 @@ Note the following:
 <entry key="NEURON file requires compilation">true</entry>
 <entry key="Mechanism Type">Synaptic mechanism</entry>
 <entry key="ChannelML file">DoubExpSyn.xml</entry>
-<entry key="GENESIS file requires compilation">true</entry>
-<entry key="Mechanism Name">GABA_syn</entry>
-<entry key="Mechanism Model">ChannelML based process</entry>
+<entry key="GENESIS file requires compilation">false</entry>
+<entry key="Mechanism Name">AMPA_thalam</entry>
+<entry key="Mechanism Model">Template based ChannelML file</entry>
 </properties>
