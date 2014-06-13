@@ -197,6 +197,10 @@ The scaling factor for converting current into change in ion concentration shoul
                     <net:group>apical_dends</net:group>
                 </net:potential_syn_loc>
             
+                <net:potential_syn_loc synapse_type="AMPA_syn_inh" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
                 <net:potential_syn_loc synapse_type="GABA_syn">
                     <net:group>basal_dends</net:group>
                 </net:potential_syn_loc>

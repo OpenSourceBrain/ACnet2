@@ -313,7 +313,7 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter">
       <void property="maxNumberCells">
-       <int>4</int>
+       <int>8</int>
       </void>
       <void property="parameterList">
        <void id="InternalParameter16" index="0">
@@ -331,7 +331,7 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter">
       <void property="maxNumberCells">
-       <int>12</int>
+       <int>8</int>
       </void>
       <void property="parameterList">
        <void id="InternalParameter17" index="0">
@@ -1946,6 +1946,10 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
     <string></string>
    </void>
    <void method="put">
+    <int>-1</int>
+    <string></string>
+   </void>
+   <void method="put">
     <int>1</int>
     <string>#SIM_CONFIG_INCLUDE TestPyramidals_GEN
 #SIM_CONFIG_INCLUDE TestCells
@@ -1954,10 +1958,6 @@ setfield B 7.769000247e+12
 
 #END_SIM_CONFIG_INCLUDE TestCells
 #END_SIM_CONFIG_INCLUDE TestPyramidals_GEN</string>
-   </void>
-   <void method="put">
-    <int>-1</int>
-    <string></string>
    </void>
   </void>
   <void property="symmetricCompartments">
@@ -1976,7 +1976,7 @@ setfield B 7.769000247e+12
    <float>0.8</float>
   </void>
   <void property="reference">
-   <string>Sim_340</string>
+   <string>Sim_341</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -3152,7 +3152,7 @@ setfield B 7.769000247e+12
          </object>
         </void>
         <void property="synapseType">
-         <string>AMPA_syn</string>
+         <string>AMPA_syn_inh</string>
         </void>
         <void property="threshold">
          <double>-20.0</double>
@@ -3230,7 +3230,7 @@ setfield B 7.769000247e+12
          </object>
         </void>
         <void property="synapseType">
-         <string>GABA_syn</string>
+         <string>GABA_syn_inh</string>
         </void>
         <void property="threshold">
          <double>-20.0</double>
