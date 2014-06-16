@@ -22,7 +22,7 @@ networks.  The simulation scripts are designed to be run with GENESIS 2.3
 and are extensively commented, are easily customizable and are designed for
 extension to more detailed models, or conversion to other simulation
 systems.  The model is slowly being implemented in GENESIS 3 (G-3) and a
-conversion to neuroConstruct (http://www.neuroconstruct.org/) is [currently under way](https://github.com/OpenSourceBrain/ACnet2/tree/master/neuroConstruct).
+conversion to [neuroConstruct](http://www.neuroconstruct.org) is [currently under way](https://github.com/OpenSourceBrain/ACnet2/tree/master/neuroConstruct).
 The scripts will be of particular interest to those GENESIS network
 modelers who have not taken advantage of the ten-fold speed increase
 available with the use of 'hsolve' for network simulations.
@@ -52,8 +52,8 @@ I encourage you to extend and share this tutorial/documentation and
 simulation script package with others. The files here may be freely
 distributed under the terms of the [GNU Lesser General Public License version 2.1](figures/copying.txt).
 
-David Beeman
-University of Colorado, Boulder
-dbeeman@colorado.edu
-Tue Sep  3 12:03:30 MDT 2013
+David Beeman   
+University of Colorado, Boulder   
+dbeeman@colorado.edu   
+Tue Sep  3 12:03:30 MDT 2013 
 
