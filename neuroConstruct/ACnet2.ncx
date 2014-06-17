@@ -621,17 +621,17 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
     </void>
     <void method="add">
      <object class="java.awt.Color">
-      <int>144</int>
-      <int>253</int>
-      <int>236</int>
+      <int>204</int>
+      <int>0</int>
+      <int>0</int>
       <int>255</int>
      </object>
     </void>
     <void method="add">
      <object class="java.awt.Color">
-      <int>158</int>
-      <int>105</int>
-      <int>247</int>
+      <int>0</int>
+      <int>51</int>
+      <int>153</int>
       <int>255</int>
      </object>
     </void>
@@ -1982,7 +1982,7 @@ setfield B 7.769000247e+12
    <float>0.8</float>
   </void>
   <void property="reference">
-   <string>Sim_373</string>
+   <string>Sim_375</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -2579,7 +2579,7 @@ setfield B 7.769000247e+12
         </void>
        </void>
        <void property="fixedNum">
-        <float>0.008</float>
+        <float>0.03</float>
        </void>
       </object>
      </void>
