@@ -61,6 +61,7 @@ function make_%Name%
     if ({exists {chanpath}})
        return
     end
+    float tau_scale = 2.0  // slow down the dynamics by a factor of 2
         create  tabchannel      {chanpath}
                 setfield        ^       \
                 Ek              {EK}	\	           //      V
@@ -72,14 +73,14 @@ function make_%Name%
                 Zpower  0
 
                 setupalpha {chanpath} X               \
-                           {16e3 * (0.0351 + EREST_ACT)}   \  // AA
-                           -16e3                           \  // AB
-                           -1.0                            \  // AC
-                           {-1.0 * (0.0351 + EREST_ACT) }  \  // AD
-                           -0.005                          \  // AF
-                           250                             \  // BA
-                           0.0                             \  // BB
-                           0.0                             \  // BC
-                           {-1.0 * (0.02 + EREST_ACT)}     \  // BD
-                           0.04                               // BF
+                   {(16e3 * (0.0351 + EREST_ACT))/{tau_scale}}   \  // AA
+                   {-16e3/{tau_scale}}             \  // AB
+                   -1.0                            \  // AC
+                   {-1.0 * (0.0351 + EREST_ACT) }  \  // AD
+                   -0.005                          \  // AF
+                   {250/{tau_scale}}               \  // BA
+                   0.0                             \  // BB
+                   0.0                             \  // BC
+                   {-1.0 * (0.02 + EREST_ACT)}     \  // BD
+                   0.04                               // BF
 end

@@ -1,0 +1,9 @@
+system: Testing a single compartment cell
+
+experiments:
+  Current clamp pyramidal:
+    expected:
+        spike times: [102.7, 121.75, 163.6, 272.925, 353.675, 436.55, 519.025]
+  Current clamp basket:
+    expected:
+        spike times: [110.275, 131.2, 152.1, 173.025, 193.925, 214.85, 235.75, 256.675, 277.575, 298.5, 319.4, 340.325, 361.225, 382.15, 403.05, 423.975, 444.875, 465.8, 486.7, 507.625, 528.525, 549.45, 570.35, 591.275]

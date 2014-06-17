@@ -67,6 +67,8 @@ function make_%Name%
     if ({exists {chanpath}})
        return
     end
+    float tau_scale = 0.05  // speed up the dynamics by a factor of 20
+            
         create  tabchannel      {chanpath}
                 setfield        ^       \
                 Ek              {EK}   \               //      V
@@ -94,8 +96,8 @@ function make_%Name%
             else
                 y = 10.0
             end
-            setfield {chanpath} Z_A->table[{i}] {y}
-            setfield {chanpath} Z_B->table[{i}] {y + 1.0}
+            setfield {chanpath} Z_A->table[{i}] {y/{tau_scale}}
+            setfield {chanpath} Z_B->table[{i}] {(y + 1.0)/{tau_scale}}
             x = x + dx
         end
 // For speed during execution, set the calculation mode to "no interpolation"

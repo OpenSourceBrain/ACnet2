@@ -7,6 +7,7 @@
         
         <status value="stable">
             <meta:comment>Transcribed from the Genesis implementation of David Beeman</meta:comment>
+            <meta:comment>Added extra scaling factor of 20 as used in protodefs.g</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>
@@ -49,8 +50,9 @@
                 <closed_state id="z0"/>
                 <open_state id="z"/>
 
-                <transition name="alpha" from="z0" to="z" expr_form="generic" expr="ca_conc &lt; 500.0 ? 0.02 * ca_conc : 10" />
-                <transition name="beta" from="z" to="z0" expr_form="generic" expr="1.0" />
+                <!-- PG: Added extra scaling factor of 20 as used in protodefs.g -->
+                <transition name="alpha" from="z0" to="z" expr_form="generic" expr="ca_conc &lt; 500.0 ? 0.4 * ca_conc : 200" />
+                <transition name="beta" from="z" to="z0" expr_form="generic" expr="20" />
 
             </gate>
             

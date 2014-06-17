@@ -34,7 +34,7 @@ projFile = File(os.getcwd(), "../ACnet2.ncx")
 
 simConfigs = []
 
-simConfigs.append("ComparePyramidals_CML_GEN")
+simConfigs.append("Compare_PyramidalBask_CML_GEN")
 
 simDt =                 0.0025
  
@@ -80,11 +80,14 @@ def testAll(argv=None):
 
     # These were discovered using analyseSims = True above.
     # They need to hold for all simulators
-    times = [106.88, 118.28, 129.407, 140.497, 151.601, 162.725, 173.878, 185.066, 196.292, 207.545, 218.826, 230.141, 241.486, 252.861, 264.263, 275.701, 287.158, 298.649, 310.163, 321.705, 333.277, 344.872, 356.49, 368.135, 379.804, 391.5, 403.219, 414.956, 426.72, 438.511, 450.318, 462.146, 473.996, 485.873, 497.767, 509.675, 521.611, 533.563, 545.537, 557.529, 569.539, 581.572, 593.622]
-    spikeTimesToCheck = {'pyramidals_0': times,
-                         'pyramidals_GEN_0': times}
+    pyr_times = [106.83, 126.59, 149.69, 176.83, 206.94, 238.54, 270.78, 303.27, 335.85, 368.45, 401.03, 433.57, 466.05, 498.49, 530.88, 563.24, 595.56]
+    bask_times = [112.66, 131.97, 151.27, 170.57, 189.87, 209.17, 228.48, 247.78, 267.08, 286.38, 305.68, 324.98, 344.29, 363.59, 382.89, 402.19, 421.49, 440.80, 460.1, 479.4, 498.7, 518.0, 537.3, 556.6, 575.91, 595.21]
+    spikeTimesToCheck = {'pyramidals_0': pyr_times,
+                         'pyramidals_GEN_0': pyr_times,
+                         'baskets_0': bask_times,
+                         'baskets_GEN_0': bask_times}
 
-    spikeTimeAccuracy = 1.05
+    spikeTimeAccuracy = 1
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)

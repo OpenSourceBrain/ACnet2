@@ -46,8 +46,8 @@
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
             <DerivedVariable name="ca_conc" dimension="none" value="caConc / CONC_SCALE"/>
             <ConditionalDerivedVariable name="r" exposure="r" dimension="per_time">
-                <Case condition="ca_conc  .lt. ( 500.0 )" value="( 0.02 * ca_conc ) / TIME_SCALE"/>
-                <Case value="( 10) / TIME_SCALE"/>
+                <Case condition="ca_conc  .lt. ( 500.0 )" value="( 0.4 * ca_conc ) / TIME_SCALE"/>
+                <Case value="( 200) / TIME_SCALE"/>
             </ConditionalDerivedVariable>
         </Dynamics>
 
@@ -61,7 +61,7 @@
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
             <DerivedVariable name="ca_conc" dimension="none" value="caConc / CONC_SCALE"/>
-            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(1.0) / TIME_SCALE"/>
+            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(20) / TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>

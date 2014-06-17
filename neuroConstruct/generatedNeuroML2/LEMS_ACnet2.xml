@@ -42,7 +42,7 @@
             <Line id="VOLTAGE-pyramidal_soma_0" timeScale="1ms" quantity="pyramidal_soma/0/pyr_4_sym_soma/v" scale="1 mV" color="#000000"/>
         </Display>
     
-        <Display id="GraphWin_12" title="ACnet2: TestSoma, pyramidal_soma, Ca_conc:CONC:ca" xmin="-70.0" xmax="770.0" ymin="-3.0000003E-6" ymax="3.3E-5" timeScale="1ms">
+        <Display id="GraphWin_12" title="ACnet2: TestSoma, pyramidal_soma, Ca_conc:CONC:ca" xmin="-70.0" xmax="770.0" ymin="-1E-5" ymax="9E-5" timeScale="1ms">
             <Line id="Ca_conc_CONC_ca-pyramidal_soma_0" timeScale="1ms" quantity="pyramidal_soma/0/pyr_4_sym_soma/caConc" scale="1 mol_per_cm3" color="#000000"/>
         </Display>
     

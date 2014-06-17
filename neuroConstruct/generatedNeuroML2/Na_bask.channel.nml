@@ -31,8 +31,8 @@
         </annotation>
 
         <gate id="m" type="gateHHrates" instances="3">
-            <forwardRate type="HHExpLinearRate" rate="1.28e3per_s" scale="0.004V" midpoint="-5e-2V"/>
-            <reverseRate type="HHExpLinearRate" rate="1.4e3per_s" scale="-0.005V" midpoint="-2.3e-2V"/>
+            <forwardRate type="HHExpLinearRate" rate="2560per_s" scale="0.004V" midpoint="-5e-2V"/>
+            <reverseRate type="HHExpLinearRate" rate="2800per_s" scale="-0.005V" midpoint="-2.3e-2V"/>
         </gate>
 
         <gate id="h" type="gateHHrates" instances="1">
@@ -48,7 +48,7 @@
 
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
-            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(9.93908245804491* (exp (-55.5555555555556*V))) / TIME_SCALE"/>
+            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(2 * 9.93908245804491 * (exp (-55.5555555555556*V))) / TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>
@@ -59,7 +59,7 @@
 
         <Dynamics>
             <DerivedVariable name="V" dimension="none" value="v / VOLT_SCALE"/>
-            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(4000.0/(0.0100518357446336* (exp (-200.0*V)) + 1.0)) / TIME_SCALE"/>
+            <DerivedVariable name="r" exposure="r" dimension="per_time" value="(2 * 4000.0/(0.0100518357446336* (exp (-200.0*V)) + 1.0)) / TIME_SCALE"/>
         </Dynamics>
 
     </ComponentType>

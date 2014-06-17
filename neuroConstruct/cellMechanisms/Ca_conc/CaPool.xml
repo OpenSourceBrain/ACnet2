@@ -50,7 +50,7 @@
 
         <ion_species name="ca"/>
         
-        <decaying_pool_model resting_conc ="0.0" decay_constant="0.01333">
+        <decaying_pool_model resting_conc ="0.0" decay_constant="0.1">
             
             <fixed_pool_info>
                 <!-- this value is divided by the compt area to get the

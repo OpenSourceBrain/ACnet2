@@ -16,6 +16,7 @@
    http://cns.iaf.cnrs-gif.fr
 */
 
+
 // passive membrane parameters
 float   CM
 float   RA
@@ -48,6 +49,9 @@ function make_%Name%
                 return
     end
 
+    /* This version scales the tau values by 0.5 */
+    float tau_scale = 0.5
+
     create tabchannel {chanpath}
     setfield ^  \
         Ek      {ENA}   \               //      V
@@ -59,11 +63,11 @@ function make_%Name%
         Zpower  0
 
     setupalpha {chanpath} X  \
-        {320e3  * (0.013 + EREST_ACT)}                 \
-        -320e3 -1.0 {-1.0   * (0.013 + EREST_ACT)}     \
+        {(320e3  * (0.013 + EREST_ACT))/{tau_scale}}                 \
+        {-320e3/{tau_scale}} -1.0 {-1.0   * (0.013 + EREST_ACT)}     \
         -0.004                                          \
-        {-280e3 * (0.040 + EREST_ACT)}                 \
-        280e3                                           \
+        {(-280e3 * (0.040 + EREST_ACT))/{tau_scale}}                 \
+        {280e3/{tau_scale}}                         \
         -1.0                                            \
         {-1.0   * (0.040 + EREST_ACT)}                 \
         5.0e-3
@@ -72,12 +76,12 @@ function make_%Name%
     // float offset = -0.010 
     float offset = 0.0 
     setupalpha {chanpath} Y  \
-        128.0                           \
+        {128.0/{tau_scale}}                           \
         0.0                             \
         0.0                             \
         {-1.0 * (0.017 + EREST_ACT + offset)}    \
         0.018                           \
-        4.0e3                           \
+        {4.0e3/{tau_scale}}                        \
         0.0                             \
         1.0                             \
         {-1.0 * (0.040 + EREST_ACT + offset)}    \

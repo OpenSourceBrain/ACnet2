@@ -90,7 +90,7 @@ function make_%Name%
     end
         create Ca_concen {chanpath}
         setfield {chanpath} \
-                tau     0.01333   \      // sec
+                tau     0.1   \      // sec
                 B       17.402e12 \      // Curr to conc for soma
                 Ca_base 0.0
         addfield {chanpath} addmsg1

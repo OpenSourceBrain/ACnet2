@@ -49,6 +49,9 @@ function make_%Name%
                 return
     end
 
+    /* This version scales the tau values by 0.5 */
+    float tau_scale = 0.5
+            
     create tabchannel {chanpath}
     setfield ^  \
         Ek      {EK}    \               //      V
@@ -59,12 +62,12 @@ function make_%Name%
         Zpower  0
 
     setupalpha {chanpath} X  \
-        {32e3 * (0.015 + EREST_ACT)}    \
-        -32e3                           \
+        {(32e3 * (0.015 + EREST_ACT))/{tau_scale}}    \
+        {-32e3/{tau_scale}}                        \
         -1.0                            \
         {-1.0 * (0.015 + EREST_ACT) }   \
         -0.005                          \
-        500                             \
+        {500/{tau_scale}}                \
         0.0                             \
         0.0                             \
         {-1.0 * (0.010 + EREST_ACT) }   \

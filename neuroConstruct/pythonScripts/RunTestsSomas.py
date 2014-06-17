@@ -37,7 +37,7 @@ simConfigs = []
 simConfigs.append("TestSoma")
 
 simDt =                 0.0025
-simDtOverride =         {"LEMS":0.001}
+simDtOverride =         {"LEMS":0.0005}
 
 simulators =            ["NEURON", "GENESIS_PHYS", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI", "LEMS"]
 simulators =            ["NEURON", "GENESIS_SI", "MOOSE_PHYS", "MOOSE_SI", "LEMS"]
@@ -82,9 +82,11 @@ def testAll(argv=None):
 
     # These were discovered using analyseSims = True above.
     # They need to hold for all simulators
-    spikeTimesToCheck = {'basket_soma_0': [110.0975, 131.0075, 151.915, 172.8225, 193.73, 214.6375, 235.5475, 256.455, 277.3625, 298.27, 319.1775, 340.0875, 360.995, 381.9025, 402.81, 423.72, 444.6275, 465.535, 486.4425, 507.35, 528.26, 549.1675, 570.075, 590.9825]}
+    spikeTimesToCheck = {'basket_soma_0': [109.942, 128.412, 146.881, 165.352, 183.823, 202.293, 220.763, 239.233, 257.703, 276.173, 294.643, 313.114, 331.584, 350.054, 368.524, 386.994, 405.464, 423.935, 442.404, 460.874, 479.345, 497.815, 516.284, 534.755, 553.226, 571.696, 590.167],
+                         'pyramidal_soma_0': [102.484, 120.743, 148.434, 255.779, 330.06, 407.046, 483.384, 559.674]}
 
-    spikeTimeAccuracy = 1.1  # Large due to LEMS...
+    #spikeTimeAccuracy = 0.3
+    spikeTimeAccuracy = 1.6  # Large due to LEMS...
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)
