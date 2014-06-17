@@ -4,7 +4,7 @@
     <meta:notes>ChannelML file describing a single synaptic mechanism</meta:notes>
     
      
-    <synapse_type name="AMPA_syn_inh">
+    <synapse_type name="AMPA_background">
         
         <status value="stable">
             <meta:contributor>
@@ -22,7 +22,7 @@
             <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/receptors2.asp</meta:uri>
         </meta:neuronDBref>
         
-       <doub_exp_syn max_conductance="0.15e-9" rise_time="0.003" decay_time="0.003" reversal_potential="0.0"/>
+       <doub_exp_syn max_conductance="80e-9" rise_time="0.003" decay_time="0.003" reversal_potential="0.0"/>
     
     </synapse_type>
         

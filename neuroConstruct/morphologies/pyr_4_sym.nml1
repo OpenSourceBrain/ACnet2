@@ -99,12 +99,14 @@
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
                     <meta:group>basal_dends</meta:group>
+                    <meta:group>basal_gaba_input</meta:group>
                 </mml:cable>
 
                 <mml:cable id="7" name="basal1">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
                     <meta:group>basal_dends</meta:group>
+                    <meta:group>background_input</meta:group>
                 </mml:cable>
 
                 <mml:cable id="8" name="basal2">
@@ -194,7 +196,7 @@ The scaling factor for converting current into change in ion concentration shoul
                 <net:potential_syn_loc synapse_type="AMPA_syn">
                     <net:group>soma_group</net:group>
                 
-                    <net:group>apical_dends</net:group>
+                    <net:group>middle_apical_dendrite</net:group>
                 </net:potential_syn_loc>
             
                 <net:potential_syn_loc synapse_type="AMPA_syn_inh" synapse_direction="preAndOrPost">
@@ -202,7 +204,7 @@ The scaling factor for converting current into change in ion concentration shoul
                 </net:potential_syn_loc>
             
                 <net:potential_syn_loc synapse_type="GABA_syn">
-                    <net:group>basal_dends</net:group>
+                    <net:group>basal_gaba_input</net:group>
                 </net:potential_syn_loc>
             </connectivity>
 

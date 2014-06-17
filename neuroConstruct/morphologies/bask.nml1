@@ -86,6 +86,10 @@
                 <net:potential_syn_loc synapse_type="GABA_syn" synapse_direction="preAndOrPost">
                     <net:group>soma_group</net:group>
                 </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="GABA_syn_inh" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
             </connectivity>
 
         </cell>
