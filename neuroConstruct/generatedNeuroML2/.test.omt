@@ -15,7 +15,7 @@ implements:
       spike detection: 
         method: threshold
         threshold: 0
-      tolerance: 0.1
+      tolerance: 1e-5
   experiment: Current clamp basket
   observables:
     spike times:
@@ -26,4 +26,4 @@ implements:
       spike detection: 
         method: threshold
         threshold: 0
-      tolerance: 0.1
+      tolerance: 1e-5
