@@ -1,9 +1,6 @@
-#
+# -*- coding: utf-8 -*-
 #
 #   A file which generates a frequency vs current curve for a cell in this project
-#   
-#   To execute this file, type '..\..\..\nC.bat -python CreateFI.py' (Windows)
-#   or '../../../nC.sh -python CreateFI.py' (Linux/Mac)
 #
 #   Author: Padraig Gleeson
 #
@@ -17,11 +14,12 @@ import sys
 import os
 
 try:
-	from java.io import File
+    from java.io import File
 except ImportError:
-	print "Note: this file should be run using ..\\..\\..\\nC.bat -python XXX.py' or '../../../nC.sh -python XXX.py'"
-	print "See http://www.neuroconstruct.org/docs/python.html for more details"
-	quit()
+    print "Note: this file should be run using 'nC.bat -python XXX.py' or 'nC.sh -python XXX.py'"
+    print "which use Jython (and so can access the Java classes in nC), as opposed to standard C based Python"
+    print "See http://www.neuroconstruct.org/docs/python.html for more details"
+    quit()
 
 from math import *
 

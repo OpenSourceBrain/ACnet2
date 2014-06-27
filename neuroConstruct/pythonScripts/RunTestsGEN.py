@@ -1,10 +1,6 @@
+# -*- coding: utf-8 -*-
 #
-#
-#   File to test current configuration of this neuroConstruct project. 
-#
-#   To execute this type of file, type '..\..\..\nC.bat -python XXX.py' (Windows)
-#   or '../../../nC.sh -python XXX.py' (Linux/Mac). Note: you may have to update the
-#   NC_HOME and NC_MAX_MEMORY variables in nC.bat/nC.sh
+#   File to compare the behaviour of cells using original GENESIS channels & nC generated code based on ChannelML
 #
 #   Author: Padraig Gleeson
 #
@@ -20,7 +16,8 @@ import os
 try:
     from java.io import File
 except ImportError:
-    print "Note: this file should be run using ..\\..\\..\\nC.bat -python XXX.py' or '../../../nC.sh -python XXX.py'"
+    print "Note: this file should be run using 'nC.bat -python XXX.py' or 'nC.sh -python XXX.py'"
+    print "which use Jython (and so can access the Java classes in nC), as opposed to standard C based Python"
     print "See http://www.neuroconstruct.org/docs/python.html for more details"
     quit()
 
