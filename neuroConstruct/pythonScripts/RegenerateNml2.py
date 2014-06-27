@@ -34,7 +34,7 @@ nc.generateNeuroML2(projFile, simConfigs)
 
 # Some extra files have been committed for testing or to provide other LEMS/NeuroML 2 examples
 # This just pulls them from the repository, since they get wiped by the generateNeuroML2 function 
-extra_files = ['.test.omt', 'LargeNet.net.nml', 'TwoCell.net.nml', 'bask.cell.nml', 'pyr_4_sym.cell.nml']
+extra_files = ['.test.*', 'LargeNet.net.nml', 'TwoCell.net.nml', 'bask.cell.nml', 'pyr_4_sym.cell.nml']
 if len(sys.argv)==2 and sys.argv[1] == "-f":
     extra_files.append('ACnet2.net.nml')
     extra_files.append('LEMS_ACnet2.xml')
