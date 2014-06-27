@@ -13,6 +13,9 @@ install:
 
 script:
     - omv all
+    - pwd
+    - ls -al
+    - ls -al neuroConstruct/generatedNeuroML2
     
     
 
