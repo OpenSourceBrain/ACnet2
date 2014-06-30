@@ -140,7 +140,7 @@ def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_
                             post_fraction_along=0.5)
 
     projection.connections.append(connection)
-'''
+
 for i in range(0, XSCALE_ex) :
     for j in range(0, ZSCALE_ex) :
         x = i*xSpacing_ex
@@ -193,7 +193,7 @@ for i in range(0, XSCALE_ex) :
 
                     exc_inh_conn_number[i][j] = exc_inh_conn_number[i][j] + 1
 
-'''
+
 inh_exc_conn_number =  [[0 for x in xrange(ZSCALE_inh)] for x in xrange(XSCALE_inh)]
 inh_inh_conn_number =  [[0 for x in xrange(ZSCALE_inh)] for x in xrange(XSCALE_inh)]
    
@@ -205,7 +205,7 @@ for i in range(0, XSCALE_inh) :
         y = j*zSpacing_inh
         index = i*ZSCALE_inh + j 
         print("Looking at connections for inh cell at (%i, %i)"%(i,j))
-        '''
+        
         # inh -> exc  connections
         conn_type = net_conn_inh_exc
         for k in range(0, XSCALE_ex):
@@ -227,7 +227,7 @@ for i in range(0, XSCALE_inh) :
                     add_connection(proj_inh_exc, count_inh_exc, inh_group, inh_group_comp, index, 0, exc_group, exc_group_comp, index2, inh_exc_syn_seg_id)
 
                     inh_exc_conn_number[i][j] = inh_exc_conn_number[i][j] + 1
-        ''' 
+        
         # inh -> inh  connections
         conn_type = net_conn_inh_inh
         for k in range(0, XSCALE_inh) :
@@ -331,12 +331,12 @@ print("Written network file to: "+nml_file)
 
 
 ###### Validate the NeuroML ######    
-
+'''
 from neuroml.utils import validate_neuroml2
-
-#validate_neuroml2(nml_file)
-    
+validate_neuroml2(nml_file) 
 print "-----------------------------------"
+'''
+
 print
 quit()
 
