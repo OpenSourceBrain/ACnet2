@@ -57,6 +57,17 @@ def testAll(argv=None):
     assert(project.genesisSettings.isSymmetricCompartments())
 
     assert(project.genesisSettings.isSIUnits())
+    
+    defSimConfig = project.simConfigInfo.getSimConfig("Default Simulation Configuration")
+    assert(str(defSimConfig.getCellGroups())=='[baskets, pyramidals]')
+    
+    smallNetSimConfig = project.simConfigInfo.getSimConfig("SmallNetwork")
+    
+    assert(smallNetSimConfig.getCellGroups().size()==2)
+    assert(smallNetSimConfig.getNetConns().size()==4)
+    assert(smallNetSimConfig.getInputs().size()==1)
+    assert(project.cellGroupsInfo.getCellPackingAdapter("pyramidals_48").getMaxNumberCells()==48)
+    assert(project.cellGroupsInfo.getCellPackingAdapter("baskets_12").getMaxNumberCells()==12)
 
     print "\n**************************************"
     print "    All tests passed!"
