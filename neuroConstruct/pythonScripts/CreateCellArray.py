@@ -28,17 +28,21 @@ nml_doc = NeuroMLDocument(id=network_id)
 net = Network(id=network_id)
 nml_doc.networks.append(net)
 
-# Get the names of the first Cell Group and Network Connection
+# The names of the cell type/component used in the Exc & Inh populations (Cell Type in neuroConstruct)
+exc_group_component = "pyr_4_sym"
+inh_group_component = "basket"
+
+# The names of the Exc & Inh groups/populations (Cell Group in neuroConstruct)
 exc_group = "pyramidals_48" #"pyramidals48x48"
 inh_group = "baskets_12" #"baskets24x24"
-exc_group_comp = "pyr_4_sym"
-inh_group_comp = "basket"
 
+# The names of the network connections (should match names at Network tab in neuroConstruct)
 net_conn_exc_exc = "SmallNet_pyr_pyr"
 net_conn_exc_inh = "SmallNet_pyr_bask"
 net_conn_inh_exc = "SmallNet_bask_pyr"
 net_conn_inh_inh = "SmallNet_bask_bask"
 
+# The names of the synapse types (should match names at Cell Mechanism/Network tabs in neuroConstruct)
 exc_exc_syn = "AMPA_syn"
 exc_exc_syn_seg_id = 3       # Middle apical dendrite
 exc_inh_syn = "AMPA_syn_inh"
@@ -74,7 +78,7 @@ connection_probability_inh_inh = 0.6
 
 # Generate excitatory cells 
 
-exc_pop = Population(id=exc_group, component=exc_group_comp, type="populationList", size=XSCALE_ex*ZSCALE_ex)
+exc_pop = Population(id=exc_group, component=exc_group_component, type="populationList", size=XSCALE_ex*ZSCALE_ex)
 net.populations.append(exc_pop)
 
 for i in range(0, XSCALE_ex) :
@@ -92,7 +96,7 @@ for i in range(0, XSCALE_ex) :
 
 # Generate inhibitory cells
 
-inh_pop = Population(id=inh_group, component=inh_group_comp, type="populationList", size=XSCALE_inh*ZSCALE_inh)
+inh_pop = Population(id=inh_group, component=inh_group_component, type="populationList", size=XSCALE_inh*ZSCALE_inh)
 net.populations.append(inh_pop)
 
 for i in range(0, XSCALE_inh) :
@@ -166,7 +170,7 @@ for i in range(0, XSCALE_ex) :
                     index2 = k*ZSCALE_ex + l 
                     count_exc_exc+=1
 
-                    add_connection(proj_exc_exc, count_exc_exc, exc_group, exc_group_comp, index, 0, exc_group, exc_group_comp, index2, exc_exc_syn_seg_id)
+                    add_connection(proj_exc_exc, count_exc_exc, exc_group, exc_group_component, index, 0, exc_group, exc_group_component, index2, exc_exc_syn_seg_id)
 
                     exc_exc_conn_number[i][j] = exc_exc_conn_number[i][j] + 1
 	    
@@ -189,7 +193,7 @@ for i in range(0, XSCALE_ex) :
                     index2 = k*ZSCALE_inh + l 
                     count_exc_inh+=1
 
-                    add_connection(proj_exc_inh, count_exc_inh, exc_group, exc_group_comp, index, 0, inh_group, inh_group_comp, index2, exc_inh_syn_seg_id)
+                    add_connection(proj_exc_inh, count_exc_inh, exc_group, exc_group_component, index, 0, inh_group, inh_group_component, index2, exc_inh_syn_seg_id)
 
                     exc_inh_conn_number[i][j] = exc_inh_conn_number[i][j] + 1
 
@@ -224,7 +228,7 @@ for i in range(0, XSCALE_inh) :
                     index2 = k*ZSCALE_ex + l 
                     count_inh_exc+=1
 
-                    add_connection(proj_inh_exc, count_inh_exc, inh_group, inh_group_comp, index, 0, exc_group, exc_group_comp, index2, inh_exc_syn_seg_id)
+                    add_connection(proj_inh_exc, count_inh_exc, inh_group, inh_group_component, index, 0, exc_group, exc_group_component, index2, inh_exc_syn_seg_id)
 
                     inh_exc_conn_number[i][j] = inh_exc_conn_number[i][j] + 1
         
@@ -246,7 +250,7 @@ for i in range(0, XSCALE_inh) :
                     index2 = k*ZSCALE_inh + l 
                     count_inh_inh+=1
                     
-                    add_connection(proj_inh_inh, count_inh_inh, inh_group, inh_group_comp, index, 0, inh_group, inh_group_comp, index2, inh_inh_syn_seg_id)
+                    add_connection(proj_inh_inh, count_inh_inh, inh_group, inh_group_component, index, 0, inh_group, inh_group_component, index2, inh_inh_syn_seg_id)
                     
                     inh_inh_conn_number[i][j] = inh_inh_conn_number[i][j] + 1
 
