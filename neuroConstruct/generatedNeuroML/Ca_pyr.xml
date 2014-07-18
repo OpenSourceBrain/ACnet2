@@ -30,7 +30,7 @@
 
         <meta:publication>
             <meta:fullTitle>Traub, R. D., Wong, R. K., Miles, R., and Michelson, H. (1991). A model of a CA3 hippocampal pyramidal neuron incorporating voltage-clamp data on intrinsic conductances. Journal of neurophysiology, 66(2), 635-50.</meta:fullTitle>
-<meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/1663538</meta:pubmedRef>
+            <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/1663538</meta:pubmedRef>
         </meta:publication>
 
         <meta:neuronDBref>
@@ -40,11 +40,11 @@
         </meta:neuronDBref>
         
         <current_voltage_relation cond_law="ohmic"
-				  ion="ca"
-				  charge="2"
-				  default_erev="0.08"
-				  fixed_erev="yes"
-				  default_gmax="1.328e-07"> 
+                                  ion="ca"
+                                  charge="2"
+                                  default_erev="0.08"
+                                  fixed_erev="yes"
+                                  default_gmax="1.328e-07"> 
             
             <gate name="m" instances="2">
                 <closed_state id="m0"/>
@@ -58,16 +58,16 @@
                 <closed_state id="h0"/>
                 <open_state id="h"/>
 
-		<time_course name="tau" from="hc" to="h" expr_form="generic" expr="0.2"/>
-		<steady_state name="inf" from="hc" to="h" expr_form="generic" expr="v &gt; -0.06 ? (exp (-50*(v + 0.06))) : 1"/>
+                <time_course name="tau" from="h0" to="h" expr_form="generic" expr="0.2"/>
+                <steady_state name="inf" from="h0" to="h" expr_form="generic" expr="v &gt; -0.06 ? (exp (-50*(v + 0.06))) : 1"/>
 
             </gate>
             
         </current_voltage_relation>
 
-	<impl_prefs>
-	  <table_settings max_v="0.05" min_v="-0.1" table_divisions="3000"/>
-	</impl_prefs>
+        <impl_prefs>
+            <table_settings max_v="0.05" min_v="-0.1" table_divisions="3000"/>
+        </impl_prefs>
         
         
     </channel_type>

@@ -7,6 +7,7 @@
         
         <status value="stable">
             <meta:comment>Transcribed from the Genesis implementation of David Beeman</meta:comment>
+            <meta:comment>Added extra scaling factor of 2 as used in protodefs.g</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>
@@ -45,17 +46,22 @@
                 <open_state id="m"/>
 
                 <!-- <transition name="alpha" from="m0" to="m" expr_form="generic" expr="(-320000.0*v - 16000.0)/(3.72665317207867e-6* (exp (-250.0*v)) - 1.0)"/>   -->
-                <transition name="alpha" from="m0" to="m" expr_form="exp_linear" rate="1.28e3" scale="4e-3" midpoint="-5e-2"/>  
+                
+                <!-- PG: Added extra scaling factor of 2 as used in protodefs.g -->
+                <transition name="alpha" from="m0" to="m" expr_form="exp_linear" rate="2560" scale="4e-3" midpoint="-5e-2"/>  
+                
                 <!-- <transition name="beta" from="m" to="m0" expr_form="generic" expr="(280000.0*v + 6440.0)/(99.4843156419338* (exp (200.0*v)) - 1.0)"/>   -->
-                <transition name="beta" from="m" to="m0" expr_form="exp_linear" rate="1.4e3" scale="-5e-3" midpoint="-2.3e-2"/>  
+                
+                <!-- PG: Added extra scaling factor of 2 as used in protodefs.g -->
+                <transition name="beta" from="m" to="m0" expr_form="exp_linear" rate="2800" scale="-5e-3" midpoint="-2.3e-2"/>  
             </gate>
            
             <gate name="h" instances="1">
                 <closed_state id="h0"/>
                 <open_state id="h"/>
 
-                <transition name="alpha" from="h0" to="h" expr_form="generic" expr="9.93908245804491* (exp (-55.5555555555556*v))"/>  
-                <transition name="beta" from="h" to="h0" expr_form="generic" expr="4000.0/(0.0100518357446336* (exp (-200.0*v)) + 1.0)"/>    
+                <transition name="alpha" from="h0" to="h" expr_form="generic" expr="2 * 9.93908245804491 * (exp (-55.5555555555556*v))"/>  
+                <transition name="beta" from="h" to="h0" expr_form="generic" expr="2 * 4000.0/(0.0100518357446336* (exp (-200.0*v)) + 1.0)"/>    
             </gate>
             
         </current_voltage_relation>

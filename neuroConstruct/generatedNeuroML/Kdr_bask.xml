@@ -7,6 +7,7 @@
         
         <status value="stable">
             <meta:comment>Transcribed from the Genesis implementation of David Beeman</meta:comment>
+            <meta:comment>Added extra scaling factor of 2 as used in protodefs.g</meta:comment>
             <meta:contributor>
                 <meta:name>Padraig Gleeson</meta:name>
             </meta:contributor>
@@ -44,8 +45,9 @@
                 <closed_state id="n0"/>
                 <open_state id="n"/>
 
-                <transition name="alpha" from="n0" to="n" expr_form="exp_linear" rate="1.6e2" scale="5e-3" midpoint="-4.8e-2"/>  
-                <transition name="beta" from="n" to="n0" expr_form="exponential" rate="5e2" scale="-4e-2" midpoint="-5.3e-2"/>  
+                <!--  Added extra scaling factor of 2 as used in protodefs.g -->
+                <transition name="alpha" from="n0" to="n" expr_form="exp_linear" rate="320" scale="5e-3" midpoint="-4.8e-2"/>  
+                <transition name="beta" from="n" to="n0" expr_form="exponential" rate="1000" scale="-4e-2" midpoint="-5.3e-2"/>  
             </gate>
            
             

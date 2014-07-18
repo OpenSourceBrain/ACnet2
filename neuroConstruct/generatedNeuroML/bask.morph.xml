@@ -78,7 +78,19 @@
                     </bio:parameter>
                 </bio:init_memb_potential></biophysics>
 
-            <connectivity/>
+            <connectivity>
+                <net:potential_syn_loc synapse_type="AMPA_syn_inh" synapse_direction="post">
+                    <net:group>dendrite_group</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="GABA_syn" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="GABA_syn_inh" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            </connectivity>
 
         </cell>
     </cells>

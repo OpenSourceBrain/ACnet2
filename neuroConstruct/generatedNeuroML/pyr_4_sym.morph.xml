@@ -66,41 +66,53 @@
                 <mml:cable id="1" name="apical0">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="2" name="apical2">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="3" name="apical3">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
+                    <meta:group>middle_apical_dendrite</meta:group>
                 </mml:cable>
 
                 <mml:cable id="4" name="apical4">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="5" name="apical1">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>thalamic_input</meta:group>
+                    <meta:group>apical_dends</meta:group>
                 </mml:cable>
 
                 <mml:cable id="6" name="basal0" fract_along_parent="0.0">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>basal_dends</meta:group>
+                    <meta:group>basal_gaba_input</meta:group>
                 </mml:cable>
 
                 <mml:cable id="7" name="basal1">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>basal_dends</meta:group>
+                    <meta:group>background_input</meta:group>
                 </mml:cable>
 
                 <mml:cable id="8" name="basal2">
                     <meta:group>all</meta:group>
                     <meta:group>dendrite_group</meta:group>
+                    <meta:group>basal_dends</meta:group>
                 </mml:cable>
 
             </mml:cables>
@@ -114,7 +126,7 @@ The scaling factor for converting current into change in ion concentration shoul
  determined from ChannelML file for the CaPool...-->
 
                     <bio:parameter name="gmax" value="0.0">
-                        <bio:group>all</bio:group>
+                        <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 </bio:mechanism>
 
@@ -167,9 +179,34 @@ The scaling factor for converting current into change in ion concentration shoul
                     <bio:parameter value="-65.0">
                         <bio:group>all</bio:group>
                     </bio:parameter>
-                </bio:init_memb_potential></biophysics>
+                </bio:init_memb_potential>
 
-            <connectivity/>
+                <bio:ion_props name="ca">
+                    <bio:parameter name="conc_e" value="3.0E-6">
+                        <bio:group>soma_group</bio:group>
+                    </bio:parameter>
+                
+                    <bio:parameter name="conc_i" value="5.0E-11">
+                        <bio:group>soma_group</bio:group>
+                    </bio:parameter>
+                </bio:ion_props>
+            </biophysics>
+
+            <connectivity>
+                <net:potential_syn_loc synapse_type="AMPA_syn">
+                    <net:group>soma_group</net:group>
+                
+                    <net:group>middle_apical_dendrite</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="AMPA_syn_inh" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="GABA_syn">
+                    <net:group>basal_gaba_input</net:group>
+                </net:potential_syn_loc>
+            </connectivity>
 
         </cell>
     </cells>

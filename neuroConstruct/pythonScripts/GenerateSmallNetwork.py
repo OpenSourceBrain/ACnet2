@@ -57,7 +57,7 @@ def testAll(argv=None):
 
     if len(argv)==1:
         print("\nNo options specified! Run this file using\n" + \
-              "   nC.sh -python %s [-neuron|-genesis|-neuroml2]\n"%argv[0])
+              "   nC.sh -python %s [-neuron|-genesis]\n"%argv[0])
         quit()
     
     if '-neuron' in argv:
@@ -67,7 +67,7 @@ def testAll(argv=None):
         
         
     if '-neuroml2' in argv:
-        
+        # Not yet working...
         nc.generateNeuroML2(projFile, simConfigs)
     
     if len(simulators)>0:
