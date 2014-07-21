@@ -1,3 +1,5 @@
+/neuroConstruct/generatedNeuroML2/clean.sh
+/neuroConstruct/generatedNeuroML2/*.lems
 /neuroConstruct/pythonScripts/ACNet2_Full.net.nml
 /neuroConstruct/generatedNeuroML2/*.dat
 /neuroConstruct/generatedNeuroML2/*.props

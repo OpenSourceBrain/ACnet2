@@ -1,7 +1,7 @@
-# Script for running automated tests on OSB using Travis-CI, see https://github.com/borismarin/osb-model-validation
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
 # Still in development, subject to change without notice!!
 
-target: LEMS_ACnet2.xml
+target: LEMS_ACnet2_LowDt.xml
 engine: jNeuroML
 implements:
   mep: .test.mep
@@ -26,4 +26,4 @@ implements:
       spike detection:
         method: threshold
         threshold: 0
-      tolerance: 1e-5
+      tolerance: 0.004

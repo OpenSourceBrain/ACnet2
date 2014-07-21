@@ -1,29 +1,29 @@
-# Script for running automated tests on OSB using Travis-CI, see https://github.com/borismarin/osb-model-validation
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
 # Still in development, subject to change without notice!!
 
-target: LEMS_ACnet2.xml
+target: LEMS_ACnet2_LowDt.xml
 engine: jNeuroML_NEURON
-#implements:
-# mep: .test.mep
-# experiment: Current clamp pyramidal
-# observables:
-# spike times:
-# file:
-# path: pyramidal_soma_0.dat
-# columns: [0,1]
-# scaling: [1000, 1000]
-# spike detection:
-# method: threshold
-# threshold: 0
-# tolerance: 1e-5
-# experiment: Current clamp basket
-# observables:
-# spike times:
-# file:
-# path: basket_soma_0.dat
-# columns: [0,1]
-# scaling: [1000, 1000]
-# spike detection:
-# method: threshold
-# threshold: 0
-# tolerance: 1e-5
+implements:
+  mep: .test.mep
+  experiment: Current clamp pyramidal
+  observables:
+    spike times:
+      file:
+        path: pyramidal_soma_0.dat
+        columns: [0,1]
+        scaling: [1000, 1000]
+      spike detection:
+        method: threshold
+        threshold: 0
+      tolerance: 1e-5
+  experiment: Current clamp basket
+  observables:
+    spike times:
+      file:
+        path: basket_soma_0.dat
+        columns: [0,1]
+        scaling: [1000, 1000]
+      spike detection:
+        method: threshold
+        threshold: 0
+      tolerance: 1e-5
