@@ -3,27 +3,27 @@
 
 target: LEMS_ACnet2_LowDt.xml
 engine: jNeuroML
-implements:
-  mep: .test.mep
-  experiment: Current clamp pyramidal
-  observables:
-    spike times:
-      file:
-        path: pyramidal_soma_0.dat
-        columns: [0,1]
-        scaling: [1000, 1000]
-      spike detection:
-        method: threshold
-        threshold: 0
-      tolerance: 1e-5
-  experiment: Current clamp basket
-  observables:
-    spike times:
-      file:
-        path: basket_soma_0.dat
-        columns: [0,1]
-        scaling: [1000, 1000]
-      spike detection:
-        method: threshold
-        threshold: 0
-      tolerance: 0.004
+mep: .test.mep
+experiments:
+  Current clamp pyramidal:
+    observables:
+      spike times:
+        file:
+          path: pyramidal_soma_0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 1e-5
+    experiment: Current clamp basket
+    observables:
+      spike times:
+        file:
+          path: basket_soma_0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.004
