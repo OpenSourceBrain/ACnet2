@@ -147,6 +147,7 @@
                         <bio:group>soma_group</bio:group>
                     </bio:parameter>
                 </bio:mechanism>
+                
 
                 <bio:spec_capacitance>
                     <bio:parameter value="2.84">

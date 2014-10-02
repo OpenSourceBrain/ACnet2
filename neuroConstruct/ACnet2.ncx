@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.7.0_55" class="java.beans.XMLDecoder">
+<java version="1.7.0_65" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -882,7 +882,7 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
       <string>baskets_v</string>
      </void>
      <void property="segmentId">
-      <string>0</string>
+      <string>*</string>
      </void>
     </object>
    </void>
@@ -910,7 +910,7 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
       <string>pyramidals_v</string>
      </void>
      <void property="segmentId">
-      <string>0</string>
+      <string>*</string>
      </void>
     </object>
    </void>
@@ -2131,6 +2131,10 @@ See http://opensourcebrain.org/projects/acnet2 for more details.
     <string></string>
    </void>
    <void method="put">
+    <int>-1</int>
+    <string></string>
+   </void>
+   <void method="put">
     <int>1</int>
     <string>#SIM_CONFIG_INCLUDE TestPyramidals_GEN
 #SIM_CONFIG_INCLUDE TestCells
@@ -2139,10 +2143,6 @@ setfield B 7.769000247e+12
 
 #END_SIM_CONFIG_INCLUDE TestCells
 #END_SIM_CONFIG_INCLUDE TestPyramidals_GEN</string>
-   </void>
-   <void method="put">
-    <int>-1</int>
-    <string></string>
    </void>
   </void>
   <void property="symmetricCompartments">
@@ -2161,7 +2161,7 @@ setfield B 7.769000247e+12
    <float>0.8</float>
   </void>
   <void property="reference">
-   <string>Sim_386</string>
+   <string>Sim_389</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>

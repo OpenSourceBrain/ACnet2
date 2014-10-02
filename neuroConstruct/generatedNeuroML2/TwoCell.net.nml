@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="network_ACnet2">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="network_ACnet2">
 
     <notes>
 
-Network structure (NeuroML 2beta3) for project: ACnet2 saved with neuroConstruct v1.7.1 on: 16:39:16, 03-Jun-14
+Network structure (NeuroML 2beta4) for project: ACnet2 saved with neuroConstruct v1.7.1 on: 15:53:21, 02-Oct-14
 
 Cell Group: pyramidals contains 1 cells
 Cell Group: baskets contains 1 cells
@@ -25,11 +25,11 @@ Cell Group: baskets contains 1 cells
     <include href="Na_pyr.channel.nml"/>
     <include href="pyr_4_sym.cell.nml"/>
 
-    <pulseGenerator id="Input_1" delay="100.0ms" duration="500.0ms" amplitude="6.0E-4uA"/>
+    <pulseGenerator id="Input_1" delay="0.1s" duration="0.5s" amplitude="6.0E-10A"/>
 
     
 
-    <pulseGenerator id="Input_0" delay="100.0ms" duration="500.0ms" amplitude="1.0E-4uA"/>
+    <pulseGenerator id="Input_0" delay="0.1s" duration="0.5s" amplitude="1.0E-10A"/>
 
     
     <network id="network_ACnet2" type="networkWithTemperature" temperature="6.3 degC">
