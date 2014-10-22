@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="Ca_pyr">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Ca_pyr">
 
     <notes>ChannelML file containing a single Calcium Channel description, from the Hippocampal CA3 neuron model presented in Traub et al., 1991.</notes>
 
@@ -30,15 +30,15 @@
             </rdf:RDF>
         </annotation>
 
-        <gate id="m" type="gateHHrates" instances="2">
+        <gateHHrates id="m" instances="2">
             <forwardRate type="HHSigmoidRate" rate="1.6e3per_s" scale="0.01389V" midpoint="5e-03V"/>
             <reverseRate type="HHExpLinearRate" rate="1e2per_s" scale="-0.005V" midpoint="-8.9e-3V"/>
-        </gate>
+        </gateHHrates>
 
-        <gate id="h" type="gateHHtauInf" instances="1">
+        <gateHHtauInf id="h" instances="1">
             <timeCourse type="Ca_pyr_h_tau_tau"/>
             <steadyState type="Ca_pyr_h_inf_inf"/>
-        </gate>
+        </gateHHtauInf>
                             
     </ionChannel>
 
