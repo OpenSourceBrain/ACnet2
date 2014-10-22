@@ -1,0 +1,79 @@
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.githubusercontent.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+    <Target component="sim1" reportFile="/home/padraig/neuroConstruct/osb/cerebral_cortex/networks/ACnet2/neuroConstruct/simulations/Sim_398/simulator.props" timesFile=time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentType definitions-->
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+    
+
+        <!--Include the generated NeuroML 2 files-->
+
+
+        <!--   Channel/synapse files-->
+    <Include file="AMPA_syn.synapse.nml"/>
+    <Include file="AMPA_syn_inh.synapse.nml"/>
+    <Include file="Ca_conc.nml"/>
+    <Include file="Ca_pyr.channel.nml"/>
+    <Include file="GABA_syn.synapse.nml"/>
+    <Include file="GABA_syn_inh.synapse.nml"/>
+    <Include file="Kahp_pyr.channel.nml"/>
+    <Include file="Kdr_bask.channel.nml"/>
+    <Include file="Kdr_pyr.channel.nml"/>
+    <Include file="LeakConductance_bask.channel.nml"/>
+    <Include file="LeakConductance_pyr.channel.nml"/>
+    <Include file="Na_bask.channel.nml"/>
+    <Include file="Na_pyr.channel.nml"/>
+        <!--   Cell files-->
+    <Include file="bask.cell.nml"/>
+    <Include file="pyr_4_sym.cell.nml"/>
+        <!--   Network file-->
+    <Include file="MediumNet.net.nml"/>
+    
+
+        <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
+        is used to allow validation of this file according to the LEMS schema specified above...-->
+    <Component type="Simulation" id="sim1" length="500.0ms" step="0.01ms" target="network_ACnet2">
+        
+        <Display id="baskets_12_v" title="ACnet2: SmallNetwork, baskets_12, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE" xmin="-0.05" xmax="0.55" ymin="-0.104" ymax="0.064" timeScale="1s">
+            <Line id="baskets_12_9 v" timeScale="1s" quantity="baskets_12/9/bask/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="baskets_12_0 v" timeScale="1s" quantity="baskets_12/0/bask/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="baskets_12_2 v" timeScale="1s" quantity="baskets_12/2/bask/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="baskets_12_11 v" timeScale="1s" quantity="baskets_12/11/bask/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="baskets_12_10 v" timeScale="1s" quantity="baskets_12/10/bask/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="baskets_12_6 v" timeScale="1s" quantity="baskets_12/6/bask/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="baskets_12_1 v" timeScale="1s" quantity="baskets_12/1/bask/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="baskets_12_4 v" timeScale="1s" quantity="baskets_12/4/bask/0/v" scale="1 V" color="#ffff00"/>
+        </Display>
+    
+        <Display id="pyramidals_48_v" title="ACnet2: SmallNetwork, pyramidals_48, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE" xmin="-0.05" xmax="0.55" ymin="-0.104" ymax="0.064" timeScale="1s">
+            <Line id="pyramidals_48_36 v" timeScale="1s" quantity="pyramidals_48/36/pyr_4_sym/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="pyramidals_48_8 v" timeScale="1s" quantity="pyramidals_48/8/pyr_4_sym/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="pyramidals_48_43 v" timeScale="1s" quantity="pyramidals_48/43/pyr_4_sym/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="pyramidals_48_6 v" timeScale="1s" quantity="pyramidals_48/6/pyr_4_sym/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="pyramidals_48_23 v" timeScale="1s" quantity="pyramidals_48/23/pyr_4_sym/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="pyramidals_48_44 v" timeScale="1s" quantity="pyramidals_48/44/pyr_4_sym/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="pyramidals_48_24 v" timeScale="1s" quantity="pyramidals_48/24/pyr_4_sym/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="pyramidals_48_35 v" timeScale="1s" quantity="pyramidals_48/35/pyr_4_sym/0/v" scale="1 V" color="#ffff00"/>
+        </Display>
+    </Component>
+
+
+</Lems>
