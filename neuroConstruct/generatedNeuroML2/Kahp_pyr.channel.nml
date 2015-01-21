@@ -30,10 +30,10 @@
             </rdf:RDF>
         </annotation>
 
-        <gateHHrates id="z" instances="1">
+        <gate id="z" type="gateHHrates" instances="1">
             <forwardRate type="Kahp_pyr_z_alpha_rate"/>
             <reverseRate type="Kahp_pyr_z_beta_rate"/>
-        </gateHHrates>
+        </gate>
                             
     </ionChannel>
 

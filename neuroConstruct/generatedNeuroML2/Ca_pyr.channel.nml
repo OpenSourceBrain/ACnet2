@@ -30,15 +30,15 @@
             </rdf:RDF>
         </annotation>
 
-        <gateHHrates id="m" instances="2">
+        <gate id="m" type="gateHHrates" instances="2">
             <forwardRate type="HHSigmoidRate" rate="1.6e3per_s" scale="0.01389V" midpoint="5e-03V"/>
             <reverseRate type="HHExpLinearRate" rate="1e2per_s" scale="-0.005V" midpoint="-8.9e-3V"/>
-        </gateHHrates>
+        </gate>
 
-        <gateHHtauInf id="h" instances="1">
+        <gate id="h" type="gateHHtauInf" instances="1">
             <timeCourse type="Ca_pyr_h_tau_tau"/>
             <steadyState type="Ca_pyr_h_inf_inf"/>
-        </gateHHtauInf>
+        </gate>
                             
     </ionChannel>
 
