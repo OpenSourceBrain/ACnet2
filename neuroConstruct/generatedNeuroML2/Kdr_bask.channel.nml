@@ -5,7 +5,7 @@
 
     <ionChannel id="Kdr_bask" conductance="10pS" type="ionChannelHH" species="k">
 
-        <notes>ChannelML file containing a single Potassium Channel description, from the book Neuronal Networks of the Hippocampus, Traub and Miles 1991</notes>
+        <notes/>
                 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
