@@ -73,6 +73,248 @@
         
             <Line id="pyramidals_48_35 v" timeScale="1s" quantity="pyramidals_48/35/pyr_4_sym/0/v" scale="1 V" color="#ffff00"/>
         </Display>
+
+
+
+<OutputFile id="baskets_12_v_0_0_OF" fileName="baskets_12_0.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/0/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_1_0_OF" fileName="baskets_12_1.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/1/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_2_0_OF" fileName="baskets_12_2.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/2/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_3_0_OF" fileName="baskets_12_3.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/3/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_4_0_OF" fileName="baskets_12_4.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/4/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_5_0_OF" fileName="baskets_12_5.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/5/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_6_0_OF" fileName="baskets_12_6.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/6/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_7_0_OF" fileName="baskets_12_7.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/7/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_8_0_OF" fileName="baskets_12_8.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/8/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_9_0_OF" fileName="baskets_12_9.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/9/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_10_0_OF" fileName="baskets_12_10.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/10/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="baskets_12_v_11_0_OF" fileName="baskets_12_11.0.dat">
+            <OutputColumn id="v" quantity="baskets_12/11/bask/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_0_0_OF" fileName="pyramidals_48_0.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/0/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_1_0_OF" fileName="pyramidals_48_1.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/1/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_2_0_OF" fileName="pyramidals_48_2.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/2/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_3_0_OF" fileName="pyramidals_48_3.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/3/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_4_0_OF" fileName="pyramidals_48_4.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/4/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_5_0_OF" fileName="pyramidals_48_5.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/5/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_6_0_OF" fileName="pyramidals_48_6.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/6/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_7_0_OF" fileName="pyramidals_48_7.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/7/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_8_0_OF" fileName="pyramidals_48_8.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/8/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_9_0_OF" fileName="pyramidals_48_9.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/9/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_10_0_OF" fileName="pyramidals_48_10.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/10/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_11_0_OF" fileName="pyramidals_48_11.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/11/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_12_0_OF" fileName="pyramidals_48_12.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/12/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_13_0_OF" fileName="pyramidals_48_13.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/13/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_14_0_OF" fileName="pyramidals_48_14.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/14/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_15_0_OF" fileName="pyramidals_48_15.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/15/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_16_0_OF" fileName="pyramidals_48_16.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/16/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_17_0_OF" fileName="pyramidals_48_17.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/17/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_18_0_OF" fileName="pyramidals_48_18.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/18/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_19_0_OF" fileName="pyramidals_48_19.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/19/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_20_0_OF" fileName="pyramidals_48_20.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/20/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_21_0_OF" fileName="pyramidals_48_21.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/21/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_22_0_OF" fileName="pyramidals_48_22.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/22/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_23_0_OF" fileName="pyramidals_48_23.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/23/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_24_0_OF" fileName="pyramidals_48_24.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/24/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_25_0_OF" fileName="pyramidals_48_25.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/25/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_26_0_OF" fileName="pyramidals_48_26.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/26/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_27_0_OF" fileName="pyramidals_48_27.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/27/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_28_0_OF" fileName="pyramidals_48_28.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/28/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_29_0_OF" fileName="pyramidals_48_29.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/29/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_30_0_OF" fileName="pyramidals_48_30.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/30/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_31_0_OF" fileName="pyramidals_48_31.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/31/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_32_0_OF" fileName="pyramidals_48_32.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/32/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_33_0_OF" fileName="pyramidals_48_33.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/33/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_34_0_OF" fileName="pyramidals_48_34.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/34/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_35_0_OF" fileName="pyramidals_48_35.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/35/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_36_0_OF" fileName="pyramidals_48_36.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/36/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_37_0_OF" fileName="pyramidals_48_37.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/37/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_38_0_OF" fileName="pyramidals_48_38.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/38/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_39_0_OF" fileName="pyramidals_48_39.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/39/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_40_0_OF" fileName="pyramidals_48_40.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/40/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_41_0_OF" fileName="pyramidals_48_41.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/41/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_42_0_OF" fileName="pyramidals_48_42.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/42/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_43_0_OF" fileName="pyramidals_48_43.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/43/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_44_0_OF" fileName="pyramidals_48_44.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/44/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_45_0_OF" fileName="pyramidals_48_45.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/45/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_46_0_OF" fileName="pyramidals_48_46.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/46/pyr_4_sym/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="pyramidals_48_v_47_0_OF" fileName="pyramidals_48_47.0.dat">
+            <OutputColumn id="v" quantity="pyramidals_48/47/pyr_4_sym/0/v"/>
+        </OutputFile>
     </Component>
 
 
