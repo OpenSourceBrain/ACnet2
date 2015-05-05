@@ -9,6 +9,14 @@
 /neuroConstruct/generatedNeuroML2/*.mod
 /neuroConstruct/generatedNeuroML2/*.py
 /neuroConstruct/generatedNeuroML2/*.hoc
+/neuroConstruct/generatedNeuroML2/*.png
+/neuroConstruct/generatedNeuroML2/*.pov
+/neuroConstruct/generatedNeuroML2/*.ini
+/neuroConstruct/generatedNeuroML2/*.svg
+/neuroConstruct/generatedNeuroML2/*.mp4
+
+
+
 umac
 i386
 x86_64
