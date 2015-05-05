@@ -35,4 +35,5 @@ neuroConstruct/ACnet2_Network_nC_jython
 neuroConstruct/generatedNeuroML2/LEMS_Test*
 neuroConstruct/generatedNeuroML2/html
 neuroConstruct/generatedNeuroML2/*geppetto.*
+neuroConstruct/generatedNeuroML2/*.js
 
