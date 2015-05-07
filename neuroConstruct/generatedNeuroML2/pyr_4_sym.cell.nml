@@ -15,7 +15,7 @@
 
     <cell id="pyr_4_sym">
 
-        <notes>A single segment/compartment cell</notes>
+        <notes>A simplified pyramidal cell model with 9 compartments</notes>
 
         <morphology id="morphology_pyr_4_sym">
 
