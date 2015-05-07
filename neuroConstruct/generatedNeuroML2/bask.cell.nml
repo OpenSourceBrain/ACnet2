@@ -9,7 +9,7 @@
 
     <cell id="bask">
 
-        <notes>A single segment/compartment cell</notes>
+        <notes>A simplified basket cell model with 2 compartments</notes>
 
         <morphology id="morphology_bask">
 
