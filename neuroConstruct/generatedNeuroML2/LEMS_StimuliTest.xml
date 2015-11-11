@@ -25,18 +25,28 @@
    
     <Simulation id="sim_StimuliTest" length="1000ms" step="0.01ms" target="StimuliTest_network">
         
-        <Display id="DispPop__Pop0" title="Voltages of DispPop__Pop0" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="v Pop0_0__v" quantity="Pop0[0]/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
-            <Line id="v Pop0_1__v" quantity="Pop0[1]/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
-            <Line id="v Pop0_2__v" quantity="Pop0[2]/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
-            <Line id="v Pop0_3__v" quantity="Pop0[3]/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+        <Display id="DispPop__PoissonFiringSynCells" title="Voltages of DispPop__PoissonFiringSynCells" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="v PoissonFiringSynCells_0__v" quantity="PoissonFiringSynCells[0]/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
+            <Line id="v PoissonFiringSynCells_1__v" quantity="PoissonFiringSynCells[1]/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
+            <Line id="v PoissonFiringSynCells_2__v" quantity="PoissonFiringSynCells[2]/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
         </Display>
         
-        <OutputFile id="Volts_file__Pop0" fileName="sim_StimuliTest.Pop0.v.dat">
-            <OutputColumn id="v_Pop0_0__v" quantity="Pop0[0]/v"/> 
-            <OutputColumn id="v_Pop0_1__v" quantity="Pop0[1]/v"/> 
-            <OutputColumn id="v_Pop0_2__v" quantity="Pop0[2]/v"/> 
-            <OutputColumn id="v_Pop0_3__v" quantity="Pop0[3]/v"/> 
+        <Display id="DispPop__SpikeArrayCells" title="Voltages of DispPop__SpikeArrayCells" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="v SpikeArrayCells_0__v" quantity="SpikeArrayCells[0]/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+            <Line id="v SpikeArrayCells_1__v" quantity="SpikeArrayCells[1]/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
+            <Line id="v SpikeArrayCells_2__v" quantity="SpikeArrayCells[2]/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file__PoissonFiringSynCells" fileName="sim_StimuliTest.PoissonFiringSynCells.v.dat">
+            <OutputColumn id="v_PoissonFiringSynCells_0__v" quantity="PoissonFiringSynCells[0]/v"/> 
+            <OutputColumn id="v_PoissonFiringSynCells_1__v" quantity="PoissonFiringSynCells[1]/v"/> 
+            <OutputColumn id="v_PoissonFiringSynCells_2__v" quantity="PoissonFiringSynCells[2]/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SpikeArrayCells" fileName="sim_StimuliTest.SpikeArrayCells.v.dat">
+            <OutputColumn id="v_SpikeArrayCells_0__v" quantity="SpikeArrayCells[0]/v"/> 
+            <OutputColumn id="v_SpikeArrayCells_1__v" quantity="SpikeArrayCells[1]/v"/> 
+            <OutputColumn id="v_SpikeArrayCells_2__v" quantity="SpikeArrayCells[2]/v"/> 
         </OutputFile>
         
     </Simulation>
