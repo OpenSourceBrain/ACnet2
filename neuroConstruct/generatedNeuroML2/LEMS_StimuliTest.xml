@@ -1,0 +1,44 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.1.6 (libNeuroML v0.2.10)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="sim_StimuliTest"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="StimuliTest.nml"/>
+    <Include file="pyr_4_sym.cell.nml"/>
+    <Include file="Ca_conc.nml"/>
+    <Include file="Ca_pyr.channel.nml"/>
+    <Include file="Kahp_pyr.channel.nml"/>
+    <Include file="Kdr_pyr.channel.nml"/>
+    <Include file="LeakConductance_pyr.channel.nml"/>
+    <Include file="Na_pyr.channel.nml"/>
+   
+    <Simulation id="sim_StimuliTest" length="1000ms" step="0.01ms" target="StimuliTest_network">
+        
+        <Display id="DispPop__Pop0" title="Voltages of DispPop__Pop0" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="v Pop0_0__v" quantity="Pop0[0]/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
+            <Line id="v Pop0_1__v" quantity="Pop0[1]/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
+            <Line id="v Pop0_2__v" quantity="Pop0[2]/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
+            <Line id="v Pop0_3__v" quantity="Pop0[3]/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file__Pop0" fileName="sim_StimuliTest.Pop0.v.dat">
+            <OutputColumn id="v_Pop0_0__v" quantity="Pop0[0]/v"/> 
+            <OutputColumn id="v_Pop0_1__v" quantity="Pop0[1]/v"/> 
+            <OutputColumn id="v_Pop0_2__v" quantity="Pop0[2]/v"/> 
+            <OutputColumn id="v_Pop0_3__v" quantity="Pop0[3]/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>

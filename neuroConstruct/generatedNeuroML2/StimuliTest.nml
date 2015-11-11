@@ -1,0 +1,13 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="StimuliTest">
+    <include href="pyr_4_sym.cell.nml"></include>
+    <expTwoSynapse id="syn0" erev="0mV" gbase="1nS" tauDecay="10ms" tauRise="0.5ms"/>
+    <poissonFiringSynapse id="poissonFiringSyn" synapse="syn0" averageRate="150 Hz" spikeTarget="./syn0"/>
+    <network id="StimuliTest_network">
+        <population id="Pop0" component="pyr_4_sym" size="4"/>
+        <inputList id="pfsInput" component="poissonFiringSyn" population="Pop0">
+            <input destination="synapses" id="0" target="../Pop0/0/pyr_4_sym"/>
+            <input destination="synapses" id="1" segmentId="2" target="../Pop0/1/pyr_4_sym"/>
+            <input destination="synapses" id="2" segmentId="4" target="../Pop0/2/pyr_4_sym"/>
+        </inputList>
+    </network>
+</neuroml>
