@@ -8,15 +8,23 @@
         <spike id="2" time="700ms"/>
         <spike id="3" time="705ms"/>
     </spikeArray>
-    <poissonFiringSynapse id="poissonFiringSyn" synapse="syn0" averageRate="50 Hz" spikeTarget="./syn0"/>
+    <spikeGeneratorPoisson id="spikeGenPoisson" averageRate="150 Hz"/>
+    <poissonFiringSynapse id="poissonFiringSyn" synapse="syn0" averageRate="150 Hz" spikeTarget="./syn0"/>
     <network id="StimuliTest_network">
         <population id="PoissonFiringSynCells" component="pyr_4_sym" size="3"/>
         <population id="SpikeArrayCells" component="pyr_4_sym" size="3"/>
+        <population id="SpikeGeneratorPoissonCells" component="pyr_4_sym" size="3"/>
         <population id="SpikeArrays" component="spikeArray" size="1"/>
-        <projection id="Proj0" postsynapticPopulation="SpikeArrayCells" presynapticPopulation="SpikeArrays" synapse="syn1">
+        <population id="SpikeGeneratorPoissons" component="spikeGenPoisson" size="1"/>
+        <projection id="Proj_sa" postsynapticPopulation="SpikeArrayCells" presynapticPopulation="SpikeArrays" synapse="syn1">
             <connection id="0" preCellId="../SpikeArrays[0]" postCellId="../SpikeArrayCells/0/pyr_4_sym"/>
             <connection id="1" preCellId="../SpikeArrays[0]" postSegmentId="2" postCellId="../SpikeArrayCells/1/pyr_4_sym"/>
             <connection id="2" preCellId="../SpikeArrays[0]" postSegmentId="4" postCellId="../SpikeArrayCells/2/pyr_4_sym"/>
+        </projection>
+        <projection id="Proj_sgp" postsynapticPopulation="SpikeGeneratorPoissonCells" presynapticPopulation="SpikeGeneratorPoissons" synapse="syn0">
+            <connection id="0" preCellId="../SpikeGeneratorPoissons[0]" postCellId="../SpikeGeneratorPoissonCells/0/pyr_4_sym"/>
+            <connection id="1" preCellId="../SpikeGeneratorPoissons[0]" postSegmentId="2" postCellId="../SpikeGeneratorPoissonCells/1/pyr_4_sym"/>
+            <connection id="2" preCellId="../SpikeGeneratorPoissons[0]" postSegmentId="4" postCellId="../SpikeGeneratorPoissonCells/2/pyr_4_sym"/>
         </projection>
         <inputList id="pfsInput" component="poissonFiringSyn" population="PoissonFiringSynCells">
             <input destination="synapses" id="0" target="../PoissonFiringSynCells/0/pyr_4_sym"/>

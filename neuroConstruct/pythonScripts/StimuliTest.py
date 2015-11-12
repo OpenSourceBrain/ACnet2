@@ -26,10 +26,16 @@ nml_doc.exp_two_synapses.append(syn1)
 # Define Poisson spiking input
 
 pfs = neuroml.PoissonFiringSynapse(id="poissonFiringSyn",
-                                   average_rate="50 Hz",
+                                   average_rate="150 Hz",
                                    synapse=syn0.id, 
                                    spike_target="./%s"%syn0.id)
 nml_doc.poisson_firing_synapses.append(pfs)
+
+# Define Poisson spike generator 
+
+sgp = neuroml.SpikeGeneratorPoisson(id="spikeGenPoisson",
+                                   average_rate="150 Hz")
+nml_doc.spike_generator_poissons.append(sgp)
 
 
 # Define Spike array
@@ -55,60 +61,91 @@ nml_doc.networks.append(net)
 
 # Create populations
 size0 = 3
-pop0 = neuroml.Population(id="PoissonFiringSynCells", size = size0,
+pyr_cells_pop0 = neuroml.Population(id="PoissonFiringSynCells", size = size0,
                           component=cell_id)
-net.populations.append(pop0)
+net.populations.append(pyr_cells_pop0)
 
 size1 = 3
-pop1 = neuroml.Population(id="SpikeArrayCells", size = size1,
+pyr_cells_pop1 = neuroml.Population(id="SpikeArrayCells", size = size1,
                           component=cell_id)
-net.populations.append(pop1)
+net.populations.append(pyr_cells_pop1)
 
-size2 = 1
-pop2 = neuroml.Population(id="SpikeArrays", size = size2,
+size2 = 3
+pyr_cells_pop2 = neuroml.Population(id="SpikeGeneratorPoissonCells", size = size2,
+                          component=cell_id)
+net.populations.append(pyr_cells_pop2)
+
+
+sa_pop = neuroml.Population(id="SpikeArrays", size = 1,
                           component=sa.id)
-net.populations.append(pop2)
+net.populations.append(sa_pop)
+
+
+sgp_pop = neuroml.Population(id="SpikeGeneratorPoissons", size = 1,
+                          component=sgp.id)
+net.populations.append(sgp_pop)
 
 
 # Add inputs
 
-pfs_input_list = neuroml.InputList(id="pfsInput", component=pfs.id, populations=pop0.id)
+pfs_input_list = neuroml.InputList(id="pfsInput", component=pfs.id, populations=pyr_cells_pop0.id)
 net.input_lists.append(pfs_input_list)
 
 
 pfs_input_list.input.append(neuroml.Input(id=0, 
-                                          target='../%s/0/%s'%(pop0.id, cell_id),
+                                          target='../%s/0/%s'%(pyr_cells_pop0.id, cell_id),
                                           destination="synapses"))
 pfs_input_list.input.append(neuroml.Input(id=1, 
-                                          target='../%s/1/%s'%(pop0.id, cell_id),
+                                          target='../%s/1/%s'%(pyr_cells_pop0.id, cell_id),
                                           segment_id = "2",
                                           destination="synapses"))
 pfs_input_list.input.append(neuroml.Input(id=2, 
-                                          target='../%s/2/%s'%(pop0.id, cell_id),
+                                          target='../%s/2/%s'%(pyr_cells_pop0.id, cell_id),
                                           segment_id = "4",
                                           destination="synapses"))
                  
                  
 # Create a projection
 
-proj0 = neuroml.Projection(id="Proj0", synapse=syn1.id,
-                        presynaptic_population=pop2.id, 
-                        postsynaptic_population=pop1.id)
-net.projections.append(proj0)
+proj_sa = neuroml.Projection(id="Proj_sa", synapse=syn1.id,
+                        presynaptic_population=sa_pop.id, 
+                        postsynaptic_population=pyr_cells_pop1.id)
+net.projections.append(proj_sa)
 
 
-proj0.connections.append(neuroml.Connection(id=0, \
-               pre_cell_id="../%s[0]"%(pop2.id),
-               post_cell_id="../%s/%i/%s"%(pop1.id,0,cell_id)))
+proj_sa.connections.append(neuroml.Connection(id=0, \
+               pre_cell_id="../%s[0]"%(sa_pop.id),
+               post_cell_id="../%s/%i/%s"%(pyr_cells_pop1.id,0,cell_id)))
                
-proj0.connections.append(neuroml.Connection(id=1, \
-               pre_cell_id="../%s[0]"%(pop2.id),
-               post_cell_id="../%s/%i/%s"%(pop1.id,1,cell_id),
+proj_sa.connections.append(neuroml.Connection(id=1, \
+               pre_cell_id="../%s[0]"%(sa_pop.id),
+               post_cell_id="../%s/%i/%s"%(pyr_cells_pop1.id,1,cell_id),
                post_segment_id = "2",))
                
-proj0.connections.append(neuroml.Connection(id=2, \
-               pre_cell_id="../%s[0]"%(pop2.id),
-               post_cell_id="../%s/%i/%s"%(pop1.id,2,cell_id),
+proj_sa.connections.append(neuroml.Connection(id=2, \
+               pre_cell_id="../%s[0]"%(sa_pop.id),
+               post_cell_id="../%s/%i/%s"%(pyr_cells_pop1.id,2,cell_id),
+               post_segment_id = "4",))
+               
+               
+proj_sgp = neuroml.Projection(id="Proj_sgp", synapse=syn0.id,
+                        presynaptic_population=sgp_pop.id, 
+                        postsynaptic_population=pyr_cells_pop2.id)
+net.projections.append(proj_sgp)
+
+
+proj_sgp.connections.append(neuroml.Connection(id=0, \
+               pre_cell_id="../%s[0]"%(sgp_pop.id),
+               post_cell_id="../%s/%i/%s"%(pyr_cells_pop2.id,0,cell_id)))
+               
+proj_sgp.connections.append(neuroml.Connection(id=1, \
+               pre_cell_id="../%s[0]"%(sgp_pop.id),
+               post_cell_id="../%s/%i/%s"%(pyr_cells_pop2.id,1,cell_id),
+               post_segment_id = "2",))
+               
+proj_sgp.connections.append(neuroml.Connection(id=2, \
+               pre_cell_id="../%s[0]"%(sgp_pop.id),
+               post_cell_id="../%s/%i/%s"%(pyr_cells_pop2.id,2,cell_id),
                post_segment_id = "4",))
 
 
@@ -137,8 +174,8 @@ generate_lems_file_for_neuroml('sim_%s'%ref,
                                 'LEMS_%s.xml'%ref,
                                 '../generatedNeuroML2',
                                 gen_plots_for_all_v = False,
-                                gen_plots_for_only = [pop0.id, pop1.id],
+                                gen_plots_for_only = [pyr_cells_pop0.id, pyr_cells_pop1.id, pyr_cells_pop2.id],
                                 gen_saves_for_all_v = False,
-                                gen_saves_for_only = [pop0.id, pop1.id],
+                                gen_saves_for_only = [pyr_cells_pop0.id, pyr_cells_pop1.id, pyr_cells_pop2.id],
                                 copy_neuroml = False,
                                 seed=1234)

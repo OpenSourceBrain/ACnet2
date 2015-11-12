@@ -37,6 +37,12 @@
             <Line id="v SpikeArrayCells_2__v" quantity="SpikeArrayCells[2]/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
         </Display>
         
+        <Display id="DispPop__SpikeGeneratorPoissonCells" title="Voltages of DispPop__SpikeGeneratorPoissonCells" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="v SpikeGeneratorPoissonCells_0__v" quantity="SpikeGeneratorPoissonCells[0]/v" scale="1mV" color="#abeb95" timeScale="1ms"/>
+            <Line id="v SpikeGeneratorPoissonCells_1__v" quantity="SpikeGeneratorPoissonCells[1]/v" scale="1mV" color="#157cf9" timeScale="1ms"/>
+            <Line id="v SpikeGeneratorPoissonCells_2__v" quantity="SpikeGeneratorPoissonCells[2]/v" scale="1mV" color="#c43818" timeScale="1ms"/>
+        </Display>
+        
         <OutputFile id="Volts_file__PoissonFiringSynCells" fileName="sim_StimuliTest.PoissonFiringSynCells.v.dat">
             <OutputColumn id="v_PoissonFiringSynCells_0__v" quantity="PoissonFiringSynCells[0]/v"/> 
             <OutputColumn id="v_PoissonFiringSynCells_1__v" quantity="PoissonFiringSynCells[1]/v"/> 
@@ -47,6 +53,12 @@
             <OutputColumn id="v_SpikeArrayCells_0__v" quantity="SpikeArrayCells[0]/v"/> 
             <OutputColumn id="v_SpikeArrayCells_1__v" quantity="SpikeArrayCells[1]/v"/> 
             <OutputColumn id="v_SpikeArrayCells_2__v" quantity="SpikeArrayCells[2]/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SpikeGeneratorPoissonCells" fileName="sim_StimuliTest.SpikeGeneratorPoissonCells.v.dat">
+            <OutputColumn id="v_SpikeGeneratorPoissonCells_0__v" quantity="SpikeGeneratorPoissonCells[0]/v"/> 
+            <OutputColumn id="v_SpikeGeneratorPoissonCells_1__v" quantity="SpikeGeneratorPoissonCells[1]/v"/> 
+            <OutputColumn id="v_SpikeGeneratorPoissonCells_2__v" quantity="SpikeGeneratorPoissonCells[2]/v"/> 
         </OutputFile>
         
     </Simulation>
