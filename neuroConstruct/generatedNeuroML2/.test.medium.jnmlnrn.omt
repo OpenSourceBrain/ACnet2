@@ -3,27 +3,38 @@
 
 target: LEMS_MediumNet.xml
 engine: jNeuroML_NEURON
-#mep: .test.mep
-#experiments: 
-#  Current clamp pyramidal:
-#    observables:
-#      spike times:
-#        file:
-#          path: pyramidal_soma_0.dat
-#          columns: [0,1]
-#          scaling: [1000, 1000]
-#        spike detection:
-#          method: threshold
-#          threshold: 0
-#        tolerance: 0.0011
-#  Current clamp basket:
-#    observables:
-#      spike times:
-#        file:
-#          path: basket_soma_0.dat
-#          columns: [0,1]
-#          scaling: [1000, 1000]
-#        spike detection:
-#          method: threshold
-#          threshold: 0
-#        tolerance: 0.0016
+mep: .test.medium.mep
+experiments: 
+  Pyramidal0:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_48_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0
+  Pyramidal1:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_48_1.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0
+  Basket0:
+    observables:
+      spike times:
+        file:
+          path: baskets_12_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0

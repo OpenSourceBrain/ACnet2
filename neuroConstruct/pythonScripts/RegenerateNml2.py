@@ -37,7 +37,8 @@ nc.generateNeuroML2(projFile, simConfigs)
 extra_files = ['.test.*', 'LargeNet.net.nml', 
                'TwoCell.net.nml', 'LEMS_MediumNet.xml', 'LEMS_TwoCell.xml', 
                'MediumNet.net.nml', 'bask.cell.nml', 'pyr_4_sym.cell.nml', 
-               'LEMS_ACnet2_LowDt.xml', '*.synapse.nml']
+               'LEMS_ACnet2_LowDt.xml', '*.synapse.nml', 'LEMS_StimuliTest.xml',
+               'README.md', 'StimuliTest.nml']
                
 if len(sys.argv)==2 and sys.argv[1] == "-f":
     extra_files.append('ACnet2.net.nml')
