@@ -51,7 +51,7 @@
                 <channelDensity condDensity="100.0 mS_per_cm2" id="Na_bask_soma_group" ionChannel="Na_bask" segmentGroup="soma_group" ion="na" erev="50.0 mV"/>
                 
 
-                <spikeThresh value="0 mV"/>
+                <spikeThresh value="0.0 mV"/>
 
                 <specificCapacitance value="1.5 uF_per_cm2"/>
 
