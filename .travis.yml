@@ -14,7 +14,7 @@ install:
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
 
 script:
-    - omv all
+    - omv all -V
     - pwd
     - ls -al
     - ls -al neuroConstruct/generatedNeuroML2
