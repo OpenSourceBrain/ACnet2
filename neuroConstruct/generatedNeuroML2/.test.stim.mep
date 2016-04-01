@@ -1,0 +1,13 @@
+system: Testing a single compartment cell
+
+experiments:
+  SA1:
+    expected:
+        spike times: [101.8, 501.93, 701.97]
+  SA2:
+    expected:
+        spike times: [105.76, 506.08, 706.03]
+  SA3:
+    expected:
+        spike times: [728.9]
+  
