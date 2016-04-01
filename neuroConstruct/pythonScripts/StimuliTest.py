@@ -47,6 +47,16 @@ sa.spikes.append(neuroml.Spike(id="2", time="700ms"))
 sa.spikes.append(neuroml.Spike(id="3", time="705ms"))
 nml_doc.spike_arrays.append(sa)
 
+# Define timedSynapticInput
+
+tsi = neuroml.TimedSynapticInput(id="timedSynapticInput",
+                                   synapse=syn1.id, 
+                                   spike_target="./%s"%syn1.id)
+tsi.spikes.append(neuroml.Spike(id="0", time="100ms"))
+tsi.spikes.append(neuroml.Spike(id="1", time="500ms"))
+tsi.spikes.append(neuroml.Spike(id="2", time="700ms"))
+tsi.spikes.append(neuroml.Spike(id="3", time="705ms"))
+nml_doc.timed_synaptic_inputs.append(tsi)
 
 # Include cell
 
@@ -74,6 +84,11 @@ size2 = 3
 pyr_cells_pop2 = neuroml.Population(id="SpikeGeneratorPoissonCells", size = size2,
                           component=cell_id)
 net.populations.append(pyr_cells_pop2)
+
+size3 = 3
+pyr_cells_pop3 = neuroml.Population(id="TimedSynapticInputCells", size = size3,
+                          component=cell_id)
+net.populations.append(pyr_cells_pop3)
 
 
 sa_pop = neuroml.Population(id="SpikeArrays", size = 1,
@@ -104,6 +119,22 @@ pfs_input_list.input.append(neuroml.Input(id=2,
                                           segment_id = "4",
                                           destination="synapses"))
                  
+                 
+
+tsi_input_list = neuroml.InputList(id="tsiInput", component=tsi.id, populations=pyr_cells_pop3.id)
+tsi_input_list.input.append(neuroml.Input(id=0, 
+                                          target='../%s/0/%s'%(pyr_cells_pop3.id, cell_id),
+                                          segment_id = "0",
+                                          destination="synapses"))
+tsi_input_list.input.append(neuroml.Input(id=1, 
+                                          target='../%s/1/%s'%(pyr_cells_pop3.id, cell_id),
+                                          segment_id = "2",
+                                          destination="synapses"))
+tsi_input_list.input.append(neuroml.Input(id=2, 
+                                          target='../%s/2/%s'%(pyr_cells_pop3.id, cell_id),
+                                          segment_id = "4",
+                                          destination="synapses"))
+net.input_lists.append(tsi_input_list)
                  
 # Create a projection
 
@@ -174,8 +205,8 @@ generate_lems_file_for_neuroml('sim_%s'%ref,
                                 'LEMS_%s.xml'%ref,
                                 '../generatedNeuroML2',
                                 gen_plots_for_all_v = False,
-                                gen_plots_for_only = [pyr_cells_pop0.id, pyr_cells_pop1.id, pyr_cells_pop2.id],
+                                gen_plots_for_only = [pyr_cells_pop0.id, pyr_cells_pop1.id, pyr_cells_pop2.id, pyr_cells_pop3.id],
                                 gen_saves_for_all_v = False,
-                                gen_saves_for_only = [pyr_cells_pop0.id, pyr_cells_pop1.id, pyr_cells_pop2.id],
+                                gen_saves_for_only = [pyr_cells_pop0.id, pyr_cells_pop1.id, pyr_cells_pop2.id, pyr_cells_pop3.id],
                                 copy_neuroml = False,
                                 seed=1234)
