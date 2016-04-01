@@ -38,3 +38,36 @@ experiments:
           method: threshold
           threshold: -64
         tolerance: 0
+  TA1:
+    observables:
+      spike times:
+        file:
+          path: sim_StimuliTest.TimedSynapticInputCells.v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: -64
+        tolerance: 1e-4
+  TA2:
+    observables:
+      spike times:
+        file:
+          path: sim_StimuliTest.TimedSynapticInputCells.v.dat
+          columns: [0,2]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: -64
+        tolerance: 1e-4
+  TA3:
+    observables:
+      spike times:
+        file:
+          path: sim_StimuliTest.TimedSynapticInputCells.v.dat
+          columns: [0,3]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: -64
+        tolerance: 1e-4

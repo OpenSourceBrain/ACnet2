@@ -10,4 +10,13 @@ experiments:
   SA3:
     expected:
         spike times: [728.9]
+  TA1:
+    expected:
+        spike times: [101.8, 501.93, 701.97]
+  TA2:
+    expected:
+        spike times: [105.76, 506.08, 706.03]
+  TA3:
+    expected:
+        spike times: [728.9]
   
