@@ -3,27 +3,27 @@
 
 target: LEMS_TwoCell.xml
 engine: jNeuroML_NEURON
-#mep: .test.mep
-#experiments: 
-#  Current clamp pyramidal:
-#    observables:
-#      spike times:
-#        file:
-#          path: pyramidal_soma_0.dat
-#          columns: [0,1]
-#          scaling: [1000, 1000]
-#        spike detection:
-#          method: threshold
-#          threshold: 0
-#        tolerance: 0.0011
-#  Current clamp basket:
-#    observables:
-#      spike times:
-#        file:
-#          path: basket_soma_0.dat
-#          columns: [0,1]
-#          scaling: [1000, 1000]
-#        spike detection:
-#          method: threshold
-#          threshold: 0
-#        tolerance: 0.0016
+mep: .test.two.mep
+experiments: 
+  pyr0:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.00
+  bask0:
+    observables:
+      spike times:
+        file:
+          path: baskets_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.00
