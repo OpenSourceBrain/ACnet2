@@ -1,0 +1,40 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+# Still in development, subject to change without notice!!
+
+target: LEMS_MediumNet.xml
+engine: jNeuroML_NetPyNE
+mep: .test.medium.mep
+experiments: 
+  Pyramidal0:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_48_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 4.3e-5
+  Pyramidal1:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_48_1.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 2.6e-5
+  Basket0:
+    observables:
+      spike times:
+        file:
+          path: baskets_12_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0

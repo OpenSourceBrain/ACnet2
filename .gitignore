@@ -49,4 +49,4 @@ neuroConstruct/generatedNeuroML2/LEMS_Test*
 neuroConstruct/generatedNeuroML2/html
 neuroConstruct/generatedNeuroML2/*geppetto.*
 neuroConstruct/generatedNeuroML2/*.js
-
+/neuroConstruct/generatedNeuroML2/LEMS_MediumNet_netpyne.py_main.json
