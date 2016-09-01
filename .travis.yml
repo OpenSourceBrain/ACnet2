@@ -1,8 +1,22 @@
 # Framework for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
-# Still in development, subject to change without notice!!
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+        # Requirements for NetPyNE & libNeuroML
+    - python-tk
+    - python-lxml
+    - python-matplotlib 
+    
 
 language: python
 python: 2.7
+
+ 
+virtualenv:
+system_site_packages: true
 
 env:
     - OMV_ENGINE=jNeuroML
