@@ -5,7 +5,8 @@ addons:
      packages:
      # Requirements for NetPyNE & libNeuroML
      - python-tk
-     - python-lxml
+     - python-lxml 
+     - python-scipy 
      - python-matplotlib 
     
 
