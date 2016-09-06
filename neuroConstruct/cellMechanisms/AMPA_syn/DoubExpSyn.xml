@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.6/Level2/ChannelML_v1.6.xsd" units="SI Units">
     
-    <meta:notes>ChannelML file describing a single synaptic mechanism</meta:notes>
+    <meta:notes>NeuroML file describing a single synaptic mechanism</meta:notes>
     
-     
     <synapse_type name="AMPA_syn">
         
         <status value="stable">
@@ -15,7 +14,7 @@
             </meta:contributor>
         </status>
     
-        <meta:notes>Simple example of a synaptic mechanism, which consists of a postsynaptic conductance which changes as a double exponential function of time. Mappings exist for NEURON and GENESIS.</meta:notes>
+        <meta:notes>Synapse model for pyramidal -> pyramidal cell excitation</meta:notes>
         
         <meta:neuronDBref>
             <meta:modelName>Receptor properties</meta:modelName>
