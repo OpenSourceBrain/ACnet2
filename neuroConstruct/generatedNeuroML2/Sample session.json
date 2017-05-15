@@ -1,0 +1,131 @@
+{
+    "id": 5,
+    "name": "ACNet2 2",
+    "experiments": [
+        {
+            "id": 13,
+            "aspectConfigurations": [
+                {
+                    "id": 13,
+                    "instance": "acnet2",
+                    "watchedVariables": [
+                        "acnet2.pyramidals_48[0].soma_0.v",
+                        "acnet2.pyramidals_48[0].apical0_1.v",
+                        "acnet2.pyramidals_48[0].apical2_2.v",
+                        "acnet2.pyramidals_48[0].apical3_3.v",
+                        "acnet2.pyramidals_48[0].apical4_4.v",
+                        "acnet2.pyramidals_48[0].apical1_5.v",
+                        "acnet2.pyramidals_48[0].basal0_6.v",
+                        "acnet2.pyramidals_48[0].basal1_7.v",
+                        "acnet2.pyramidals_48[0].basal2_8.v",
+                        "acnet2.pyramidals_48[1].soma_0.v",
+                        "acnet2.baskets_12[2].soma_0.v"
+                    ],
+                    "modelParameters": [],
+                    "simulatorConfiguration": {
+                        "id": 13,
+                        "simulatorId": "neuronSimulator",
+                        "conversionServiceId": "lemsConversion",
+                        "timestep": 5.0E-5,
+                        "length": 0.3,
+                        "parameters": {
+                            "target": "network_ACnet2"
+                        }
+                    }
+                }
+            ],
+            "name": "Experiment ready to execute",
+            "description": "",
+            "creationDate": 1473267723,
+            "lastModified": 1473267723,
+            "status": "DESIGN",
+            "simulationResults": [],
+            "startDate": "Sep 7, 2016 6:02:03 PM",
+            "endDate": "Sep 7, 2016 6:02:03 PM",
+            "isPublic": false,
+            "view": {
+                "id": 101,
+                "viewStates": {
+                    "views": {
+                        "Canvas1": {
+                            "widgetType": "CANVAS",
+                            "isWidget": false,
+                            "dataType": "instances",
+                            "data": [
+                                "acnet2"
+                            ],
+                            "componentSpecific": {
+                                "cameraPosition": {
+                                    "x": 791.673,
+                                    "y": 204.363,
+                                    "z": 427.814
+                                },
+                                "cameraRotation": {
+                                    "rx": -0.712,
+                                    "ry": 1.123,
+                                    "rz": 0.506,
+                                    "radius": 427.374
+                                },
+                                "colorMap": {
+                                    "acnet2.pyramidals_48": 13303808,
+                                    "acnet2.baskets_12": 13208
+                                },
+                                "colorFunctionMap": {},
+                                "opacityMap": {},
+                                "geometryTypeMap": {},
+                                "backgroundColor": 1052688
+                            }
+                        },
+                        "Tutorial1": {
+                            "widgetType": "TUTORIAL",
+                            "isWidget": true,
+                            "dataType": "array",
+                            "data": [
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json"
+                            ],
+                            "componentSpecific": {
+                                "activeTutorial": "Open Source Brain Tutorial",
+                                "currentStep": 0
+                            },
+                            "size": {
+                                "height": 300,
+                                "width": 350
+                            },
+                            "position": {
+                                "left": "50%",
+                                "top": "50%"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "activeExperimentId": 13,
+    "geppettoModel": {
+        "id": 13,
+        "url": "/GeppettoModel.xmi",
+        "type": "GEPPETTO_PROJECT"
+    },
+    "isPublic": false,
+    "isReadOnly": false,
+    "view": {
+        "id": 100,
+        "viewStates": {
+            "views": {
+                "Canvas1": {
+                    "widgetType": "CANVAS",
+                    "componentSpecific": {
+                        "colorMap": {
+                            "acnet2.pyramidals_48": 13303808,
+                            "acnet2.baskets_12": 13208
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
