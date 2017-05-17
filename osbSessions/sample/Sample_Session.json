@@ -40,11 +40,11 @@
             "lastModified": 1473267723,
             "status": "DESIGN",
             "simulationResults": [],
-            "startDate": "Sep 7, 2016 6:02:03 PM",
-            "endDate": "Sep 7, 2016 6:02:03 PM",
+            "startDate": 1473267723,
+            "endDate": 1473267723,
             "isPublic": false,
             "view": {
-                "id": 101,
+                "id": 110,
                 "viewStates": {
                     "views": {
                         "Canvas1": {
@@ -56,19 +56,18 @@
                             ],
                             "componentSpecific": {
                                 "cameraPosition": {
-                                    "x": 791.673,
-                                    "y": 204.363,
-                                    "z": 427.814
+                                    "x": -126.86,
+                                    "y": 602.402,
+                                    "z": 739.892
                                 },
                                 "cameraRotation": {
-                                    "rx": -0.712,
-                                    "ry": 1.123,
-                                    "rz": 0.506,
-                                    "radius": 427.374
+                                    "rx": -0.787,
+                                    "ry": -0.497,
+                                    "rz": -0.224,
+                                    "radius": 530.719
                                 },
                                 "colorMap": {
-                                    "acnet2.pyramidals_48": 13303808,
-                                    "acnet2.baskets_12": 13208
+                                    "acnet2": "0xffffff"
                                 },
                                 "colorFunctionMap": {},
                                 "opacityMap": {},
@@ -81,22 +80,22 @@
                             "isWidget": true,
                             "dataType": "array",
                             "data": [
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json",
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json",
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json"
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json"
                             ],
                             "componentSpecific": {
                                 "activeTutorial": "Open Source Brain Tutorial",
                                 "currentStep": 0
                             },
                             "size": {
-                                "height": 300,
-                                "width": 350
+                                "height": 380.8,
+                                "width": 448.8
                             },
                             "position": {
-                                "left": "50%",
-                                "top": "50%"
+                                "left": 897,
+                                "top": 188
                             }
                         }
                     }
@@ -113,18 +112,10 @@
     "isPublic": false,
     "isReadOnly": false,
     "view": {
-        "id": 100,
+        "id": 0,
         "viewStates": {
             "views": {
-                "Canvas1": {
-                    "widgetType": "CANVAS",
-                    "componentSpecific": {
-                        "colorMap": {
-                            "acnet2.pyramidals_48": 13303808,
-                            "acnet2.baskets_12": 13208
-                        }
-                    }
-                }
+                "Canvas1": {}
             }
         }
     }
