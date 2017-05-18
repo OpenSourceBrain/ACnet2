@@ -10,16 +10,7 @@
                     "instance": "acnet2",
                     "watchedVariables": [
                         "acnet2.pyramidals_48[0].soma_0.v",
-                        "acnet2.pyramidals_48[0].apical0_1.v",
-                        "acnet2.pyramidals_48[0].apical2_2.v",
-                        "acnet2.pyramidals_48[0].apical3_3.v",
-                        "acnet2.pyramidals_48[0].apical4_4.v",
-                        "acnet2.pyramidals_48[0].apical1_5.v",
-                        "acnet2.pyramidals_48[0].basal0_6.v",
-                        "acnet2.pyramidals_48[0].basal1_7.v",
-                        "acnet2.pyramidals_48[0].basal2_8.v",
-                        "acnet2.pyramidals_48[1].soma_0.v",
-                        "acnet2.baskets_12[2].soma_0.v"
+                        "acnet2.pyramidals_48[1].soma_0.v"
                     ],
                     "modelParameters": [],
                     "simulatorConfiguration": {
@@ -27,7 +18,7 @@
                         "simulatorId": "neuronSimulator",
                         "conversionServiceId": "lemsConversion",
                         "timestep": 5.0E-5,
-                        "length": 0.3,
+                        "length": 0.15,
                         "parameters": {
                             "target": "network_ACnet2"
                         }
@@ -36,17 +27,57 @@
             ],
             "name": "Experiment ready to execute",
             "description": "",
-            "creationDate": 1494975600000,
-            "lastModified": 1494975600000,
-            "status": "DESIGN",
-            "simulationResults": [],
-            "startDate": 1494975600000,
-            "endDate": 1494975600000,
+            "creationDate": 1473267723,
+            "lastModified": 1495104391,
+            "status": "COMPLETED",
+            "simulationResults": [
+                {
+                    "id": 293,
+                    "simulatedInstance": "acnet2",
+                    "result": {
+                        "id": 397,
+                        "url": "/results_18052017_114646.h5",
+                        "type": "RECORDING"
+                    },
+                    "format": "GEPPETTO_RECORDING"
+                },
+                {
+                    "id": 294,
+                    "simulatedInstance": "acnet2",
+                    "result": {
+                        "id": 398,
+                        "url": "/rawRecording.zip",
+                        "type": "RECORDING"
+                    },
+                    "format": "RAW"
+                }
+            ],
+            "startDate": 1495104391,
+            "endDate": 1495104409,
             "isPublic": false,
             "view": {
-                "id": 110,
+                "id": 118,
                 "viewStates": {
                     "views": {
+                        "Plot1": {
+                            "widgetType": 0,
+                            "isWidget": true,
+                            "transparentBackground": false,
+                            "name": "Recorded variables: v",
+                            "size": {
+                                "height": 382.8,
+                                "width": 524.8
+                            },
+                            "position": {
+                                "left": 131,
+                                "top": 59
+                            },
+                            "dataType": "object",
+                            "data": [
+                                "acnet2.pyramidals_48[0].soma_0.v",
+                                "acnet2.pyramidals_48[1].soma_0.v"
+                            ]
+                        },
                         "Canvas1": {
                             "widgetType": "CANVAS",
                             "isWidget": false,
@@ -56,23 +87,23 @@
                             ],
                             "componentSpecific": {
                                 "cameraPosition": {
-                                    "x": -126.86,
-                                    "y": 602.402,
-                                    "z": 739.892
+                                    "x": -59.25,
+                                    "y": 648.032,
+                                    "z": 67.759
                                 },
                                 "cameraRotation": {
-                                    "rx": -0.787,
-                                    "ry": -0.497,
-                                    "rz": -0.224,
-                                    "radius": 530.719
+                                    "rx": -1.731,
+                                    "ry": -0.557,
+                                    "rz": -1.895,
+                                    "radius": 194.232
                                 },
                                 "colorMap": {
-                                    "acnet2": "0xffffff"
+                                    "acnet2": "0x991140"
                                 },
                                 "colorFunctionMap": {},
                                 "opacityMap": {},
                                 "geometryTypeMap": {},
-                                "backgroundColor": 1052688
+                                "backgroundColor": "0x101010"
                             }
                         },
                         "Tutorial1": {
@@ -81,21 +112,21 @@
                             "dataType": "array",
                             "data": [
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json",
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json",
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json"
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json"
                             ],
                             "componentSpecific": {
                                 "activeTutorial": "Open Source Brain Tutorial",
                                 "currentStep": 0
                             },
                             "size": {
-                                "height": 380.8,
-                                "width": 448.8
+                                "height": 300,
+                                "width": 350
                             },
                             "position": {
-                                "left": 897,
-                                "top": 188
+                                "left": "50%",
+                                "top": "50%"
                             }
                         }
                     }
@@ -110,9 +141,8 @@
         "type": "GEPPETTO_PROJECT"
     },
     "isPublic": false,
-    "isReadOnly": false,
     "view": {
-        "id": 0,
+        "id": 119,
         "viewStates": {
             "views": {
                 "Canvas1": {}
