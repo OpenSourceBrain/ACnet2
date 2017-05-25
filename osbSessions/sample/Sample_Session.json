@@ -1,104 +1,178 @@
 {
-    "id": 5,
-    "name": "ACNet2 2",
+    "id": 119,
+    "name": "network_ACnet2",
     "experiments": [
         {
-            "id": 13,
+            "id": 437,
             "aspectConfigurations": [
                 {
-                    "id": 13,
-                    "instance": "acnet2",
+                    "id": 381,
+                    "instance": "network_ACnet2",
                     "watchedVariables": [
-                        "acnet2.pyramidals_48[0].soma_0.v",
-                        "acnet2.pyramidals_48[1].soma_0.v"
+                        "network_ACnet2.pyramidals_48[0].soma_0.v",
+                        "network_ACnet2.pyramidals_48[1].soma_0.v",
+                        "network_ACnet2.pyramidals_48[2].soma_0.v",
+                        "network_ACnet2.pyramidals_48[3].soma_0.v",
+                        "network_ACnet2.pyramidals_48[4].soma_0.v",
+                        "network_ACnet2.pyramidals_48[5].soma_0.v",
+                        "network_ACnet2.pyramidals_48[6].soma_0.v",
+                        "network_ACnet2.pyramidals_48[7].soma_0.v",
+                        "network_ACnet2.pyramidals_48[8].soma_0.v",
+                        "network_ACnet2.pyramidals_48[9].soma_0.v",
+                        "network_ACnet2.pyramidals_48[10].soma_0.v",
+                        "network_ACnet2.pyramidals_48[11].soma_0.v",
+                        "network_ACnet2.pyramidals_48[12].soma_0.v",
+                        "network_ACnet2.pyramidals_48[13].soma_0.v",
+                        "network_ACnet2.pyramidals_48[14].soma_0.v",
+                        "network_ACnet2.pyramidals_48[15].soma_0.v",
+                        "network_ACnet2.pyramidals_48[16].soma_0.v",
+                        "network_ACnet2.pyramidals_48[17].soma_0.v",
+                        "network_ACnet2.pyramidals_48[18].soma_0.v",
+                        "network_ACnet2.pyramidals_48[19].soma_0.v",
+                        "network_ACnet2.pyramidals_48[20].soma_0.v",
+                        "network_ACnet2.pyramidals_48[21].soma_0.v",
+                        "network_ACnet2.pyramidals_48[22].soma_0.v",
+                        "network_ACnet2.pyramidals_48[23].soma_0.v",
+                        "network_ACnet2.pyramidals_48[24].soma_0.v",
+                        "network_ACnet2.pyramidals_48[25].soma_0.v",
+                        "network_ACnet2.pyramidals_48[26].soma_0.v",
+                        "network_ACnet2.pyramidals_48[27].soma_0.v",
+                        "network_ACnet2.pyramidals_48[28].soma_0.v",
+                        "network_ACnet2.pyramidals_48[29].soma_0.v",
+                        "network_ACnet2.pyramidals_48[30].soma_0.v",
+                        "network_ACnet2.pyramidals_48[31].soma_0.v",
+                        "network_ACnet2.pyramidals_48[32].soma_0.v",
+                        "network_ACnet2.pyramidals_48[33].soma_0.v",
+                        "network_ACnet2.pyramidals_48[34].soma_0.v",
+                        "network_ACnet2.pyramidals_48[35].soma_0.v",
+                        "network_ACnet2.pyramidals_48[36].soma_0.v",
+                        "network_ACnet2.pyramidals_48[37].soma_0.v",
+                        "network_ACnet2.pyramidals_48[38].soma_0.v",
+                        "network_ACnet2.pyramidals_48[39].soma_0.v",
+                        "network_ACnet2.pyramidals_48[40].soma_0.v",
+                        "network_ACnet2.pyramidals_48[41].soma_0.v",
+                        "network_ACnet2.pyramidals_48[42].soma_0.v",
+                        "network_ACnet2.pyramidals_48[43].soma_0.v",
+                        "network_ACnet2.pyramidals_48[44].soma_0.v",
+                        "network_ACnet2.pyramidals_48[45].soma_0.v",
+                        "network_ACnet2.pyramidals_48[46].soma_0.v",
+                        "network_ACnet2.pyramidals_48[47].soma_0.v",
+                        "network_ACnet2.baskets_12[0].soma_0.v",
+                        "network_ACnet2.baskets_12[1].soma_0.v",
+                        "network_ACnet2.baskets_12[2].soma_0.v",
+                        "network_ACnet2.baskets_12[3].soma_0.v",
+                        "network_ACnet2.baskets_12[4].soma_0.v",
+                        "network_ACnet2.baskets_12[5].soma_0.v",
+                        "network_ACnet2.baskets_12[6].soma_0.v",
+                        "network_ACnet2.baskets_12[7].soma_0.v",
+                        "network_ACnet2.baskets_12[8].soma_0.v",
+                        "network_ACnet2.baskets_12[9].soma_0.v",
+                        "network_ACnet2.baskets_12[10].soma_0.v",
+                        "network_ACnet2.baskets_12[11].soma_0.v"
                     ],
                     "modelParameters": [],
                     "simulatorConfiguration": {
-                        "id": 13,
+                        "id": 378,
                         "simulatorId": "neuronSimulator",
-                        "conversionServiceId": "lemsConversion",
-                        "timestep": 5.0E-5,
-                        "length": 0.15,
+                        "timestep": 2.5E-5,
+                        "length": 0.3,
                         "parameters": {
                             "target": "network_ACnet2"
                         }
                     }
                 }
             ],
-            "name": "Experiment ready to execute",
-            "description": "",
-            "creationDate": 1473267723,
-            "lastModified": 1495104391,
+            "name": "MediumNet - net",
+            "details": "{\"error_code\":\"EXCEPTION\",\"message\":\"Experiment with name: MediumNet - net and id: 437 has failed.\\n\",\"exception\":\"org.geppetto.core.common.GeppettoInitializationException: The service neuronSimulator was not found!\",\"id\":437}",
+            "creationDate": 1495708435,
+            "lastModified": 1495708623,
             "status": "COMPLETED",
             "simulationResults": [
                 {
-                    "id": 293,
-                    "simulatedInstance": "acnet2",
+                    "id": 297,
+                    "simulatedInstance": "network_ACnet2",
                     "result": {
-                        "id": 397,
-                        "url": "/results_18052017_114646.h5",
+                        "id": 421,
+                        "url": "/experiment_437/results_25052017_113719.h5",
                         "type": "RECORDING"
                     },
                     "format": "GEPPETTO_RECORDING"
                 },
                 {
-                    "id": 294,
-                    "simulatedInstance": "acnet2",
+                    "id": 298,
+                    "simulatedInstance": "network_ACnet2",
                     "result": {
-                        "id": 398,
-                        "url": "/rawRecording.zip",
+                        "id": 422,
+                        "url": "/experiment_437/rawRecording.zip",
                         "type": "RECORDING"
                     },
                     "format": "RAW"
                 }
             ],
-            "startDate": 1495104391,
-            "endDate": 1495104409,
+            "startDate": 1495708623,
+            "endDate": 1495708655,
+            "script": "/script.js",
             "isPublic": false,
             "view": {
-                "id": 118,
+                "id": 189,
                 "viewStates": {
                     "views": {
                         "Plot1": {
                             "widgetType": 0,
                             "isWidget": true,
                             "transparentBackground": false,
-                            "name": "Recorded variables: v",
+                            "name": "network_ACnet2.pyramidals_48[0].soma_0.v",
                             "size": {
-                                "height": 382.8,
-                                "width": 524.8
+                                "height": 300,
+                                "width": 350
                             },
                             "position": {
-                                "left": 131,
-                                "top": 59
+                                "left": 108,
+                                "top": 119
                             },
                             "dataType": "object",
                             "data": [
-                                "acnet2.pyramidals_48[0].soma_0.v",
-                                "acnet2.pyramidals_48[1].soma_0.v"
+                                "network_ACnet2.pyramidals_48[0].soma_0.v"
                             ]
+                        },
+                        "VarVis1": {
+                            "widgetType": 5,
+                            "isWidget": true,
+                            "transparentBackground": false,
+                            "name": "Simulation time",
+                            "size": {
+                                "height": 120,
+                                "width": 350
+                            },
+                            "position": {
+                                "left": 820,
+                                "top": 228
+                            },
+                            "dataType": "object",
+                            "data": "time"
                         },
                         "Canvas1": {
                             "widgetType": "CANVAS",
                             "isWidget": false,
                             "dataType": "instances",
                             "data": [
-                                "acnet2"
+                                "network_ACnet2"
                             ],
                             "componentSpecific": {
                                 "cameraPosition": {
-                                    "x": -59.25,
-                                    "y": 648.032,
-                                    "z": 67.759
+                                    "x": 230.357,
+                                    "y": 256.435,
+                                    "z": 934.238
                                 },
                                 "cameraRotation": {
-                                    "rx": -1.731,
-                                    "ry": -0.557,
-                                    "rz": -1.895,
-                                    "radius": 194.232
+                                    "rx": -0.294,
+                                    "ry": -0.117,
+                                    "rz": -0.02,
+                                    "radius": 531.19
                                 },
                                 "colorMap": {
-                                    "acnet2": "0x991140"
+                                    "network_ACnet2.pyramidals_48": "0x3ccb00",
+                                    "network_ACnet2.baskets_12": "#003398"
                                 },
                                 "colorFunctionMap": {},
                                 "opacityMap": {},
@@ -111,10 +185,10 @@
                             "isWidget": true,
                             "dataType": "array",
                             "data": [
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json",
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json",
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json"
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
+                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json"
                             ],
                             "componentSpecific": {
                                 "activeTutorial": "Open Source Brain Tutorial",
@@ -134,18 +208,70 @@
             }
         }
     ],
-    "activeExperimentId": 13,
+    "activeExperimentId": 437,
     "geppettoModel": {
-        "id": 13,
-        "url": "/GeppettoModel.xmi",
+        "id": 420,
+        "url": "/MediumNet_MODEL5ab89d0b425aa317153f21bdafc2feb3.xmi",
         "type": "GEPPETTO_PROJECT"
     },
     "isPublic": false,
+    "isReadOnly": false,
     "view": {
-        "id": 119,
+        "id": 190,
         "viewStates": {
             "views": {
-                "Canvas1": {}
+                "Canvas1": {
+                    "widgetType": "CANVAS",
+                    "isWidget": false,
+                    "dataType": "instances",
+                    "data": [
+                        "network_ACnet2"
+                    ],
+                    "componentSpecific": {
+                        "cameraPosition": {
+                            "x": 231.956,
+                            "y": 508.366,
+                            "z": 1849.839
+                        },
+                        "cameraRotation": {
+                            "rx": 0,
+                            "ry": 0,
+                            "rz": 0,
+                            "radius": 1595.066
+                        },
+                        "colorMap": {
+                            "network_ACnet2.pyramidals_48": "#cb0000",
+                            "network_ACnet2.baskets_12": "#003398"
+                        },
+                        "colorFunctionMap": {},
+                        "opacityMap": {},
+                        "geometryTypeMap": {},
+                        "backgroundColor": "0x101010"
+                    }
+                },
+                "Tutorial1": {
+                    "widgetType": "TUTORIAL",
+                    "isWidget": true,
+                    "dataType": "array",
+                    "data": [
+                        "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json",
+                        "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
+                        "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json",
+                        "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json"
+                    ],
+                    "componentSpecific": {
+                        "activeTutorial": "Open Source Brain Tutorial",
+                        "currentStep": 0
+                    },
+                    "size": {
+                        "height": 300,
+                        "width": 350
+                    },
+                    "position": {
+                        "left": "50%",
+                        "top": "50%"
+                    }
+                }
             }
         }
     }
