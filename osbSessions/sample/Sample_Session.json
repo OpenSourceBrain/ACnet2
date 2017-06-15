@@ -109,8 +109,8 @@
                     "format": "RAW"
                 }
             ],
-            "startDate": 1495708623,
-            "endDate": 1495708655,
+            "startDate": 1495708623000,
+            "endDate": 1495708655000,
             "script": "/script.js",
             "isPublic": false,
             "view": {
