@@ -11,15 +11,15 @@ Note the following:
    Mechanism Type should only have values: Channel mechanism, Synaptic mechanism, Ion concentration, Point process, Gap junction
 
 </comment>
-<entry key="Description"/>
+<entry key="Description">NeuroML file containing a single Potassium Channel description, from the book Neuronal Networks of the Hippocampus, Traub and Miles 1991</entry>
 <entry key="NEURON mapping">ChannelML_v1.8.1_NEURONmod.xsl</entry>
-<entry key="GENESIS mapping">ChannelML_v1.8.1_GENESIStab.xsl</entry>
 <entry key="PSICS file requires compilation">false</entry>
+<entry key="GENESIS mapping">ChannelML_v1.8.1_GENESIStab.xsl</entry>
 <entry key="Implementation method">ChannelML based Cell Mechanism</entry>
 <entry key="NEURON file requires compilation">true</entry>
 <entry key="Mechanism Type">Channel mechanism</entry>
-<entry key="ChannelML file">Kd.xml</entry>
 <entry key="PSICS mapping">ChannelML_v1.8.1_PSICS.xsl</entry>
+<entry key="ChannelML file">Kd.xml</entry>
 <entry key="GENESIS file requires compilation">false</entry>
 <entry key="Mechanism Name">Kdr_bask</entry>
 <entry key="Mechanism Model">Template based ChannelML file</entry>

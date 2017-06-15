@@ -11,8 +11,7 @@ Note the following:
    Mechanism Type should only have values: Channel mechanism, Synaptic mechanism, Ion concentration, Point process, Gap junction
 
 </comment>
-<entry key="Description">Simple example of a leak/passive conductance. Note: for GENESIS cells with a single leak conductance,
-        it is better to use the Rm and Em variables for a passive current.</entry>
+<entry key="Description">Passive conductance for pyramidal cell</entry>
 <entry key="NEURON mapping">ChannelML_v1.8.1_NEURONmod.xsl</entry>
 <entry key="PSICS file requires compilation">false</entry>
 <entry key="GENESIS mapping">ChannelML_v1.8.1_GENESIStab.xsl</entry>
