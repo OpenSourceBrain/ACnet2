@@ -184,8 +184,8 @@
                             "widgetType": "TUTORIAL",
                             "isWidget": true,
                             "dataType": "array",
+                            "force_show": true,
                             "data": [
-                                "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_intro/hh_intro.json",
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_neuroml/hh_neuroml.json",
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_practical/hh_practical.json",
                                 "https://raw.githubusercontent.com/tarelli/tutorials/master/1_hh_exercises/hh_exercises.json"
