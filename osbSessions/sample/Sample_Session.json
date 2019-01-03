@@ -170,10 +170,7 @@
                                     "rz": -0.02,
                                     "radius": 531.19
                                 },
-                                "colorMap": {
-                                    "network_ACnet2.pyramidals_48": "0x3ccb00",
-                                    "network_ACnet2.baskets_12": "#003398"
-                                },
+                                "colorMap": {},
                                 "colorFunctionMap": {},
                                 "opacityMap": {},
                                 "geometryTypeMap": {},
