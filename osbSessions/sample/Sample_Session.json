@@ -174,7 +174,7 @@
                                 "colorFunctionMap": {},
                                 "opacityMap": {},
                                 "geometryTypeMap": {},
-                                "backgroundColor": "0x101010"
+                                "backgroundColor": "0xff1010"
                             }
                         },
                         "Tutorial1": {
@@ -243,7 +243,7 @@
                         "colorFunctionMap": {},
                         "opacityMap": {},
                         "geometryTypeMap": {},
-                        "backgroundColor": "0x101010"
+                        "backgroundColor": "0x1010ff"
                     }
                 },
                 "Tutorial1": {
