@@ -5,6 +5,6 @@
 
 Model developed originally in GENESIS by Dave Beeman.
 
-For more details, see the [Wiki](http://www.opensourcebrain.org/projects/acnet2/wiki/Wiki).
+For more details, please see the [Wiki](http://www.opensourcebrain.org/projects/acnet2/wiki/Wiki).
 
 [![Build Status](https://travis-ci.org/OpenSourceBrain/ACnet2.svg)](https://travis-ci.org/OpenSourceBrain/ACnet2)
