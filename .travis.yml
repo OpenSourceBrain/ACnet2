@@ -1,4 +1,6 @@
-sudo: false
+
+dist: xenial
+sudo: false  
 
 addons:
    apt:
@@ -12,11 +14,11 @@ addons:
     
 
 language: python
-python: 2.7
+python: 
+    - 2.7
+    - 3.7
 
- 
-virtualenv:
-   system_site_packages: true
+
 
 env:
     - OMV_ENGINE=jNeuroML
@@ -26,13 +28,17 @@ env:
     - OMV_ENGINE=jNeuroML_validatev1
 
 install: 
-    - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+    - pip install git+https://github.com/OpenSourceBrain/osb-model-validation    
+    - pip install numpy scipy # Why is this needed? Scipy doesn't seem to get installed correctly with addons above...
+    - pip install tables # Ditto
+    - pip install matplotlib
+    - pip install future pandas matplotlib-scalebar bokeh
 
 script:
     - omv all -V
     - pwd
     - ls -al
-    - ls -al neuroConstruct/generatedNeuroML2
+    - omv list-engines -V
     
     
     
