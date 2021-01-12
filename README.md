@@ -7,4 +7,4 @@ Model developed originally in GENESIS by Dave Beeman.
 
 For more details about this model, please see the [Wiki](http://www.opensourcebrain.org/projects/acnet2/wiki/Wiki).
 
-[![Build Status](https://travis-ci.org/OpenSourceBrain/ACnet2.svg)](https://travis-ci.org/OpenSourceBrain/ACnet2)
+[![Build Status](https://travis-ci.com/OpenSourceBrain/ACnet2.svg)](https://travis-ci.com/OpenSourceBrain/ACnet2)
