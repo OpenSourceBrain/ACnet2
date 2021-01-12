@@ -3,7 +3,7 @@
 
 ### Primary Auditory Cortex network model 
 
-Model developed originally in GENESIS by Dave Beeman.
+This model was developed originally in GENESIS by Dave Beeman.
 
 For more details about this model, please see the [Wiki](http://www.opensourcebrain.org/projects/acnet2/wiki/Wiki).
 
