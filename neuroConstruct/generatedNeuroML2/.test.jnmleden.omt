@@ -2,7 +2,7 @@
 # Still in development, subject to change without notice!!
 
 target: LEMS_ACnet2_LowDt.xml
-engine: jNeuroML_NEURON
+engine: jNeuroML_EDEN
 mep: .test.mep
 experiments:
   Current clamp pyramidal:
@@ -15,7 +15,7 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0
+        tolerance: 0.0010208746220724105
   Current clamp basket:
     observables:
       spike times:
@@ -26,7 +26,4 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0
-
-
-        
+        tolerance: 0.00029262095123372775
