@@ -52,3 +52,5 @@ neuroConstruct/generatedNeuroML2/*.js
 /neuroConstruct/generatedNeuroML2/LEMS_MediumNet_netpyne.py_main.json
 /neuroConstruct/generatedNeuroML2/*.gv
 /neuroConstruct/generatedNeuroML2/*.gv.pdf
+*_code.gen.c
+*_code.gen.so
