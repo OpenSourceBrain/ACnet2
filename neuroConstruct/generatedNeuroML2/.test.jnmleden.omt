@@ -1,5 +1,4 @@
-# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
-# Still in development, subject to change without notice!!
+# Script for running automated tests on OSB, see https://github.com/OpenSourceBrain/osb-model-validation 
 
 target: LEMS_ACnet2_LowDt.xml
 engine: jNeuroML_EDEN
@@ -15,7 +14,7 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0.0010208746220724105
+        tolerance: 0.0010167414427688726
   Current clamp basket:
     observables:
       spike times:
@@ -26,4 +25,4 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0.00029262095123372775
+        tolerance: 0.000289288215650068

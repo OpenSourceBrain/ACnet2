@@ -54,3 +54,4 @@ neuroConstruct/generatedNeuroML2/*.js
 /neuroConstruct/generatedNeuroML2/*.gv.pdf
 *_code.gen.c
 *_code.gen.so
+arm64
