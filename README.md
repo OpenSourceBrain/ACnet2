@@ -1,5 +1,5 @@
 
-![](http://www.opensourcebrain.org/attachments/download/87/AC_cells_s.png)
+![](http://v1.opensourcebrain.org/attachments/download/87/AC_cells_s.png)
 
 ### Primary Auditory Cortex network model 
 
