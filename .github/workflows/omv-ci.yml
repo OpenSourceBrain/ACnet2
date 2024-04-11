@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Py${{ matrix.python-version }}, ${{engine}} on ${{ matrix.runs-on }}
+    name: Py${{ matrix.python-version }}, ${{ matrix.engine}} on ${{ matrix.runs-on }}
     runs-on: ${{ matrix.runs-on }}
     strategy:
       fail-fast: false
