@@ -55,3 +55,4 @@ neuroConstruct/generatedNeuroML2/*.js
 *_code.gen.c
 *_code.gen.so
 arm64
+/neuroConstruct/generatedNeuroML2/ACnet2.net.nml__flattened.xml
