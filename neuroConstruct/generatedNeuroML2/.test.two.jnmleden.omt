@@ -15,7 +15,7 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0.017343922603342065
+        tolerance: 0.01734388742304312
   bask0:
     observables:
       spike times:
@@ -26,4 +26,4 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0.0017869092394359062
+        tolerance: 0.001786960295444412
